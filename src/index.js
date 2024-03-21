@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './variable.css';
 import Nav from './Nav';
 import Background from './Background';
 import reportWebVitals from './reportWebVitals';
@@ -8,8 +9,8 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Nav />
     <Background />
+    <Nav />
   </React.StrictMode>
 );
 
