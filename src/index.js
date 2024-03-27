@@ -1,16 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import './variable.css';
-import Nav from './Nav';
-import Background from './Background';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import "./variable.css";
+import Background from "./Background";
+import Nav from "./Nav";
+import Landing from "./Landing";
+import Help from "./Help";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Background />
     <Nav />
+    <Landing />
+    <Help />
   </React.StrictMode>
 );
 
