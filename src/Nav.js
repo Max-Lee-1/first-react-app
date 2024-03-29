@@ -1,7 +1,9 @@
+import Logo from "./ns-teallogo-wURL-1X.png";
+
 export default function Nav() {
   return (
     <section id="nav" className="z-50 relative">
-      <nav class="fixed w-screen z-50 top-0 start-0 bg-white/20 shadow-lg ring-1 ring-black/5 backdrop-blur">
+      <nav class="fixed w-screen z-50 top-0 start-0 bg-black/20 shadow-lg ring-1 ring-black/5 backdrop-blur">
         <div class="flex flex-wrap items-center justify-between p-4">
           {/*<a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
@@ -52,7 +54,13 @@ export default function Nav() {
           </div>
         </div>
       </nav>
-      <div className="fixed z-50 top-0 start-0 bg-white/20 shadow-lg ring-1 ring-black/5 backdrop-blur"></div>
+      <div className="flex fixed h-screen justify-start items-center">
+        <img
+          className="w-40 h-16 py-4 px-5 -rotate-90 -translate-x-12 bg-black/20 shadow-lg ring-1 ring-black/5 backdrop-blur"
+          src={Logo}
+          alt="Netsafe Logo"
+        />
+      </div>
     </section>
   );
 }
