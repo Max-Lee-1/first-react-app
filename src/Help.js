@@ -1,6 +1,6 @@
 export default function Help() {
   return (
-    <section id="Help" className="w-screen h-screen">
+    <section id="Help" className="w-screen z-40 relative">
       <div className="container h-screen flex flex-col justify-center items-center">
         <h1 className="w-1/2 self-center text-center text-white text-5xl font-bold my-2">
           Something to confess?
@@ -17,6 +17,11 @@ export default function Help() {
             <p className="text-white text-sm">Contact Us</p>
           </button>
         </div>
+      </div>
+      <div className="container h-screen flex flex-col justify-center items-center">
+        <h1 className="w-1/2 self-center text-center text-white text-5xl font-bold my-2">
+          Other Sites That Can Help You
+        </h1>
       </div>
     </section>
   );

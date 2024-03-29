@@ -1,7 +1,7 @@
 export default function Nav() {
   return (
-    <section id="nav bg-white/20 shadow-lg ring-1 ring-black/5 backdrop-blur">
-      <nav class="fixed w-screen z-50 top-0 start-0">
+    <section id="nav" className="z-50 relative">
+      <nav class="fixed w-screen z-50 top-0 start-0 bg-white/20 shadow-lg ring-1 ring-black/5 backdrop-blur">
         <div class="flex flex-wrap items-center justify-between p-4">
           {/*<a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
@@ -42,7 +42,7 @@ export default function Nav() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#Help"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Help
@@ -52,6 +52,7 @@ export default function Nav() {
           </div>
         </div>
       </nav>
+      <div className="fixed z-50 top-0 start-0 bg-white/20 shadow-lg ring-1 ring-black/5 backdrop-blur"></div>
     </section>
   );
 }

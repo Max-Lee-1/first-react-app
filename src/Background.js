@@ -1,6 +1,6 @@
 export default function Background() {
   return (
-    <section id="Background">
+    <section id="Background" className="z-10 relative">
       <div className="absolute">
         <div className="bg-circle-2 translate-x-96 -mt-96 absolute bg-blue-800 rounded-full drop-shadow-2xl" />
         <div className="bg-circle-2 -mt-96 -ml-36 absolute bg-teal-500 rounded-full drop-shadow-2xl" />
