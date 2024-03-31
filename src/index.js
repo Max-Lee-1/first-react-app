@@ -6,6 +6,7 @@ import Background from "./Background";
 import Nav from "./Nav";
 import Landing from "./Landing";
 import Help from "./Help";
+import Article from "./Article";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -15,6 +16,7 @@ root.render(
     <Nav />
     <Landing />
     <Help />
+    <Article />
   </React.StrictMode>
 );
 
