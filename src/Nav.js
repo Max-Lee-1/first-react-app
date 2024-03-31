@@ -1,4 +1,4 @@
-import Logo from "./ns-teallogo-wURL-1X.png";
+import Logo from "./Logo/ns-teallogo-wURL-1X.png";
 
 export default function Nav() {
   return (
@@ -55,11 +55,13 @@ export default function Nav() {
         </div>
       </nav>
       <div className="flex fixed h-screen justify-start items-center">
-        <img
-          className="w-40 h-16 py-4 px-5 -rotate-90 -translate-x-12 bg-black/20 shadow-lg ring-1 ring-black/5 backdrop-blur"
-          src={Logo}
-          alt="Netsafe Logo"
-        />
+        <a href="https://netsafe.org.nz/" target="blank">
+          <img
+            className="w-40 h-16 py-4 px-5 -rotate-90 -translate-x-12 bg-black/20 shadow-lg ring-1 ring-black/5 backdrop-blur"
+            src={Logo}
+            alt="Netsafe Logo"
+          />
+        </a>
       </div>
     </section>
   );

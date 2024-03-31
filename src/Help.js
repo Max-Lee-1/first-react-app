@@ -1,7 +1,11 @@
+import nasefLogo from "./Logo/Network of Academic and Scholastic Esports Federations White@2x.png";
+import hgLogo from "./Logo/HG Logo Horizontal White.png";
+import ttLogo from "./Logo/TakeThis_logo_horizontal_white-1.png";
+
 export default function Help() {
   return (
     <section id="Help" className="w-screen z-40 relative">
-      <div className="container h-screen flex flex-col justify-center items-center">
+      <div className="h-screen flex flex-col justify-center items-center">
         <h1 className="w-1/2 self-center text-center text-white text-5xl font-bold my-2">
           Something to confess?
         </h1>
@@ -10,18 +14,49 @@ export default function Help() {
           organization with an unrelenting focus on online safety practices.
         </h3>
         <div className="container flex flex-row justify-center items-center gap-8 my-2">
-          <button className="w-1/10 h-1/10 bg-gradient-to-r from-teal-600 to-lime-600 p-4 rounded-lg">
-            <p className="text-white text-sm">Make A Report</p>
-          </button>
-          <button className="w-1/10 h-1/10 bg-gradient-to-r from-teal-600 to-lime-600 p-4 rounded-lg">
-            <p className="text-white text-sm">Contact Us</p>
-          </button>
+          <a
+            className="w-auto h-1/10 bg-gradient-to-r from-teal-600 to-lime-600 p-4 rounded-lg"
+            href="https://report.netsafe.org.nz/hc/en-au/requests/new"
+            target="_blank"
+          >
+            <p className="text-white text-sm text-center">Make A Report</p>
+          </a>
+          <a
+            className="w-auto h-1/10 bg-gradient-to-r from-teal-600 to-lime-600 p-4 rounded-lg"
+            href="https://netsafe.org.nz/contact-us/"
+            target="_blank"
+          >
+            <p className="text-white text-sm text-center">Contact Us Here</p>
+          </a>
         </div>
       </div>
-      <div className="container h-screen flex flex-col justify-center items-center">
+      <div className="h-screen flex flex-col justify-center items-center">
         <h1 className="w-1/2 self-center text-center text-white text-5xl font-bold my-2">
           Other Sites That Can Help You
         </h1>
+        <div className="w-screen h-screen flex justify-center items-center absolute drop-shadow-lg">
+          <a href="https://www.nasef.org/" target="blank">
+            <img
+              className="w-56 h-24 -translate-x-40 -translate-y-36"
+              src={nasefLogo}
+              alt="NASEF Logo"
+            />
+          </a>
+          <a href="https://www.healthygamer.gg" target="blank">
+            <img
+              className="w-36 -translate-x-48 translate-y-32"
+              src={hgLogo}
+              alt="Healthy Gamer Logo"
+            />
+          </a>
+          <a href="https://www.takethis.org/" target="blank">
+            <img
+              className="w-40 translate-x-10 -translate-y-24"
+              src={ttLogo}
+              alt="Take This Logo"
+            />
+          </a>
+        </div>
       </div>
     </section>
   );
