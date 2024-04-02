@@ -27,10 +27,7 @@ body {
 
     scrollbar-width: none;
     /* scroll padding */
-
     scroll-padding-inline: var(--_spacer, 1rem);
-
-
 }
 
 .media-scroller::-webkit-scrollbar {

@@ -9,7 +9,7 @@ export default function Help() {
         <h1 className="w-1/2 self-center text-center text-white text-5xl font-bold my-2">
           Something to confess?
         </h1>
-        <h3 className="w-1/2 self-center text-center text-white text-xl font-normal my-2">
+        <h3 className="w-1/2 self-center text-center text-white text-xl font-normal my-4">
           Netsafe is an internationally renowned independent not for profit
           organization with an unrelenting focus on online safety practices.
         </h3>
@@ -35,26 +35,26 @@ export default function Help() {
           Other Sites That Can Help You
         </h1>
         <div className="w-screen h-screen flex justify-center items-center absolute drop-shadow-lg">
-          <a href="https://www.nasef.org/" target="blank">
-            <img
-              className="w-56 h-24 -translate-x-40 -translate-y-36"
-              src={nasefLogo}
-              alt="NASEF Logo"
-            />
+          <a
+            className="-translate-x-40 -translate-y-36"
+            href="https://www.nasef.org/"
+            target="blank"
+          >
+            <img className="w-56 h-24" src={nasefLogo} alt="NASEF Logo" />
           </a>
-          <a href="https://www.healthygamer.gg" target="blank">
-            <img
-              className="w-36 -translate-x-48 translate-y-32"
-              src={hgLogo}
-              alt="Healthy Gamer Logo"
-            />
+          <a
+            className="-translate-x-48 translate-y-32"
+            href="https://www.healthygamer.gg"
+            target="blank"
+          >
+            <img className="w-36 h-12" src={hgLogo} alt="Healthy Gamer Logo" />
           </a>
-          <a href="https://www.takethis.org/" target="blank">
-            <img
-              className="w-40 translate-x-10 -translate-y-24"
-              src={ttLogo}
-              alt="Take This Logo"
-            />
+          <a
+            className="translate-x-10 -translate-y-24"
+            href="https://www.takethis.org/"
+            target="blank"
+          >
+            <img className="w-40 h-12" src={ttLogo} alt="Take This Logo" />
           </a>
         </div>
       </div>

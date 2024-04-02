@@ -1,14 +1,14 @@
 export default function Article() {
   return (
-    <section id="Article" className="w-screen h-screen z-10 relative">
-      <h1 class="w-1/3 text-center text-white text-5xl font-bold drop-shadow-lg pb-1">
-        Individual elements
+    <section
+      id="Article"
+      className="w-screen z-10 relative grid justify-center items-center"
+    >
+      <h1 class="w-screen text-white text-5xl font-bold drop-shadow-lg ml-20 mb-8 mt-20">
+        Latest Article
       </h1>
 
-      <div
-        class="media-scroller snap-mandatory snap-both
-      grid gap-4 grid-flow-col px-4 overflow-x-auto overscroll-contain"
-      >
+      <div class="media-scroller snap-mandatory snap-both grid gap-4 grid-flow-col overflow-x-auto overscroll-contain ml-20">
         <div class="snap-start grid gap-4 pb-4 bg-gray-700 rounded-lg shadow">
           <img
             className="aspect-video object-cover"
@@ -41,6 +41,13 @@ export default function Article() {
           />
           <p class="title pl-4">A dog that's blinking?</p>
         </div>
+      </div>
+
+      <h1 class="w-screen text-white text-5xl font-bold drop-shadow-lg pb-1 ml-20 mb-8 mt-20">
+        Gaming Etiquette
+      </h1>
+
+      <div class="media-scroller snap-mandatory snap-both grid gap-4 grid-flow-col overflow-x-auto overscroll-contain ml-20">
         <div class="snap-start grid gap-4 pb-4 bg-gray-700 rounded-lg shadow">
           <img
             className="aspect-video object-cover"
@@ -106,72 +113,6 @@ export default function Article() {
             alt=""
           />
           <p class="title pl-4">Vestibulum</p>
-        </div>
-        <div class="snap-start grid gap-4 pb-4 bg-gray-700 rounded-lg shadow">
-          <img
-            className="aspect-video object-cover"
-            src="https://images.unsplash.com/photo-1642177584449-fa0b017dccc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
-            alt=""
-          />
-          <p class="title pl-4">Adipiscing tristique risus nec feugiat</p>
-        </div>
-        <div class="snap-start grid gap-4 pb-4 bg-gray-700 rounded-lg shadow">
-          <img
-            className="aspect-video object-cover"
-            src="https://images.unsplash.com/photo-1643249960396-d39d2a63ce8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0Mw&ixlib=rb-1.2.1&q=80&w=400"
-            alt=""
-          />
-          <p class="title pl-4">Rutrum tellus pellentesque eu tincidunt</p>
-        </div>
-        <div class="snap-start grid gap-4 pb-4 bg-gray-700 rounded-lg shadow">
-          <img
-            className="aspect-video object-cover"
-            src="https://images.unsplash.com/photo-1641424222187-1c336d21804c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-            alt=""
-          />
-          <p class="title pl-4">Bibendum enim</p>
-        </div>
-        <div class="snap-start grid gap-4 pb-4 bg-gray-700 rounded-lg shadow">
-          <img
-            className="aspect-video object-cover"
-            src="https://images.unsplash.com/photo-1640998483268-d1faffa789ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODkwNA&ixlib=rb-1.2.1&q=80&w=400"
-            alt=""
-          />
-          <p class="title pl-4">Amet commodo</p>
-        </div>
-        <div class="snap-start grid gap-4 pb-4 bg-gray-700 rounded-lg shadow">
-          <img
-            className="aspect-video object-cover"
-            src="https://images.unsplash.com/photo-1642034451735-2a8df1eaa2c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
-            alt=""
-          />
-          <p class="title pl-4">A erat nam at lectus</p>
-        </div>
-        <div class="snap-start grid gap-4 pb-4 bg-gray-700 rounded-lg shadow">
-          <img
-            className="aspect-video object-cover"
-            src="https://images.unsplash.com/photo-1640808238224-5520de93c939?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
-            alt=""
-          />
-          <p class="title pl-4">
-            Pellentesque eu tincidunt tortor aliquam nulla
-          </p>
-        </div>
-        <div class="snap-start grid gap-4 pb-4 bg-gray-700 rounded-lg shadow">
-          <img
-            className="aspect-video object-cover"
-            src="https://images.unsplash.com/photo-1643039952431-38adfa91f320?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-            alt=""
-          />
-          <p class="title pl-4">Quam adipiscing vitae</p>
-        </div>
-        <div class="snap-start grid gap-4 pb-4 bg-gray-700 rounded-lg shadow">
-          <img
-            className="aspect-video object-cover"
-            src="https://images.unsplash.com/photo-1643148636637-58b3eb95cdad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
-            alt=""
-          />
-          <p class="title pl-4">Fermentum</p>
         </div>
       </div>
     </section>

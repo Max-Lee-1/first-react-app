@@ -13,42 +13,47 @@ export default function Landing() {
             <div className="w-3.5 h-3.5 bg-white bg-opacity-25 rounded-full" />
             <div className="w-3.5 h-3.5 bg-white bg-opacity-25 rounded-full" />
         </div>*/}
-      <div className="w-screen h-screen flex justify-center items-center -translate-x-80 -translate-y-36 absolute drop-shadow-lg">
-        <button className="w-40 h-40 flex justify-center bg-gradient-to-b from-red-300 to-red-500 rounded-full">
-          <h3 className="w-24 text-center self-center text-white text-base font-bold drop-shadow-lg">
-            Wanna Read about it?
-          </h3>
-        </button>
-      </div>
-      <div className="w-screen h-screen flex justify-center items-end -translate-x-52 -translate-y-24 absolute drop-shadow-lg">
-        <button className="w-40 h-40 flex justify-center bg-gradient-to-b from-amber-500 to-amber-400 rounded-full">
+      <div className="w-scree h-screen flex justify-center items-center">
+        <div className="-translate-x-80 -translate-y-36 absolute drop-shadow-lg">
           <a
-            href=""
-            className="w-24 text-center self-center text-white text-base font-bold drop-shadow-lg"
+            href="#Article"
+            className="w-40 h-40 flex justify-center items-center bg-gradient-to-b from-red-300 to-red-500 rounded-full"
           >
-            <h3>Why should I care?</h3>
+            <h3 className="w-24 text-center self-center text-white text-base font-bold drop-shadow-lg">
+              Wanna Read about it?
+            </h3>
           </a>
-        </button>
-      </div>
-      <div className="w-screen h-screen flex justify-center items-center translate-x-80 -translate-y-16 absolute drop-shadow-lg">
-        <button className="w-40 h-40 flex justify-center bg-gradient-to-b from-teal-500 to-lime-500 rounded-full">
+        </div>
+        <div className="-translate-x-52 translate-y-48 absolute drop-shadow-lg">
           <a
-            href="quiz"
-            className="w-24 text-center self-center text-white text-base font-bold drop-shadow-lg"
+            href="#Article"
+            className="w-40 h-40 flex justify-center items-center bg-gradient-to-b from-amber-500 to-amber-400 rounded-full"
           >
-            <h3>Take the Quiz</h3>
+            <h3 className="w-24 text-center self-center text-white text-base font-bold drop-shadow-lg">
+              Why should I care?
+            </h3>
           </a>
-        </button>
-      </div>
-      <div className="w-screen h-screen flex justify-center items-end translate-x-48 -translate-y-36 absolute drop-shadow-lg">
-        <button className="w-40 h-40 flex justify-center bg-gradient-to-b from-slate-700 to-indigo-800 rounded-full">
+        </div>
+        <div className="translate-x-80 -translate-y-28 absolute drop-shadow-lg">
           <a
-            href="#Help"
-            className="w-24 text-center self-center text-white text-base font-bold drop-shadow-lg"
+            href="#Article"
+            className="w-40 h-40 flex justify-center items-center bg-gradient-to-b from-teal-500 to-lime-500 rounded-full"
           >
-            <h3>Yes, I need Professional Help</h3>
+            <h3 className="w-24 text-center self-center text-white text-base font-bold drop-shadow-lg">
+              Take the Quiz
+            </h3>
           </a>
-        </button>
+        </div>
+        <div className="translate-x-48 translate-y-36 absolute drop-shadow-lg">
+          <a
+            href="#Article"
+            className="w-40 h-40 flex justify-center items-center bg-gradient-to-b from-slate-700 to-indigo-800 rounded-full"
+          >
+            <h3 className="w-24 text-center self-center text-white text-base font-bold drop-shadow-lg">
+              Yes, I need Professional Help
+            </h3>
+          </a>
+        </div>
       </div>
     </section>
   );
