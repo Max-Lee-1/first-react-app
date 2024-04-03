@@ -2,9 +2,9 @@ export default function Article() {
   return (
     <section
       id="Article"
-      className="w-screen z-10 relative grid justify-center items-center"
+      className="w-screen z-10 relative grid justify-center items-center py-20"
     >
-      <h1 class="w-screen text-white text-5xl font-bold drop-shadow-lg ml-20 mb-8 mt-20">
+      <h1 class="w-screen text-white text-5xl font-bold drop-shadow-lg ml-20 mb-8">
         Latest Article
       </h1>
 
@@ -115,6 +115,7 @@ export default function Article() {
           <p class="title pl-4">Vestibulum</p>
         </div>
       </div>
+      <span className="h-48"></span>
     </section>
   );
 }

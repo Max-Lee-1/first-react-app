@@ -36,7 +36,7 @@ export default function Landing() {
         </div>
         <div className="translate-x-80 -translate-y-28 absolute drop-shadow-lg">
           <a
-            href="#Article"
+            href="#Quiz"
             className="w-40 h-40 flex justify-center items-center bg-gradient-to-b from-teal-500 to-lime-500 rounded-full"
           >
             <h3 className="w-24 text-center self-center text-white text-base font-bold drop-shadow-lg">
@@ -46,7 +46,7 @@ export default function Landing() {
         </div>
         <div className="translate-x-48 translate-y-36 absolute drop-shadow-lg">
           <a
-            href="#Article"
+            href="#Help"
             className="w-40 h-40 flex justify-center items-center bg-gradient-to-b from-slate-700 to-indigo-800 rounded-full"
           >
             <h3 className="w-24 text-center self-center text-white text-base font-bold drop-shadow-lg">

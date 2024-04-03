@@ -7,6 +7,7 @@ import Nav from "./Nav";
 import Landing from "./Landing";
 import Help from "./Help";
 import Article from "./Article";
+import Quiz from "./Quiz";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -15,8 +16,9 @@ root.render(
     <Background />
     <Nav />
     <Landing />
-    <Help />
+    <Quiz />
     <Article />
+    <Help />
   </React.StrictMode>
 );
 
