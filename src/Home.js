@@ -1,18 +1,11 @@
 export default function Landing() {
   return (
-    <section id="Landing" className="z-40 w-screen h-screen relative">
+    <section data-section id="Home" className="z-40 w-screen h-screen relative">
       <div className="w-screen h-screen flex justify-center items-center absolute">
         <h1 className="w-1/3 text-center text-white text-5xl font-bold drop-shadow-lg">
           Are You A Toxic Gamer?
         </h1>
       </div>
-      {/*<div className="scroll-dots w-40 h-48 px-20 flex-col justify-start items-start gap-7 inline-flex">
-            <div className="w-3.5 h-3.5 bg-white rounded-full" />
-            <div className="w-3.5 h-3.5 bg-white bg-opacity-25 rounded-full" />
-            <div className="w-3.5 h-3.5 bg-white bg-opacity-25 rounded-full" />
-            <div className="w-3.5 h-3.5 bg-white bg-opacity-25 rounded-full" />
-            <div className="w-3.5 h-3.5 bg-white bg-opacity-25 rounded-full" />
-        </div>*/}
       <div className="w-scree h-screen flex justify-center items-center">
         <div className="-translate-x-80 -translate-y-36 absolute drop-shadow-lg">
           <a

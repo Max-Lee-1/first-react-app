@@ -1,6 +1,7 @@
 export default function Quiz() {
   return (
     <section
+      data-section
       id="Quiz"
       className="z-10 relative w-screen min-h-screen py-40 flex items-center"
     >

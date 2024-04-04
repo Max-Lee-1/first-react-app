@@ -4,7 +4,7 @@ import ttLogo from "./Logo/TakeThis_logo_horizontal_white-1.png";
 
 export default function Help() {
   return (
-    <section id="Help" className="w-screen z-40 relative">
+    <section data-section id="Help" className="w-screen z-40 relative">
       <div className="h-screen flex flex-col justify-center items-center">
         <h1 className="w-1/2 self-center text-center text-white text-5xl font-bold my-2">
           Something to confess?

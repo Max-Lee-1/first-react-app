@@ -4,7 +4,7 @@ import "./index.css";
 import "./variable.css";
 import Background from "./Background";
 import Nav from "./Nav";
-import Landing from "./Landing";
+import Landing from "./Home";
 import Help from "./Help";
 import Article from "./Article";
 import Quiz from "./Quiz";

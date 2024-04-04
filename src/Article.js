@@ -1,6 +1,7 @@
 export default function Article() {
   return (
     <section
+      data-section
       id="Article"
       className="w-screen z-10 relative grid justify-center items-center py-20"
     >
@@ -15,7 +16,7 @@ export default function Article() {
             src="https://images.unsplash.com/photo-1641353989082-9b15fa661805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
             alt=""
           />
-          <p class="title pl-4">Short title</p>
+          <p class="title pl-4">Article 1</p>
         </div>
         <div class="snap-start grid gap-4 pb-4 bg-gray-700 rounded-lg shadow">
           <img
@@ -23,7 +24,7 @@ export default function Article() {
             src="https://images.unsplash.com/photo-1642190672487-22bde32965f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
             alt=""
           />
-          <p class="title pl-4">A longer title here</p>
+          <p class="title pl-4">Article 2</p>
         </div>
         <div class="snap-start grid gap-4 pb-4 bg-gray-700 rounded-lg shadow">
           <img
@@ -31,7 +32,7 @@ export default function Article() {
             src="https://images.unsplash.com/photo-1641841344411-49dbd02896f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
             alt=""
           />
-          <p class="title pl-4">An even longer title on this one</p>
+          <p class="title pl-4">Article 3</p>
         </div>
         <div class="snap-start grid gap-4 pb-4 bg-gray-700 rounded-lg shadow">
           <img
@@ -39,7 +40,7 @@ export default function Article() {
             src="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
             alt=""
           />
-          <p class="title pl-4">A dog that's blinking?</p>
+          <p class="title pl-4">Article 4</p>
         </div>
       </div>
 
@@ -54,7 +55,7 @@ export default function Article() {
             src="https://images.unsplash.com/photo-1640938776314-4d303f8a1380?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
             alt=""
           />
-          <p class="title pl-4">Chair</p>
+          <p class="title pl-4">Article 5</p>
         </div>
         <div class="snap-start grid gap-4 pb-4 bg-gray-700 rounded-lg shadow">
           <img
@@ -115,7 +116,6 @@ export default function Article() {
           <p class="title pl-4">Vestibulum</p>
         </div>
       </div>
-      <span className="h-48"></span>
     </section>
   );
 }
