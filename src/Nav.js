@@ -32,66 +32,57 @@ export default function Nav() {
   }, []);
   const activeStyle = {
     fontWeight: "bold",
-    color: "red",
+    color: "white",
     textDecoration: "underline",
   };
 
   return (
     <section id="nav" className="z-50 relative">
       <nav class="fixed w-screen z-50 top-0 start-0 bg-black/20 shadow-lg ring-1 ring-black/5 backdrop-blur">
-        <div class="flex flex-wrap items-center justify-between p-4">
-          {/*
-      className={
-                    activeId === "section-1" ? "text-red-500" : "text-gray-500"
-                  }
-                  */}
+        <div class="flex flex-wrap items-center justify-between py-4">
           <div
             class="hidden w-full md:block md:w-auto ml-20"
             id="navbar-default"
           >
             <ul class="font-medium flex flex-col py-4 md:p-0 mt-4 border border-gray-100  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-              <li
-                className={activeSection === "Home" ? "active" : ""}
-                class="block py-2 px-3"
-              >
+              <li className={activeSection === "Home" ? "active" : ""}>
                 <a
                   href="#Home"
-                  style={activeSection === "Home" ? activeStyle : {}}
+                  className="block py-2 px-3 text-gray-400 hover:text-white"
                 >
-                  Home
+                  <p style={activeSection === "Home" ? activeStyle : {}}>
+                    Home
+                  </p>
                 </a>
               </li>
-              <li
-                className={activeSection === "Quiz" ? "active" : ""}
-                class="block py-2 px-3"
-              >
+              <li className={activeSection === "Quiz" ? "active" : ""}>
                 <a
                   href="#Quiz"
-                  style={activeSection === "Quiz" ? activeStyle : {}}
+                  className="block py-2 px-3 text-gray-400 hover:text-white"
                 >
-                  Quiz
+                  <p style={activeSection === "Quiz" ? activeStyle : {}}>
+                    Quiz
+                  </p>
                 </a>
               </li>
-              <li
-                className={activeSection === "Article" ? "active" : ""}
-                class="block py-2 px-3"
-              >
+              <li className={activeSection === "Article" ? "active" : ""}>
                 <a
                   href="#Article"
-                  style={activeSection === "Article" ? activeStyle : {}}
+                  className="block py-2 px-3 text-gray-400 hover:text-white"
                 >
-                  Article
+                  <p style={activeSection === "Article" ? activeStyle : {}}>
+                    Article
+                  </p>
                 </a>
               </li>
-              <li
-                className={activeSection === "Help" ? "active" : ""}
-                class="block py-2 px-3"
-              >
+              <li className={activeSection === "Help" ? "active" : ""}>
                 <a
                   href="#Help"
-                  style={activeSection === "Help" ? activeStyle : {}}
+                  className="block py-2 px-3 text-gray-400 hover:text-white"
                 >
-                  Help
+                  <p style={activeSection === "Help" ? activeStyle : {}}>
+                    Help
+                  </p>
                 </a>
               </li>
             </ul>
