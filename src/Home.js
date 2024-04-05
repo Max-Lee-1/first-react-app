@@ -1,6 +1,10 @@
 export default function Landing() {
   return (
-    <section data-section id="Home" className="z-40 w-screen min-h-screen relative">
+    <section
+      data-section
+      id="Home"
+      className="z-40 w-screen min-h-screen relative"
+    >
       <div className="w-screen h-screen flex justify-center items-center absolute">
         <h1 className="w-1/3 text-center text-white text-5xl font-bold drop-shadow-lg">
           Are You A Toxic Gamer?
@@ -55,7 +59,11 @@ export default function Landing() {
             Your Health, Your Care
           </h1>
           <p className="text-white text-xl text-justify col-span-1 row-span- w-full">
-            Excessive gaming often leads to a sedentary lifestyle, which can result in various health issues such as obesity, muscle stiffness, and poor posture. Sitting for prolonged periods without adequate breaks can contribute to cardiovascular problems and weaken overall physical fitness.
+            Excessive gaming often leads to a sedentary lifestyle, which can
+            result in various health issues such as obesity, muscle stiffness,
+            and poor posture. Sitting for prolonged periods without adequate
+            breaks can contribute to cardiovascular problems and weaken overall
+            physical fitness.
           </p>
         </div>
         <div className="grid grid-cols-3 gap-16 mx-20">
@@ -101,15 +109,20 @@ export default function Landing() {
       </div>
       <div className="h-screen">
         <div className="grid grid-cols-2 gap-4 mx-20 pb-20 pt-40">
-          <div className="p-4 bg-gray-700 rounded-lg flex flex-col gap-1 col-span-1 row-span-1 drop-shadow-md">
-          </div>
+          <div className="p-4 bg-gray-700 rounded-lg flex flex-col gap-1 col-span-1 row-span-1 drop-shadow-md"></div>
           <div className="p-4 flex flex-col gap-1 col-span-1 row-span-1">
             <h1 class="pb-4 col-span-1 row-span-1 text-white text-5xl font-bold drop-shadow-lg">
               Who We Are
             </h1>
             <p className="text-white text-xl text-justify col-span-1 row-span- w-full">
-              Game with health aims to promote
-              Ad commodo commodo excepteur do adipisicing. Ullamco duis enim fugiat elit veniam in aute aliquip. Cupidatat occaecat ea ipsum deserunt quis. Excepteur eiusmod labore est labore voluptate reprehenderit consequat commodo do duis dolore mollit sint duis. Ex veniam cillum ea incididunt aliquip veniam eiusmod pariatur consequat ex irure. Officia deserunt Lorem eu Lorem est non. Id in reprehenderit reprehenderit aliqua elit ex amet pariatur magna in eiusmod nostrud laboris.
+              Game with health aims to promote Ad commodo commodo excepteur do
+              adipisicing. Ullamco duis enim fugiat elit veniam in aute aliquip.
+              Cupidatat occaecat ea ipsum deserunt quis. Excepteur eiusmod
+              labore est labore voluptate reprehenderit consequat commodo do
+              duis dolore mollit sint duis. Ex veniam cillum ea incididunt
+              aliquip veniam eiusmod pariatur consequat ex irure. Officia
+              deserunt Lorem eu Lorem est non. Id in reprehenderit reprehenderit
+              aliqua elit ex amet pariatur magna in eiusmod nostrud laboris.
             </p>
           </div>
         </div>
