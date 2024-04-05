@@ -12,6 +12,39 @@ export default function Quiz() {
           </h1>
         </div>
         <div className="p-4 bg-gray-700 rounded-lg flex flex-col gap-1 col-span-3 row-span-1 drop-shadow-md">
+          <h1 class="text-white text-5xl font-bold drop-shadow-lg p-4 flex">
+            Healthy Screentime
+          </h1>
+          <p className="w-full text-white text-xl text-justify p-4">
+            Screens have their allure, but too much isn't good for you. Set
+            limits, take breaks, and explore the world offline. Your eyes, mind,
+            and relationships will thank you for the balance. See if you have
+            great management with your screen time here.
+          </p>
+        </div>
+        <div className="p-4 bg-gray-700 rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md">
+          <a
+            className="w-auto bg-gradient-to-r from-teal-600 to-lime-600 p-4 rounded-lg flex"
+            href="https://brilliantstarmagazine.org/articles/quiz-are-you-smart-about-screens"
+            target="_blank"
+          >
+            <p className="text-white text-5xl font-bold drop-shadow-lg p-4">
+              Quiz: Are You Smart About Screens?
+            </p>
+          </a>
+        </div>
+        <div className="p-4 bg-gray-700 rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md">
+          <a
+            className="w-auto bg-gradient-to-r from-teal-600 to-lime-600 p-4 rounded-lg flex"
+            href="https://www.mind-diagnostics.org/video_game_addiction-test"
+            target="_blank"
+          >
+            <p className="text-white text-5xl font-bold drop-shadow-lg p-4">
+              FIND OUT IF YOU HAVE A VIDEO GAME ADDICTION
+            </p>
+          </a>
+        </div>
+        <div className="p-4 bg-gray-700 rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md">
           <h1 class="text-white text-5xl font-bold drop-shadow-lg p-4">
             Game Addiction
           </h1>
@@ -25,37 +58,16 @@ export default function Quiz() {
         <div className="p-4 bg-gray-700 rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md">
           <a
             className="w-auto bg-gradient-to-r from-teal-600 to-lime-600 p-4 rounded-lg flex"
-            href="https://brilliantstarmagazine.org/articles/quiz-are-you-smart-about-screens"
+            href="https://www.mind-diagnostics.org/video_game_addiction-test"
             target="_blank"
           >
-            <p className="text-white text-sm text-center">
-              Quiz: Are You Smart About Screens?
+            <p className="text-white text-5xl font-bold drop-shadow-lg p-4">
+              FIND OUT IF YOU HAVE A VIDEO GAME ADDICTION
             </p>
           </a>
         </div>
-        <div className="p-4 bg-gray-700 rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md">
-          <h1 class="text-white text-5xl font-bold drop-shadow-lg p-4 flex">
-            Healthy Screentime
-          </h1>
-          <div className="w-1/2 text-white text-xl text-justify p-4">
-            Screens have their allure, but too much isn't good for you. Set
-            limits, take breaks, and explore the world offline. Your eyes, mind,
-            and relationships will thank you for the balance. See if you have
-            great management with your screen time here.
-          </div>
-        </div>
-        <div>
-          <a
-            className="w-auto bg-gradient-to-r from-teal-600 to-lime-600 p-4 rounded-lg flex"
-            href="https://brilliantstarmagazine.org/articles/quiz-are-you-smart-about-screens"
-            target="_blank"
-          >
-            <p className="text-white text-sm text-center">
-              Quiz: Are You Smart About Screens?
-            </p>
-          </a>
-        </div>
-        <div className="p-4 bg-gray-700 rounded-lg flex flex-col gap-1 col-span-1 row-span-2 drop-shadow-md">
+
+        {/*<div className="p-4 bg-gray-700 rounded-lg flex flex-col gap-1 col-span-1 row-span-2 drop-shadow-md">
           <h1 class="text-white text-5xl font-bold drop-shadow-lg p-4">
             Healthy Screentime
           </h1>
@@ -64,7 +76,7 @@ export default function Quiz() {
             limits, take breaks, and explore the world offline. Your eyes, mind,
             and relationships will thank you for the balance.
           </p>
-        </div>
+  </div>*/}
       </div>
 
       {/*<div className="grid auto-rows-[192px] grid-cols-3 gap-4">
