@@ -3,7 +3,7 @@ export default function Quiz() {
     <section
       data-section
       id="Quiz"
-      className="z-10 relative w-screen min-h-screen py-20 flex items-center"
+      className="z-10 relative w-screen min-h-screen flex items-center pt-10 my-20"
     >
       <div className="grid grid-cols-6 gap-4 mx-20">
         <div className="justify-center p-4 bg-gray-700 rounded-lg flex flex-col gap-1 col-span-1 row-span-1 drop-shadow-md">
