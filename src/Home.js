@@ -8,7 +8,7 @@ export default function Landing() {
       className="z-10 w-screen min-h-screen relative mb-20"
     >
       <div className="w-screen h-screen flex justify-center items-center absolute">
-        <h1 className="w-1/3 text-center text-white text-5xl font-bold drop-shadow-lg">
+        <h1 className="w-1/3 text-center text-white text-5xl drop-shadow-lg">
           Are You A Toxic Gamer?
         </h1>
       </div>
@@ -57,10 +57,10 @@ export default function Landing() {
       <div className="p-4 flex flex-col gap-1 col-span-1 row-span-1 drop-shadow-md"></div>
       <div id="Hazards" className="min-h-screen">
         <div className="grid grid-cols-2 gap-4 mx-20 pb-20 pt-40">
-          <h1 class="col-span-1 row-span-1 text-white text-5xl font-bold drop-shadow-lg">
+          <h1 class="text-white text-5xl font-bold drop-shadow-lg">
             Your Health, Your Care
           </h1>
-          <p className="text-white text-xl text-justify col-span-1 row-span- w-full">
+          <p className="text-white text-xl text-justify w-full">
             Excessive gaming often leads to a sedentary lifestyle, which can
             result in various health issues such as obesity, muscle stiffness,
             and poor posture. Sitting for prolonged periods without adequate
@@ -85,27 +85,27 @@ export default function Landing() {
             <h1 class="text-white text-5xl font-bold drop-shadow-lg p-5">
               Mental Health Concerns
             </h1>
-            <h3 className="text-white text-xl p-5 text-justify">
+            <p className="text-white text-xl p-5 text-justify">
               Unhealthy gaming habits can negatively affect mental well-being.
               Excessive gaming may lead to increased stress, anxiety, and
               depression, especially if it interferes with daily
               responsibilities and social interactions. The immersive nature of
               gaming can also blur the line between reality and fantasy,
               potentially exacerbating mental health issues.
-            </h3>
+            </p>
           </div>
           <div className="p-4 bg-gray-700 rounded-lg flex flex-col gap-1 col-span-1 row-span-1 drop-shadow-md">
             <h1 class="text-white text-5xl font-bold drop-shadow-lg p-5">
               Social & Emotional Fallout
             </h1>
-            <h3 className="text-white text-xl p-5 text-justify">
+            <p className="text-white text-xl p-5 text-justify">
               Spending excessive time gaming can strain relationships with
               friends, family, and significant others. It may lead to social
               isolation, as individuals prioritize gaming over face-to-face
               interactions. Moreover, unhealthy gaming habits can hinder
               personal growth, as time spent gaming often detracts from pursuing
               educational, career, or personal development opportunities.
-            </h3>
+            </p>
           </div>
         </div>
       </div>
@@ -120,7 +120,7 @@ export default function Landing() {
           <h1 class="pb-4 col-span-1 row-span-1 text-white text-5xl font-bold drop-shadow-lg">
             Who We Are
           </h1>
-          <p className="text-white text-xl text-justify col-span-1 row-span- w-full">
+          <p className="text-white text-xl text-justify w-full">
             Game with health aims to promote Ad commodo commodo excepteur do
             adipisicing. Ullamco duis enim fugiat elit veniam in aute aliquip.
             Cupidatat occaecat ea ipsum deserunt quis. Excepteur eiusmod labore

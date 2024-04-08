@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import "./variable.css";
 import Background from "./Background";
 import Nav from "./Nav";
 import Landing from "./Home";

@@ -2,16 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-/**body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+body {
+  overflow-x: hidden;
+  background-color: #333333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}**/
+h1 {
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+h3,
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-circle-1 {
+  width: 800px;
+  height: 800px;
+}
+
+.bg-circle-2 {
+  width: 1200px;
+  height: 1200px;
+}
+
+/*Article*/
+.media-scroller {
+  --_spacer: 1rem;
+  grid-auto-columns: 23%;
+  /* IE and Edge */
+  -ms-overflow-style: none;
+  /* Firefox */
+
+  scrollbar-width: none;
+  scroll-padding-inline: var(--_spacer, 1rem);
+}
+
+.media-scroller::-webkit-scrollbar {
+  display: none;
+}
