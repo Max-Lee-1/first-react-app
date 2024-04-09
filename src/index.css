@@ -7,17 +7,17 @@
 
 body {
   overflow-x: hidden;
-  background-color: #333333;
+  background-color: #18223c;
 }
 
-h1 {
+/**h1 {
   font-family: 'Proxima Nova', sans-serif;
 }
 
 h3,
 p {
   font-family: Arial, Helvetica, sans-serif;
-}
+}**/
 
 .bg-circle-1 {
   width: 800px;
