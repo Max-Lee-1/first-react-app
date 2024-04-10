@@ -1,35 +1,38 @@
 export default function Background() {
-  const translateLeft = document.querySelectorAll(".parallax-left");
-  const translateRight = document.querySelectorAll(".parallax-right");
-  const translateUp = document.querySelectorAll(".parallax-up");
-  const translateDown = document.querySelectorAll(".parallax-down");
-
+  // Function to handle parallax effect
   function parallax() {
     const y = window.scrollY;
     const x = window.scrollX;
 
     // Translate layers to the left
-    translateLeft.forEach((layer) => {
+    document.querySelectorAll(".parallax-left").forEach((layer) => {
       layer.style.transform = `translateX(${0.3 * x}px)`;
     });
 
     // Translate layers to the right
-    translateRight.forEach((layer) => {
+    document.querySelectorAll(".parallax-right").forEach((layer) => {
       layer.style.transform = `translateX(${-0.3 * x}px)`;
     });
 
     // Translate layers upward
-    translateUp.forEach((layer) => {
+    document.querySelectorAll(".parallax-up").forEach((layer) => {
       layer.style.transform = `translateY(${-0.3 * y}px)`;
     });
 
     // Translate layers downward
-    translateDown.forEach((layer) => {
+    document.querySelectorAll(".parallax-down").forEach((layer) => {
       layer.style.transform = `translateY(${0.3 * y}px)`;
     });
   }
 
-  window.addEventListener("scroll", parallax, false);
+  // Add event listener to handle parallax effect on scroll
+  document.addEventListener("scroll", parallax);
+
+  // Add event listener to handle parallax effect on resize
+  window.addEventListener("resize", parallax);
+
+  // Call parallax function once after initial rendering to apply effect immediately
+  parallax();
 
   return (
     <section id="Background" className="z-10 fixed">
