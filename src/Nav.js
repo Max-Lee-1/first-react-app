@@ -33,7 +33,7 @@ export default function Nav() {
     };
   }, []);
   const activeStyle = {
-    fontWeight: "bold",
+    /*fontWeight: "bold",*/
     color: "white",
     textDecoration: "underline",
   };

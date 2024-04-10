@@ -7,12 +7,12 @@ export default function Quiz() {
     >
       <div className="grid grid-cols-6 gap-4 mx-20">
         <div className="justify-center p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-1 row-span-1 drop-shadow-md">
-          <h1 className="font-Proxima text-center text-white text-5xl font-bold my-2">
+          <h1 className="text-white font-Proxima text-center text-5xl font-bold my-2">
             Gaming Health Quizes
           </h1>
         </div>
         <div className="p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-3 row-span-1 drop-shadow-md">
-          <h1 class="textfont-Proxima -white text-5xl font-bold drop-shadow-lg p-4 flex">
+          <h1 class="text-white font-Proxima text-5xl font-bold drop-shadow-lg p-4 flex">
             Healthy Screentime
           </h1>
           <p className="font-Arial w-full text-white text-xl text-justify p-4">
@@ -45,7 +45,7 @@ export default function Quiz() {
           </a>
         </div>
         <div className="p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md">
-          <h1 class="textfont-Proxima -white text-5xl font-bold drop-shadow-lg p-4">
+          <h1 class="text-white font-Proxima text-5xl font-bold drop-shadow-lg p-4">
             Game Addiction
           </h1>
           <p className="font-Arial w-full text-white text-xl text-justify p-4">
@@ -68,7 +68,7 @@ export default function Quiz() {
         </div>
 
         {/*<div className="p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-1 row-span-2 drop-shadow-md">
-          <h1 class="textfont-Proxima -white text-5xl font-bold drop-shadow-lg p-4">
+          <h1 class="texttext-white font-Proxima -white text-5xl font-bold drop-shadow-lg p-4">
             Healthy Screentime
           </h1>
           <p className="font-Arial text-white text-xl text-justify p-4">

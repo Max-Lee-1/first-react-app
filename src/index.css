@@ -5,6 +5,10 @@
 @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   background-color: #18223c;
@@ -20,13 +24,13 @@ p {
 }**/
 
 .bg-circle-1 {
-  width: 800px;
-  height: 800px;
+  width: calc(100vh / 1.2);
+  height: calc(100vh / 1.2);
 }
 
 .bg-circle-2 {
-  width: 1200px;
-  height: 1200px;
+  width: calc(100vh / 0.7);
+  height: calc(100vh / 0.7);
 }
 
 /*Article*/
