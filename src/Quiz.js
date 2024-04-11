@@ -22,28 +22,24 @@ export default function Quiz() {
             great management with your screen time here.
           </p>
         </div>
-        <div className="p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md">
-          <a
-            className="w-auto bg-gradient-to-r from-Teal-main to-Sulu/[0.8] p-4 rounded-lg flex"
-            href="https://brilliantstarmagazine.org/articles/quiz-are-you-smart-about-screens"
-            target="_blank"
-          >
-            <p className="font-Arial text-white text-5xl font-bold drop-shadow-lg p-4">
-              Quiz: Are You Smart About Screens?
-            </p>
-          </a>
-        </div>
-        <div className="p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md">
-          <a
-            className="w-auto bg-gradient-to-r from-Teal-main to-Sulu/[0.8] p-4 rounded-lg flex"
-            href="https://www.mind-diagnostics.org/video_game_addiction-test"
-            target="_blank"
-          >
-            <p className="font-Arial text-white text-5xl font-bold drop-shadow-lg p-4">
-              FIND OUT IF YOU HAVE A VIDEO GAME ADDICTION
-            </p>
-          </a>
-        </div>
+        <a
+          className="w-auto bg-gradient-to-r from-Teal-main to-Sulu/[0.8] p-4 rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md"
+          href="https://brilliantstarmagazine.org/articles/quiz-are-you-smart-about-screens"
+          target="_blank"
+        >
+          <p className="font-Arial text-white text-5xl font-bold drop-shadow-lg p-4">
+            Quiz: Are You Smart About Screens?
+          </p>
+        </a>
+        <a
+          className="w-auto bg-gradient-to-r from-Teal-main to-Sulu/[0.8] p-4 rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md"
+          href="https://www.mind-diagnostics.org/video_game_addiction-test"
+          target="_blank"
+        >
+          <p className="font-Arial text-white text-5xl font-bold drop-shadow-lg p-4">
+            FIND OUT IF YOU HAVE A VIDEO GAME ADDICTION
+          </p>
+        </a>
         <div className="p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md">
           <h1 class="text-white font-Proxima text-5xl font-bold drop-shadow-lg p-4">
             Game Addiction
@@ -55,17 +51,15 @@ export default function Quiz() {
             are a game addict.
           </p>
         </div>
-        <div className="p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md">
-          <a
-            className="w-auto bg-gradient-to-r from-Teal-main to-Sulu/[0.8] p-4 rounded-lg flex"
-            href="https://www.mind-diagnostics.org/video_game_addiction-test"
-            target="_blank"
-          >
-            <p className="font-Arial text-white text-5xl font-bold drop-shadow-lg p-4">
-              FIND OUT IF YOU HAVE A VIDEO GAME ADDICTION
-            </p>
-          </a>
-        </div>
+        <a
+          className="w-auto bg-gradient-to-r from-Teal-main to-Sulu/[0.8] p-4 rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md"
+          href="https://www.mind-diagnostics.org/video_game_addiction-test"
+          target="_blank"
+        >
+          <p className="font-Arial text-white text-5xl font-bold drop-shadow-lg p-4">
+            FIND OUT IF YOU HAVE A VIDEO GAME ADDICTION
+          </p>
+        </a>
 
         {/*<div className="p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-1 row-span-2 drop-shadow-md">
           <h1 class="texttext-white font-Proxima -white text-5xl font-bold drop-shadow-lg p-4">

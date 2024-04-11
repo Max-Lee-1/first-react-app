@@ -54,12 +54,12 @@ export default function Landing() {
           </a>
         </div>
       </div>
-      <div id="Hazards" className="min-h-screen">
-        <div className="grid grid-cols-2 gap-4 mx-20 pb-20 pt-40">
+      <div id="Hazards" className="max-h-screen">
+        <div className="grid grid-cols-2 gap-4 mx-20 pb-10 pt-40">
           <h1 class="font-Proxima text-white text-5xl font-bold drop-shadow-lg">
             Your Health, Your Care
           </h1>
-          <p className="text-white text-base text-justify w-full">
+          <p className="font-Arial text-white text-base text-justify">
             Excessive gaming often leads to a sedentary lifestyle, which can
             result in various health issues such as obesity, muscle stiffness,
             and poor posture. Sitting for prolonged periods without adequate
@@ -69,10 +69,10 @@ export default function Landing() {
         </div>
         <div className="grid grid-cols-3 gap-16 mx-20">
           <div className="p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-1 row-span-1 drop-shadow-md">
-            <h1 class="font-Proxima text-white text-5xl font-bold drop-shadow-lg px-5 py-4">
+            <h1 class="font-Proxima text-white text-4xl font-bold drop-shadow-lg px-5 py-4">
               Physical Health Impact
             </h1>
-            <p className="fotn-Arial text-white text-base px-5 py-4 text-justify">
+            <p className="font-Arial text-white text-base px-5 pb-4 text-justify">
               Excessive gaming often leads to a sedentary lifestyle, which can
               result in various health issues such as obesity, muscle stiffness,
               and poor posture. Sitting for prolonged periods without adequate
@@ -81,10 +81,10 @@ export default function Landing() {
             </p>
           </div>
           <div className="p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-1 row-span-1 drop-shadow-md">
-            <h1 class="font-Proxima text-white text-5xl font-bold drop-shadow-lg px-5 py-4">
+            <h1 class="font-Proxima text-white text-4xl font-bold drop-shadow-lg px-5 py-4">
               Mental Health Concerns
             </h1>
-            <p className="font-Arial text-white text-base px-5 py-4 text-justify">
+            <p className="font-Arial text-white text-base px-5 pb-4 text-justify">
               Unhealthy gaming habits can negatively affect mental well-being.
               Excessive gaming may lead to increased stress, anxiety, and
               depression, especially if it interferes with daily
@@ -94,10 +94,10 @@ export default function Landing() {
             </p>
           </div>
           <div className="p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-1 row-span-1 drop-shadow-md">
-            <h1 class="font-Proxima text-white text-5xl font-bold drop-shadow-lg px-5 py-4">
+            <h1 class="font-Proxima text-white text-4xl font-bold drop-shadow-lg px-5 py-4">
               Social & Emotional Fallout
             </h1>
-            <p className="font-Arial text-white text-base px-5 py-4 text-justify">
+            <p className="font-Arial text-white text-base px-5 pb-4 text-justify">
               Spending excessive time gaming can strain relationships with
               friends, family, and significant others. It may lead to social
               isolation, as individuals prioritize gaming over face-to-face
@@ -120,7 +120,7 @@ export default function Landing() {
             Who We Are
           </h1>
           <p className="font-Arial text-white text-base text-justify w-full">
-            Game with health aims to promote Ad commodo commodo excepteur do
+            Healthy Gaming Hub aims to promote Ad commodo commodo excepteur do
             adipisicing. Ullamco duis enim fugiat elit veniam in aute aliquip.
             Cupidatat occaecat ea ipsum deserunt quis. Excepteur eiusmod labore
             est labore voluptate reprehenderit consequat commodo do duis dolore

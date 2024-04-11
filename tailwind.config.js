@@ -13,6 +13,7 @@ module.exports = {
         "Teal-bright": "#68f7ed", //brighter teal
         Navy: "#18223c", //background
         Chambray: "#3a5496",
+        Rhino: "#2c4060",
         "Rock-Blue": "#9daacb",
         "Blue-Indigo": "#5980c3",
         "Bittersweet-Pink": "#fc7373",

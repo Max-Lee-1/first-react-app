@@ -23,14 +23,24 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }**/
 
-.bg-circle-1 {
+.bg-circle-lg {
   width: calc(100vh / 1.2);
   height: calc(100vh / 1.2);
 }
 
-.bg-circle-2 {
+.bg-circle-xl {
   width: calc(100vh / 0.7);
   height: calc(100vh / 0.7);
+}
+
+.bg-circle-2xl {
+  width: calc(100vh / 0.5);
+  height: calc(100vh / 0.5);
+}
+
+.bg-circle-base {
+  width: calc(100vh / 1.5);
+  height: calc(100vh / 1.5);
 }
 
 /*Article*/
