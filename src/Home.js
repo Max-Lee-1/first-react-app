@@ -4,10 +4,13 @@ export default function Landing() {
   return (
     <section
       data-section
-      id="Home"
       className="z-10 w-screen min-h-screen relative mb-20"
+      id="Home"
     >
-      <div className="w-screen h-screen flex justify-center items-center absolute">
+      <div
+        className="w-screen h-screen flex justify-center items-center absolute"
+        id="Landing"
+      >
         <h1 className="w-1/3 text-center font-Proxima text-white text-5xl drop-shadow-lg">
           Are You A Toxic Gamer?
         </h1>
@@ -108,13 +111,11 @@ export default function Landing() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-4 mx-20 pt-40">
-        <div className="h-3/4 p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-1 row-span-1 drop-shadow-md">
-          <img
-            src={catGaming}
-            className="object-cover h-full w-full rounded-lg"
-          ></img>
-        </div>
+      <div id="About" className="grid grid-cols-2 gap-4 mx-20 pt-40">
+        <img
+          src={catGaming}
+          className="object-cover h-3/4 w-full rounded-lg flex flex-col gap-1 col-span-1 row-span-1 drop-shadow-md"
+        ></img>
         <div className="p-4 flex flex-col gap-1 col-span-1 row-span-1">
           <h1 class="font-Proxima pb-4 col-span-1 row-span-1 text-white text-5xl font-bold drop-shadow-lg">
             Who We Are

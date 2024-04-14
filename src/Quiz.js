@@ -12,10 +12,10 @@ export default function Quiz() {
           </h1>
         </div>
         <div className="p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-3 row-span-1 drop-shadow-md">
-          <h1 class="text-white font-Proxima text-5xl font-bold drop-shadow-lg p-4 flex">
+          <h1 class="text-white font-Proxima text-5xl font-bold drop-shadow-lg p-4 pb-2 flex">
             Healthy Screentime
           </h1>
-          <p className="font-Arial w-full text-white text-xl text-justify p-4">
+          <p className="font-Arial w-full text-white text-xl text-justify p-4 pt-0">
             Screens have their allure, but too much isn't good for you. Set
             limits, take breaks, and explore the world offline. Your eyes, mind,
             and relationships will thank you for the balance. See if you have
@@ -41,10 +41,10 @@ export default function Quiz() {
           </p>
         </a>
         <div className="p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md">
-          <h1 class="text-white font-Proxima text-5xl font-bold drop-shadow-lg p-4">
+          <h1 class="text-white font-Proxima text-5xl font-bold drop-shadow-lg p-4 pb-2">
             Game Addiction
           </h1>
-          <p className="font-Arial w-full text-white text-xl text-justify p-4">
+          <p className="font-Arial w-full text-white text-xl text-justify p-4 pt-0">
             Hey, I get it, games are addictive. But remember, there's a whole
             world out there beyond the virtual world. Don't let game addiction
             ruin your daily lives. Test yourself with these quizes to see if you
