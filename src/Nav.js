@@ -6,34 +6,37 @@ export default function Nav() {
   const observer = useRef(null);
 
   useEffect(() => {
-    //create new instance and pass a callback function
+    // Create a new IntersectionObserver instance and pass a callback function
     observer.current = new IntersectionObserver((entries) => {
+      // Find the first section that is intersecting the viewport
       const visibleSection = entries.find(
         (entry) => entry.isIntersecting
       )?.target;
 
-      //Get Section ID
+      // Set new viewport to active
       if (visibleSection) {
-        //console.log(visibleSection.id);
         setActiveSection(visibleSection.id);
       }
     });
 
-    //Get custom attribute data-section from all sections
+    // Get all sections with the "data-section" attribute
     const sections = document.querySelectorAll("[data-section]");
 
+    // Observe each sections
     sections.forEach((section) => {
       observer.current.observe(section);
     });
-    //Cleanup function to remove observer
+
+    // Cleanup function to remove observer when component unmounts
     return () => {
       sections.forEach((section) => {
         observer.current.unobserve(section);
       });
     };
   }, []);
+
+  // Style for the active section link
   const activeStyle = {
-    /*fontWeight: "bold",*/
     color: "white",
     textDecoration: "underline",
   };

@@ -22,11 +22,12 @@ export default function Article() {
 
   // ArticleCard component representing each blog card
   function ArticleCard({ id, imageUrl, webUrl, title, className }) {
-    //Toggle onClick from Blog button
+    // Toggle onClick from Blog button
     const handleClick = () => {
       selectBlog(id, title, webUrl, imageUrl, className);
     };
-    //Condition: different html on "latest" vs "redirect" section
+
+    // Condition: different html on "latest" vs "redirect" section
     if (className === "latest") {
       return (
         <div id={id}>
@@ -57,12 +58,7 @@ export default function Article() {
     }
   }
 
-  React.useEffect(() => {
-    console.log("Selected Blog:", selectedBlog);
-  }, [selectedBlog]);
-
   // Article component representing the entire article section
-
   return (
     <section
       data-section
