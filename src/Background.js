@@ -1,3 +1,5 @@
+import wave from "./img/layered-waves-haikei (2).svg";
+
 export default function Background() {
   // Function to handle parallax effect
   function parallax() {
@@ -6,6 +8,10 @@ export default function Background() {
       // Translate layers to the left
       document.querySelectorAll(".parallax-left").forEach((layer) => {
         layer.style.transform = `translateX(${1.75 * y}px)`;
+      });
+
+      document.querySelectorAll(".parallax-left-fast").forEach((layer) => {
+        layer.style.transform = `translateX(${4.75 * y}px)`;
       });
 
       // Translate layers to the right
@@ -38,10 +44,10 @@ export default function Background() {
   requestAnimationFrame(parallax);
 
   return (
-    <section id="Background" className="z-10 fixed">
-      <div className="w-screen h-screen fixed bg-gradient-to-r from-gray-500 to-black opacity-50 z-50 " />
+    <section id="Background" className="z-10 fixed bg-Navy">
+      <div className="w-screen h-screen absolute bg-gradient-to-r from-gray-500 to-black opacity-50 z-50" />
       {/* Landing Background */}
-      <div className="fixed w-screen h-screen z-30">
+      <div className="relative w-screen h-screen z-30">
         <div className="layer parallax-up bg-circle-2xl fixed -right-60 -top-80 bg-Rhino rounded-full drop-shadow-2xl" />
         <div className="layer parallax-up bg-circle-xl fixed -top-96 -left-36 bg-Teal-bright rounded-full drop-shadow-2xl" />
         <div className="layer parallax-up bg-circle-xl fixed top-56 left-96 bg-Navy rounded-full drop-shadow-2xl" />
@@ -67,6 +73,12 @@ export default function Background() {
         <div className="layer parallax-left bg-circle-2xl fixed top-[25vh] -left-[425vh] bg-Rhino rounded-full drop-shadow-2xl" />
         <div className="layer parallax-left bg-circle-base fixed -bottom-60 -left-[275vh] bg-Teal-bright rounded-full drop-shadow-2xl" />
         <div className="layer parallax-left bg-circle-lg fixed -top-[50vh] -left-[175vh] bg-Rhino rounded-full drop-shadow-2xl" />
+      </div>
+      <div className="relative w-screen h-screen z-40">
+        <img
+          className="layer parallax-left-fast fixed top-0 -left-[1450vh] w-screen h-screen"
+          src={wave}
+        />
       </div>
     </section>
   );

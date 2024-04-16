@@ -1,9 +1,11 @@
+import wave from "./img/layered-waves-haikei.svg";
+
 export default function Quiz() {
   return (
     <section
       data-section
       id="Quiz"
-      className="z-10 relative w-screen min-h-screen flex items-center pt-10 my-20"
+      className="z-10 relative w-screen min-h-screen flex items-center pt-10 my-20 "
     >
       <div className="grid grid-cols-6 gap-4 mx-20">
         <div className="justify-center p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-1 row-span-1 drop-shadow-md">
