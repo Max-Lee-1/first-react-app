@@ -63,7 +63,7 @@ export default function Article() {
     <section
       data-section
       id="Article"
-      className="w-screen min-h-screen grid z-10 relative justify-center items-center pt-20 my-20"
+      className="w-screen min-h-screen grid z-10 relative justify-center items-center pt-40 mb-20"
     >
       <h1 className="font-Proxima text-white text-5xl font-bold drop-shadow-lg ml-20 mb-8">
         Latest Article

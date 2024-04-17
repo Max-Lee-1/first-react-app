@@ -1,4 +1,6 @@
-import wave from "./img/layered-waves-haikei (2).svg";
+import wave from "./img/stacked-waves-haikei(edit).png";
+import bgGradient from "./img/blurry-gradient-haikei.svg";
+import bgCircle from "./img/circle-scatter-haikei (2).svg";
 
 export default function Background() {
   // Function to handle parallax effect
@@ -44,40 +46,49 @@ export default function Background() {
   requestAnimationFrame(parallax);
 
   return (
-    <section id="Background" className="z-10 fixed bg-Navy">
-      <div className="w-screen h-screen absolute bg-gradient-to-r from-gray-500 to-black opacity-50 z-50" />
+    <section id="Background" className="z-10 relative bg-Navy">
+      <div className="fixed w-screen h-screen bg-gradient-to-r from-gray-500 to-black opacity-50 z-50" />
       {/* Landing Background */}
-      <div className="relative w-screen h-screen z-30">
-        <div className="layer parallax-up bg-circle-2xl fixed -right-60 -top-80 bg-Rhino rounded-full drop-shadow-2xl" />
-        <div className="layer parallax-up bg-circle-xl fixed -top-96 -left-36 bg-Teal-bright rounded-full drop-shadow-2xl" />
+      <div className="fixed w-screen h-screen z-30">
+        <div className="layer parallax-up bg-circle-2xl fixed -right-60 -top-80 bg-Blue-Indigo rounded-full drop-shadow-2xl" />
+        <div className="layer parallax-up bg-circle-xl fixed -top-96 -left-36 bg-Rock-Blue rounded-full drop-shadow-2xl" />
         <div className="layer parallax-up bg-circle-xl fixed top-56 left-96 bg-Navy rounded-full drop-shadow-2xl" />
-        <div className="layer parallax-up bg-circle-lg fixed -top-60 -left-48 bg-Rock-Blue rounded-full drop-shadow-2xl" />
-        <div className="layer parallax-up bg-circle-base fixed top-80 -left-56 bg-Rhino rounded-full drop-shadow-2xl" />
+        <div className="layer parallax-up bg-circle-lg fixed -top-60 -left-48 bg-Teal-bright rounded-full drop-shadow-2xl" />
+        <div className="layer parallax-up bg-circle-base fixed top-80 -left-56 bg-Navy rounded-full drop-shadow-2xl" />
         <div className="layer parallax-up bg-circle-xl fixed top-[50vh] -left-20 bg-Blue-Indigo rounded-full drop-shadow-2xl" />
-        <div className="layer parallax-up bg-circle-xl fixed top-72 -right-36 bg-Rock-Blue rounded-full drop-shadow-2xl" />
-        <div className="layer parallax-up bg-circle-base fixed -top-72 -right-36 bg-Teal-bright rounded-full drop-shadow-2xl" />
+        <div className="layer parallax-up bg-circle-xl fixed top-72 -right-36 bg-Teal-bright rounded-full drop-shadow-2xl" />
+        <div className="layer parallax-up bg-circle-base fixed -top-72 -right-36 bg-Navy rounded-full drop-shadow-2xl" />
       </div>
       {/* Hazards Background */}
-      <div className="relative w-screen h-screen z-20">
-        <div className="layer parallax-down bg-circle-xl fixed -top-[200vh] -left-60 bg-Teal-bright rounded-full drop-shadow-2xl" />
-        <div className="layer parallax-down bg-circle-2xl fixed -top-[200vh] -right-[50vw] bg-Blue-Indigo rounded-full drop-shadow-2xl" />
-        <div className="layer parallax-down bg-circle-base fixed -top-[180vh] right-80 bg-Chambray rounded-full drop-shadow-2xl" />
-        <div className="layer parallax-down bg-circle-base fixed -top-[220vh] right-[35vw] bg-Rhino rounded-full drop-shadow-2xl" />
-        <div className="layer parallax-down bg-circle-2xl fixed -top-[110vh] -left-32 bg-Rock-Blue rounded-full drop-shadow-2xl" />
+      <div className="fixed w-screen h-screen z-20">
+        <div className="layer parallax-down bg-circle-xl fixed -top-[200vh] -left-60 bg-Teal-main rounded-full drop-shadow-2xl" />
+        <div className="layer parallax-down bg-circle-2xl fixed -top-[200vh] -right-[50vw] bg-Chambray rounded-full drop-shadow-2xl" />
+        <div className="layer parallax-down bg-circle-base fixed -top-[180vh] right-80 bg-Navy rounded-full drop-shadow-2xl" />
+        <div className="layer parallax-down bg-circle-base fixed -top-[220vh] right-[35vw] bg-Rock-Blue rounded-full drop-shadow-2xl" />
+        <div className="layer parallax-down bg-circle-2xl fixed -top-[110vh] -left-32 bg-Navy rounded-full drop-shadow-2xl" />
       </div>
       {/* About Background */}
-      <div className="relative w-screen h-screen z-10">
-        <div className="layer parallax-left bg-circle-2xl fixed -top-36 -left-[150vh] bg-Blue-Indigo rounded-full drop-shadow-2xl" />
+      <div className="fixed w-screen h-screen z-10">
+        <div className="layer parallax-left bg-circle-2xl fixed -top-36 -left-[150vh] bg-Chambray rounded-full drop-shadow-2xl" />
         <div className="layer parallax-left bg-circle-xl fixed -top-36 -left-[265vh] bg-Rock-Blue rounded-full drop-shadow-2xl" />
-        <div className="layer parallax-left bg-circle-lg fixed -top-[25vh] -left-[380vh] bg-Teal-bright rounded-full drop-shadow-2xl" />
-        <div className="layer parallax-left bg-circle-2xl fixed top-[25vh] -left-[425vh] bg-Rhino rounded-full drop-shadow-2xl" />
-        <div className="layer parallax-left bg-circle-base fixed -bottom-60 -left-[275vh] bg-Teal-bright rounded-full drop-shadow-2xl" />
-        <div className="layer parallax-left bg-circle-lg fixed -top-[50vh] -left-[175vh] bg-Rhino rounded-full drop-shadow-2xl" />
+        <div className="layer parallax-left bg-circle-lg fixed -top-[25vh] -left-[380vh] bg-Teal-main rounded-full drop-shadow-2xl" />
+        <div className="layer parallax-left bg-circle-2xl fixed top-[25vh] -left-[425vh] bg-Navy rounded-full drop-shadow-2xl" />
+        <div className="layer parallax-left bg-circle-base fixed -bottom-60 -left-[275vh] bg-Teal-main rounded-full drop-shadow-2xl" />
+        <div className="layer parallax-left bg-circle-lg fixed -top-[50vh] -left-[175vh] bg-Navy rounded-full drop-shadow-2xl" />
       </div>
-      <div className="relative w-screen h-screen z-40">
+      {/* Quiz Background */}
+      <div className="relative top-[300vh] z-40">
         <img
-          className="layer parallax-left-fast fixed top-0 -left-[1450vh] w-screen h-screen"
+          className="mix-blend-darken w-screen h-80 absolute -top-[10vh] z-40"
           src={wave}
+        />
+        <img
+          className="mix-blend-darken w-screen aspect-video absolute object-cover object-right z-50 opacity-25"
+          src={bgGradient}
+        />
+        <img
+          className="mix-blend-darken w-screen aspect-video absolute object-cover object-right z-30"
+          src={bgCircle}
         />
       </div>
     </section>
