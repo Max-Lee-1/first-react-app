@@ -1,6 +1,7 @@
 import wave from "./img/stacked-waves-haikei(edit).png";
 import bgGradient from "./img/blurry-gradient-haikei.svg";
-import bgCircle from "./img/circle-scatter-haikei (2).svg";
+import bgCircle1 from "./img/circle-scatter-haikei (2).svg";
+import bgCircle2 from "./img/circle-scatter-haikei (3).svg";
 
 export default function Background() {
   // Function to handle parallax effect
@@ -83,12 +84,16 @@ export default function Background() {
           src={wave}
         />
         <img
-          className="mix-blend-darken w-screen aspect-video absolute object-cover object-right z-50 opacity-25"
+          className="mix-blend-darken w-screen aspect-video absolute object-cover object-right z-50 opacity-50"
           src={bgGradient}
         />
+        <div className="absolute bg-Blue-Indigo w-screen aspect-video"></div>
+      </div>
+      {/* Article Background */}
+      <div className="relative top-[400vh] z-40">
         <img
-          className="mix-blend-darken w-screen aspect-video absolute object-cover object-right z-30"
-          src={bgCircle}
+          className=" w-screen aspect-video absolute top-[50vh] object-cover object-right z-30"
+          src={bgCircle2}
         />
       </div>
     </section>
