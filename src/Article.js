@@ -73,7 +73,7 @@ export default function Article() {
       className="w-screen grid z-10 relative justify-center items-center mt-20"
     >
       {!latestHidden && ( // Check if "Latest Article" section should be visible
-        <div className="w-screen h-screen grid grid-cols-4 mt-20">
+        <div className="w-screen h-screen grid grid-cols-4">
           {/*<h1 className="font-Proxima text-white text-5xl font-bold drop-shadow-lg ml-20 mb-8">
             Latest Article
   </h1>*/}
@@ -119,7 +119,7 @@ export default function Article() {
             alt=""
           />
           <div className="w-screen h-screen flex flex-col relative p-20">
-            <div className="flex flex-row justify-between  h-10">
+            <div className="flex flex-row justify-between h-10 pt-10">
               <h1 className="font-Proxima text-white text-5xl font-bold drop-shadow-lg">
                 {selectedBlog.title}
               </h1>
@@ -133,7 +133,7 @@ export default function Article() {
                 X
               </button>
             </div>
-            <p className="flex-grow pt-10">
+            <p className="flex-grow pt-20">
               Deserunt cillum voluptate exercitation adipisicing ea aute
               incididunt elit exercitation ex proident ea magna dolor. Officia
               ad qui esse irure et laboris aliquip laboris irure enim. Dolor
@@ -145,7 +145,7 @@ export default function Article() {
       )}
 
       <h1 class="font-Proxima w-screen text-white text-5xl font-bold drop-shadow-lg pb-1 ml-20 mb-8 mt-20">
-        Gaming Etiquette
+        Other Blog Sites
       </h1>
 
       <div class="media-scroller snap-mandatory snap-both grid gap-4 grid-flow-col overflow-x-auto overscroll-contain ml-20">
