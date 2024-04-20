@@ -49,7 +49,7 @@ export default function Nav() {
             <li className={activeSection === "Home" ? "active" : ""}>
               <a
                 href="#Home"
-                className="block py-2 px-3 text-gray-400 hover:text-white "
+                className="block py-2 px-3 text-gray-400 hover:text-white hover:scale-105 transition duration-100  "
               >
                 <p style={activeSection === "Home" ? activeStyle : {}}>Home</p>
               </a>
@@ -57,7 +57,7 @@ export default function Nav() {
             <li className={activeSection === "Quiz" ? "active" : ""}>
               <a
                 href="#Quiz"
-                className="block py-2 px-3 text-gray-400 hover:text-white"
+                className="block py-2 px-3 text-gray-400 hover:text-white hover:scale-105 transition duration-100"
               >
                 <p style={activeSection === "Quiz" ? activeStyle : {}}>Quiz</p>
               </a>
@@ -65,7 +65,7 @@ export default function Nav() {
             <li className={activeSection === "Article" ? "active" : ""}>
               <a
                 href="#Article"
-                className="block py-2 px-3 text-gray-400 hover:text-white"
+                className="block py-2 px-3 text-gray-400 hover:text-white hover:scale-105 transition duration-100"
               >
                 <p style={activeSection === "Article" ? activeStyle : {}}>
                   Article
@@ -75,7 +75,7 @@ export default function Nav() {
             <li className={activeSection === "Help" ? "active" : ""}>
               <a
                 href="#Help"
-                className="block py-2 px-3 text-gray-400 hover:text-white"
+                className="block py-2 px-3 text-gray-400 hover:text-white hover:scale-105 transition duration-100"
               >
                 <p style={activeSection === "Help" ? activeStyle : {}}>Help</p>
               </a>

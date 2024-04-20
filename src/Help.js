@@ -19,7 +19,7 @@ export default function Help() {
         </p>
         <div className="container flex flex-row justify-center items-center gap-8 my-2">
           <a
-            className="w-auto h-1/10 bg-gradient-to-r from-Teal-main to-Sulu/[0.8] p-4 rounded-lg"
+            className="w-auto h-1/10 bg-gradient-to-r from-Teal-main to-Sulu/[0.8] p-4 rounded-lg hover:scale-105 transition duration-100"
             href="https://report.netsafe.org.nz/hc/en-au/requests/new"
             target="_blank"
           >
@@ -28,7 +28,7 @@ export default function Help() {
             </p>
           </a>
           <a
-            className="w-auto h-1/10 bg-gradient-to-r from-Teal-main to-Sulu/[0.8] p-4 rounded-lg"
+            className="w-auto h-1/10 bg-gradient-to-r from-Teal-main to-Sulu/[0.8] p-4 rounded-lg hover:scale-105 transition duration-100"
             href="https://netsafe.org.nz/contact-us/"
             target="_blank"
           >
@@ -44,21 +44,21 @@ export default function Help() {
         </h1>
         <div className="w-screen h-screen flex justify-center items-center absolute drop-shadow-lg">
           <a
-            className="-translate-x-40 -translate-y-36"
+            className="-translate-x-40 -translate-y-36 hover:scale-105 transition duration-100"
             href="https://www.nasef.org/"
             target="blank"
           >
             <img className="w-56 h-24" src={nasefLogo} alt="NASEF Logo" />
           </a>
           <a
-            className="-translate-x-48 translate-y-32"
+            className="-translate-x-48 translate-y-32 hover:scale-105 transition duration-100"
             href="https://www.healthygamer.gg"
             target="blank"
           >
             <img className="w-36 h-12" src={hgLogo} alt="Healthy Gamer Logo" />
           </a>
           <a
-            className="translate-x-10 -translate-y-24"
+            className="translate-x-10 -translate-y-24 hover:scale-105 transition duration-100"
             href="https://www.takethis.org/"
             target="blank"
           >

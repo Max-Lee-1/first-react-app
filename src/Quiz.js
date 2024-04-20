@@ -27,7 +27,7 @@ export default function Quiz() {
           </p>
         </div>
         <a
-          className="w-auto bg-gradient-to-r from-Teal-main to-Sulu/[0.8] p-4 rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md"
+          className="w-auto bg-gradient-to-r from-Teal-main to-Sulu/[0.8] p-4 rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md hover:scale-105 transition duration-100"
           href="https://brilliantstarmagazine.org/articles/quiz-are-you-smart-about-screens"
           target="_blank"
         >
@@ -36,7 +36,7 @@ export default function Quiz() {
           </p>
         </a>
         <a
-          className="w-auto bg-gradient-to-r from-Teal-main to-Sulu/[0.8] p-4 rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md"
+          className="w-auto bg-gradient-to-r from-Teal-main to-Sulu/[0.8] p-4 rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md hover:scale-105 transition duration-100"
           href="https://www.mind-diagnostics.org/video_game_addiction-test"
           target="_blank"
         >
@@ -56,7 +56,7 @@ export default function Quiz() {
           </p>
         </div>
         <a
-          className="w-auto bg-gradient-to-r from-Teal-main to-Sulu/[0.8] p-4 rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md"
+          className="w-auto bg-gradient-to-r from-Teal-main to-Sulu/[0.8] p-4 rounded-lg flex flex-col gap-1 col-span-2 row-span-1 drop-shadow-md hover:scale-105 transition duration-100"
           href="https://www.mind-diagnostics.org/video_game_addiction-test"
           target="_blank"
         >

@@ -16,7 +16,7 @@ export default function Landing() {
         </h1>
       </div>
       <div className="w-screen h-screen flex justify-center items-center">
-        <div className="md:-translate-x-80 md:-translate-y-36 -translate-x-24 -translate-y-40 absolute drop-shadow-lg">
+        <div className="md:-translate-x-80 md:-translate-y-36 -translate-x-24 -translate-y-40 absolute drop-shadow-lg hover:scale-105 transition duration-100">
           <a
             href="#Article"
             className="md:w-40 md:h-40 w-20 h-20 flex justify-center items-center bg-gradient-to-b from-Bittersweet-Red to-Bittersweet-Pink/[0.7] rounded-full"
@@ -26,7 +26,7 @@ export default function Landing() {
             </h3>
           </a>
         </div>
-        <div className="md:-translate-x-52 md:translate-y-48 -translate-x-20 translate-y-48 absolute drop-shadow-lg">
+        <div className="md:-translate-x-52 md:translate-y-48 -translate-x-20 translate-y-48 absolute drop-shadow-lg hover:scale-105 transition duration-100">
           <a
             href="#Hazards"
             className="md:w-40 md:h-40 w-20 h-20 flex justify-center items-center bg-gradient-to-b from-Orange to-amber-400 rounded-full"
@@ -36,7 +36,7 @@ export default function Landing() {
             </h3>
           </a>
         </div>
-        <div className="md:translate-x-80 md:-translate-y-28 translate-x-32 -translate-y-28 absolute drop-shadow-lg">
+        <div className="md:translate-x-80 md:-translate-y-28 translate-x-32 -translate-y-28 absolute drop-shadow-lg hover:scale-105 transition duration-100">
           <a
             href="#Quiz"
             className="md:w-40 md:h-40 w-20 h-20 flex justify-center items-center bg-gradient-to-b from-Sulu to-Green-Pea rounded-full"
@@ -46,7 +46,7 @@ export default function Landing() {
             </h3>
           </a>
         </div>
-        <div className="md:translate-x-48 md:translate-y-36 translate-x-28 translate-y-40 absolute drop-shadow-lg">
+        <div className="md:translate-x-48 md:translate-y-36 translate-x-28 translate-y-40 absolute drop-shadow-lg hover:scale-105 transition duration-100">
           <a
             href="#Help"
             className="md:w-40 md:h-40 w-20 h-20 flex justify-center items-center bg-gradient-to-b from-Chambray to-Navy rounded-full"

@@ -36,7 +36,7 @@ export default function Article() {
         <div id={id}>
           {/* Render article previews here */}
           <button
-            className={`col-span-1 bg-cover bg-center h-screen w-full`}
+            className={`col-span-1 bg-cover bg-center h-screen w-full transition duration-50 hover:scale-105`}
             onClick={handleClick}
             style={{ backgroundImage: `url(${imageUrl})` }}
           >
@@ -49,7 +49,7 @@ export default function Article() {
         <div id={id}>
           {/* Render article previews here without onClick */}
           <a
-            className={`snap-start grid gap-4 pb-4 bg-Charcoal rounded-lg shadow`}
+            className={`snap-start grid gap-4 pb-4 bg-Charcoal rounded-lg shadow hover:scale-105 transition duration-100`}
             href={webUrl}
             target="blank"
           >
@@ -144,11 +144,11 @@ export default function Article() {
         </div>
       )}
 
-      <h1 class="font-Proxima w-screen text-white text-5xl font-bold drop-shadow-lg pb-1 ml-20 mb-8 mt-20">
+      <h1 class="font-Proxima w-screen text-white text-5xl font-bold drop-shadow-lg ml-20 mb-8 mt-20">
         Other Blog Sites
       </h1>
 
-      <div class="media-scroller snap-mandatory snap-both grid gap-4 grid-flow-col overflow-x-auto overscroll-contain ml-20">
+      <div class="h-screen media-scroller snap-mandatory snap-both grid gap-4 grid-flow-col overflow-x-auto overflow-y-auto ml-20">
         <ArticleCard
           className="redirect"
           id="Blog5"

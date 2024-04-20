@@ -2,6 +2,10 @@ import wave from "./img/stacked-waves-haikei(edit).png";
 import bgGradient from "./img/blurry-gradient-haikei.svg";
 import bgCircle1 from "./img/circle-scatter-haikei (2).svg";
 import bgCircle2 from "./img/circle-scatter-haikei (3).svg";
+import a from "./img/image_fx_digital_illustration_of_a_harmonious_gaming_c.jpg";
+import b from "./img/image_fx_digital_illustration_on_helping_out_cyber_bul.jpg";
+import c from "./img/image_fx_digital_illustration_on__too_much_gaming_scre.jpg";
+import d from "./img/image_fx_digital_illustration_on_helping_out_gaming_me.jpg";
 
 export default function Background() {
   // Function to handle parallax effect
@@ -94,6 +98,25 @@ export default function Background() {
         <img
           className=" w-screen aspect-video absolute top-[50vh] object-cover object-right z-30"
           src={bgCircle2}
+        />
+      </div>
+      {/* Help Background */}
+      <div className="relative top-[600vh] z-0">
+        <img
+          className="bg-circle-lg fixed right-[15vw] top-10 rounded-full drop-shadow-2xl"
+          src={a}
+        />
+        <img
+          className="bg-circle-base fixed -left-5 -top-5 rounded-full drop-shadow-2xl"
+          src={b}
+        />
+        <img
+          className="bg-circle-lg fixed left-[15vw] -bottom-[25vh] rounded-full drop-shadow-2xl"
+          src={c}
+        />
+        <img
+          className="bg-circle-base fixed right-4 bottom-0 rounded-full drop-shadow-2xl"
+          src={d}
         />
       </div>
     </section>
