@@ -1,37 +1,16 @@
 import Logo from "./Logo/ns-teallogo-wURL-1X.png";
 import React, { useState, useEffect, useRef } from "react";
+import { observeSections, unobserveSections } from "./intersectionObserver";
 
 export default function Nav() {
   const [activeSection, setActiveSection] = useState(null);
   const observer = useRef(null);
 
   useEffect(() => {
-    // Create a new IntersectionObserver instance and pass a callback function
-    observer.current = new IntersectionObserver((entries) => {
-      // Find the first section that is intersecting the viewport
-      const visibleSection = entries.find(
-        (entry) => entry.isIntersecting
-      )?.target;
+    observer.current = observeSections((id) => setActiveSection(id));
 
-      // Set new viewport to active
-      if (visibleSection) {
-        setActiveSection(visibleSection.id);
-      }
-    });
-
-    // Get all sections with the "data-section" attribute
-    const sections = document.querySelectorAll("[data-section]");
-
-    // Observe each sections
-    sections.forEach((section) => {
-      observer.current.observe(section);
-    });
-
-    // Cleanup function to remove observer when component unmounts
     return () => {
-      sections.forEach((section) => {
-        observer.current.unobserve(section);
-      });
+      unobserveSections(observer.current);
     };
   }, []);
 

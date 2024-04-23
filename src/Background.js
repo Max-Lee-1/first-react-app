@@ -8,7 +8,6 @@ import c from "./img/image_fx_digital_illustration_on__too_much_gaming_scre.jpg"
 import d from "./img/image_fx_digital_illustration_on_helping_out_gaming_me.jpg";
 
 export default function Background() {
-  // Function to handle parallax effect
   function parallax() {
     const y = window.scrollY;
     for (let i = 0; i < document.querySelectorAll(".layer").length; i++) {
@@ -17,6 +16,7 @@ export default function Background() {
         layer.style.transform = `translateX(${1.75 * y}px)`;
       });
 
+      // Translate layers to the left (faster rate)
       document.querySelectorAll(".parallax-left-fast").forEach((layer) => {
         layer.style.transform = `translateX(${4.75 * y}px)`;
       });
@@ -34,6 +34,11 @@ export default function Background() {
       // Translate layers downward
       document.querySelectorAll(".parallax-down").forEach((layer) => {
         layer.style.transform = `translateY(${1.75 * y}px)`;
+      });
+
+      // Making layers slowly appearing by scroll
+      document.querySelectorAll(".parallax-appear").forEach((layer) => {
+        layer.style.opacity = `${y / 500 - 1}`;
       });
     }
   }
@@ -53,7 +58,7 @@ export default function Background() {
   return (
     <section id="Background" className="z-10 relative bg-Navy">
       <div className="fixed w-screen h-screen bg-gradient-to-r from-gray-500 to-black opacity-50 z-50" />
-      {/* Landing Background */}
+      {/* Landing Background 
       <div className="fixed w-screen h-screen z-30">
         <div className="layer parallax-up bg-circle-2xl fixed -right-60 -top-80 bg-Blue-Indigo rounded-full drop-shadow-2xl" />
         <div className="layer parallax-up bg-circle-xl fixed -top-96 -left-36 bg-Rock-Blue rounded-full drop-shadow-2xl" />
@@ -63,7 +68,7 @@ export default function Background() {
         <div className="layer parallax-up bg-circle-xl fixed top-[50vh] -left-20 bg-Blue-Indigo rounded-full drop-shadow-2xl" />
         <div className="layer parallax-up bg-circle-xl fixed top-72 -right-36 bg-Teal-bright rounded-full drop-shadow-2xl" />
         <div className="layer parallax-up bg-circle-base fixed -top-72 -right-36 bg-Navy rounded-full drop-shadow-2xl" />
-      </div>
+      </div>*/}
       {/* Hazards Background */}
       <div className="fixed w-screen h-screen z-20">
         <div className="layer parallax-down bg-circle-xl fixed -top-[200vh] -left-60 bg-Teal-main rounded-full drop-shadow-2xl" />
@@ -103,19 +108,19 @@ export default function Background() {
       {/* Help Background */}
       <div className="relative top-[600vh] z-0">
         <img
-          className="bg-circle-lg fixed right-[15vw] top-10 rounded-full drop-shadow-2xl"
+          className="layer parallax-appear bg-circle-lg fixed right-[15vw] top-10 rounded-full drop-shadow-2xl"
           src={a}
         />
         <img
-          className="bg-circle-base fixed -left-5 -top-5 rounded-full drop-shadow-2xl"
+          className="layer parallax-appear bg-circle-base fixed -left-5 -top-5 rounded-full drop-shadow-2xl"
           src={b}
         />
         <img
-          className="bg-circle-lg fixed left-[15vw] -bottom-[25vh] rounded-full drop-shadow-2xl"
+          className="layer parallax-appear bg-circle-lg fixed left-[15vw] -bottom-[25vh] rounded-full drop-shadow-2xl"
           src={c}
         />
         <img
-          className="bg-circle-base fixed right-4 bottom-0 rounded-full drop-shadow-2xl"
+          className="layer parallax-appear bg-circle-base fixed right-4 bottom-0 rounded-full drop-shadow-2xl"
           src={d}
         />
       </div>
