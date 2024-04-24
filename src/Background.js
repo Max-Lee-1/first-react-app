@@ -6,39 +6,62 @@ import a from "./img/image_fx_digital_illustration_of_a_harmonious_gaming_c.jpg"
 import b from "./img/image_fx_digital_illustration_on_helping_out_cyber_bul.jpg";
 import c from "./img/image_fx_digital_illustration_on__too_much_gaming_scre.jpg";
 import d from "./img/image_fx_digital_illustration_on_helping_out_gaming_me.jpg";
+import React, { useState, useEffect, useRef } from "react";
+import { observeSections, unobserveSections } from "./intersectionObserver";
 
 export default function Background() {
+  const [activeSection, setActiveSection] = useState(null);
+  const observer = useRef(null);
+
+  useEffect(() => {
+    observer.current = observeSections((id) => setActiveSection(id));
+
+    return () => {
+      unobserveSections(observer.current);
+    };
+  }, []);
+
   function parallax() {
-    const y = window.scrollY;
+    const pageY = window.scrollY; // Measuring page y axis
+    let sectionY = 0; // Initialize sectionY
+
+    if (activeSection) {
+      const activeSectionElement = document.getElementById(activeSection);
+      if (activeSectionElement) {
+        sectionY = activeSectionElement.getBoundingClientRect().top;
+      }
+    }
+
     for (let i = 0; i < document.querySelectorAll(".layer").length; i++) {
       // Translate layers to the left
       document.querySelectorAll(".parallax-left").forEach((layer) => {
-        layer.style.transform = `translateX(${1.75 * y}px)`;
+        layer.style.transform = `translateX(${1.75 * pageY}px)`;
       });
 
       // Translate layers to the left (faster rate)
       document.querySelectorAll(".parallax-left-fast").forEach((layer) => {
-        layer.style.transform = `translateX(${4.75 * y}px)`;
+        layer.style.transform = `translateX(${4.75 * pageY}px)`;
       });
 
       // Translate layers to the right
       document.querySelectorAll(".parallax-right").forEach((layer) => {
-        layer.style.transform = `translateX(${-1.75 * y}px)`;
+        layer.style.transform = `translateX(${-1.75 * pageY}px)`;
       });
 
       // Translate layers upward
       document.querySelectorAll(".parallax-up").forEach((layer) => {
-        layer.style.transform = `translateY(${-1.75 * y}px)`;
+        layer.style.transform = `translateY(${-1.75 * pageY}px)`;
       });
 
       // Translate layers downward
       document.querySelectorAll(".parallax-down").forEach((layer) => {
-        layer.style.transform = `translateY(${1.75 * y}px)`;
+        layer.style.transform = `translateY(${1.75 * pageY}px)`;
       });
 
       // Making layers slowly appearing by scroll
       document.querySelectorAll(".parallax-appear").forEach((layer) => {
-        layer.style.opacity = `${y / 500 - 1}`;
+        layer.style.opacity =
+          activeSection === "Help" ? `${1 - sectionY / 500}` : "0";
       });
     }
   }
@@ -58,7 +81,7 @@ export default function Background() {
   return (
     <section id="Background" className="z-10 relative bg-Navy">
       <div className="fixed w-screen h-screen bg-gradient-to-r from-gray-500 to-black opacity-50 z-50" />
-      {/* Landing Background 
+      {/* Landing Background */}
       <div className="fixed w-screen h-screen z-30">
         <div className="layer parallax-up bg-circle-2xl fixed -right-60 -top-80 bg-Blue-Indigo rounded-full drop-shadow-2xl" />
         <div className="layer parallax-up bg-circle-xl fixed -top-96 -left-36 bg-Rock-Blue rounded-full drop-shadow-2xl" />
@@ -68,7 +91,7 @@ export default function Background() {
         <div className="layer parallax-up bg-circle-xl fixed top-[50vh] -left-20 bg-Blue-Indigo rounded-full drop-shadow-2xl" />
         <div className="layer parallax-up bg-circle-xl fixed top-72 -right-36 bg-Teal-bright rounded-full drop-shadow-2xl" />
         <div className="layer parallax-up bg-circle-base fixed -top-72 -right-36 bg-Navy rounded-full drop-shadow-2xl" />
-      </div>*/}
+      </div>
       {/* Hazards Background */}
       <div className="fixed w-screen h-screen z-20">
         <div className="layer parallax-down bg-circle-xl fixed -top-[200vh] -left-60 bg-Teal-main rounded-full drop-shadow-2xl" />
