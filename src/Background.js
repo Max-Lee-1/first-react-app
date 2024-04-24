@@ -121,13 +121,13 @@ export default function Background() {
         />
         <div className="absolute bg-Blue-Indigo w-screen aspect-video"></div>
       </div>
-      {/* Article Background */}
+      {/* Article Background 
       <div className="relative top-[400vh] z-40">
         <img
           className=" w-screen aspect-video absolute top-[50vh] object-cover object-right z-30"
           src={bgCircle2}
         />
-      </div>
+      </div>*/}
       {/* Help Background */}
       <div className="relative top-[600vh] z-0">
         <img
