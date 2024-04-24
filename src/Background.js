@@ -61,7 +61,7 @@ export default function Background() {
       // Making layers slowly appearing by scroll
       document.querySelectorAll(".parallax-appear").forEach((layer) => {
         layer.style.opacity =
-          activeSection === "Help" ? `${1 - sectionY / 500}` : "0";
+          activeSection === "Help" ? `${1 - sectionY / 510}` : "0";
       });
     }
   }
@@ -80,16 +80,50 @@ export default function Background() {
 
   return (
     <section id="Background" className="z-10 relative bg-Navy">
-      <div className="fixed w-screen h-screen bg-gradient-to-r from-gray-500 to-black opacity-50 z-50" />
       {/* Landing Background */}
       <div className="fixed w-screen h-screen z-30">
-        <div className="layer parallax-up bg-circle-2xl fixed -right-60 -top-80 bg-Blue-Indigo rounded-full drop-shadow-2xl" />
-        <div className="layer parallax-up bg-circle-xl fixed -top-96 -left-36 bg-Rock-Blue rounded-full drop-shadow-2xl" />
-        <div className="layer parallax-up bg-circle-xl fixed top-56 left-96 bg-Navy rounded-full drop-shadow-2xl" />
-        <div className="layer parallax-up bg-circle-lg fixed -top-60 -left-48 bg-Teal-bright rounded-full drop-shadow-2xl" />
-        <div className="layer parallax-up bg-circle-base fixed top-80 -left-56 bg-Navy rounded-full drop-shadow-2xl" />
-        <div className="layer parallax-up bg-circle-xl fixed top-[50vh] -left-20 bg-Blue-Indigo rounded-full drop-shadow-2xl" />
-        <div className="layer parallax-up bg-circle-xl fixed top-72 -right-36 bg-Teal-bright rounded-full drop-shadow-2xl" />
+        <div className="layer parallax-up bg-blend-saturation bg-circle-2xl fixed -right-60 -top-80 bg-Blue-Indigo rounded-full drop-shadow-2xl">
+          <img
+            className=" bg-blend-saturation w-full h-full rounded-full absolute object-cover object-right z-50 opacity-50"
+            src={bgGradient}
+          />
+        </div>
+        <div className="layer parallax-up bg-blend-saturation bg-circle-xl fixed -top-96 -left-36 bg-Rock-Blue rounded-full drop-shadow-2xl">
+          <img
+            className=" bg-blend-saturation w-full h-full rounded-full absolute object-cover object-right z-50 opacity-50"
+            src={bgGradient}
+          />
+        </div>
+        <div className="layer parallax-up bg-blend-saturation bg-circle-xl fixed top-56 left-96 bg-Navy rounded-full drop-shadow-2xl">
+          <img
+            className=" bg-blend-saturation w-full h-full rounded-full absolute object-cover object-right z-50 opacity-50"
+            src={bgGradient}
+          />
+        </div>
+        <div className="layer parallax-up bg-blend-saturation bg-circle-lg fixed -top-60 -left-48 bg-Teal-bright rounded-full drop-shadow-2xl">
+          <img
+            className=" bg-blend-saturation w-full h-full rounded-full absolute object-cover object-right z-50 opacity-50"
+            src={bgGradient}
+          />
+        </div>
+        <div className="layer parallax-up bg-blend-saturation bg-circle-base fixed top-80 -left-56 bg-Navy rounded-full drop-shadow-2xl">
+          <img
+            className=" bg-blend-saturation w-full h-full rounded-full absolute object-cover object-right z-50 opacity-50"
+            src={bgGradient}
+          />
+        </div>
+        <div className="layer parallax-up bg-blend-saturation bg-circle-xl fixed top-[50vh] -left-20 bg-Blue-Indigo rounded-full drop-shadow-2xl">
+          <img
+            className=" bg-blend-saturation w-full h-full rounded-full absolute object-cover object-right z-50 opacity-50"
+            src={bgGradient}
+          />
+        </div>
+        <div className="layer parallax-up bg-blend-saturation bg-circle-xl fixed top-72 -right-36 bg-Teal-bright rounded-full drop-shadow-2xl">
+          <img
+            className=" bg-blend-saturation w-full h-full rounded-full absolute object-cover object-right z-50 opacity-50"
+            src={bgGradient}
+          />
+        </div>
         <div className="layer parallax-up bg-circle-base fixed -top-72 -right-36 bg-Navy rounded-full drop-shadow-2xl" />
       </div>
       {/* Hazards Background */}

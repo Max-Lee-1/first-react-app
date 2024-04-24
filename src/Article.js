@@ -39,7 +39,7 @@ export default function Article() {
             onClick={handleClick}
             style={{ backgroundImage: `url(${imageUrl})` }}
           >
-            <p className="h-screen flex justify-start items-end p-8 font-Arial font-normal text-center text-4xl">
+            <p className="h-screen flex justify-start items-end p-8 font-Arial font-normal text-center text-3xl">
               {title}
             </p>
           </button>
@@ -58,7 +58,7 @@ export default function Article() {
               src={imageUrl}
               alt=""
             />
-            <p className="text-white font-Arial text-center pl-4">{title}</p>
+            <p className="text-white font-Arial text-center">{title}</p>
           </a>
         </div>
       );
@@ -140,52 +140,53 @@ export default function Article() {
           </div>
         </div>
       )}
+      <div className="h-[80vh] w-screen">
+        <h1 class="font-Proxima w-screen text-white text-5xl font-bold drop-shadow-lg ml-20 mb-8 mt-20">
+          Other Blog Sites
+        </h1>
 
-      <h1 class="font-Proxima w-screen text-white text-5xl font-bold drop-shadow-lg ml-20 mb-8 mt-20">
-        Other Blog Sites
-      </h1>
-
-      <div class="h-screen media-scroller snap-mandatory snap-both grid gap-4 grid-flow-col overflow-x-auto overflow-y-auto ml-20">
-        <ArticleCard
-          className="redirect"
-          id="Blog5"
-          imageUrl="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-          title="Blog 5"
-          webUrl="https://www.verizon.com/about/parenting/healthy-gamer-habits"
-        />
-        <ArticleCard
-          className="redirect"
-          id="Blog5"
-          imageUrl="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-          title="Blog 5"
-          webUrl=""
-        />
-        <ArticleCard
-          className="redirect"
-          id="Blog5"
-          imageUrl="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-          title="Blog 5"
-          webUrl=""
-        />
-        <ArticleCard
-          className="redirect"
-          id="Blog5"
-          imageUrl="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-          title="Blog 5"
-          webUrl=""
-        />
-        <ArticleCard
-          className="redirect"
-          id="Blog5"
-          imageUrl="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-          title="Blog 5"
-          webUrl=""
-        />
-        <ArticleCard
-          id="Blog5"
-          imageUrl="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-          title="Blog 5"
-        />
+        <div class="h-screen media-scroller snap-mandatory snap-both grid gap-4 grid-flow-col overflow-x-auto overflow-y-auto ml-20">
+          <ArticleCard
+            className="redirect"
+            id="Blog5"
+            imageUrl="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
+            title="Blog 5"
+            webUrl="https://www.verizon.com/about/parenting/healthy-gamer-habits"
+          />
+          <ArticleCard
+            className="redirect"
+            id="Blog5"
+            imageUrl="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
+            title="Blog 5"
+            webUrl=""
+          />
+          <ArticleCard
+            className="redirect"
+            id="Blog5"
+            imageUrl="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
+            title="Blog 5"
+            webUrl=""
+          />
+          <ArticleCard
+            className="redirect"
+            id="Blog5"
+            imageUrl="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
+            title="Blog 5"
+            webUrl=""
+          />
+          <ArticleCard
+            className="redirect"
+            id="Blog5"
+            imageUrl="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
+            title="Blog 5"
+            webUrl=""
+          />
+          <ArticleCard
+            id="Blog5"
+            imageUrl="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
+            title="Blog 5"
+          />
+        </div>
       </div>
     </section>
   );

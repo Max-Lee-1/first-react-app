@@ -7,9 +7,9 @@ export default function Quiz() {
     <section
       data-section
       id="Quiz"
-      className="z-10 relative w-screen max-h-screen flex items-center pt-0 "
+      className="z-10 relative w-screen h-screen flex items-center p-0 pb-40"
     >
-      <div className="grid grid-cols-6 gap-4 mx-20 pt-20 z-50">
+      <div className="grid grid-cols-6 gap-4 mx-20 pt-20 z-50 h-[75vh]">
         <div className="justify-center p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-1 row-span-1 drop-shadow-md">
           <h1 className="text-white font-Proxima text-center text-5xl font-bold my-2">
             Gaming Health Quizes
