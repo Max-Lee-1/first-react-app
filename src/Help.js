@@ -9,8 +9,8 @@ export default function Help() {
       id="Help"
       className="w-screen min-h-screen z-10 relative my-20"
     >
-      <div className="h-screen flex flex-col justify-center items-center">
-        <h1 className="font-Proxima w-1/2 self-center text-center text-white text-5xl font-bold my-2">
+      <div className="h-screen flex flex-col justify-center items-center lg:mx-20 mx-10">
+        <h1 className="font-Proxima w-1/2 self-center text-center text-white lg:text-5xl text-4xl font-bold my-2">
           Something to confess?
         </h1>
         <p className="font-Arial w-full self-center text-center text-white text-xl font-normal my-4">

@@ -33,28 +33,28 @@ export default function Article() {
     // Condition: different code on "latest" vs "redirect" section
     if (className === "latest") {
       return (
-        <div id={id} className="bg-black">
+        <div id={id} className="">
           <button
-            className={`col-span-1 bg-cover bg-center h-screen text-transparent w-full opacity-75 transition duration-200 hover:opacity-100 hover:text-white`}
+            className={`lg:h-screen h-full col-span-1 row-span-1 bg-cover bg-center text-transparent w-full opacity-75 transition duration-200 hover:opacity-100 hover:text-white`}
             onClick={handleClick}
             style={{ backgroundImage: `url(${imageUrl})` }}
           >
-            <p className="h-screen flex justify-start items-end p-8 font-Arial font-normal text-center text-3xl">
+            <div className="h-screen flex justify-start items-end p-8 font-Arial font-normal text-center text-3xl">
               {title}
-            </p>
+            </div>
           </button>
         </div>
       );
     } else if (className === "redirect") {
       return (
-        <div id={id}>
+        <div id={id} className="lg:w-[25vw] w-[75vw]">
           <a
             className={`snap-start grid gap-4 pb-4 bg-Charcoal rounded-lg shadow hover:scale-105 transition duration-100`}
             href={webUrl}
             target="blank"
           >
             <img
-              className="aspect-video object-cover rounded-t-lg"
+              className="aspect-video object-cover h-[50vh] rounded-t-lg"
               src={imageUrl}
               alt=""
             />
@@ -70,10 +70,10 @@ export default function Article() {
     <section
       data-section
       id="Article"
-      className="w-screen grid z-10 relative justify-center items-center mt-20"
+      className="w-screen min-h-screen grid z-10 relative justify-center items-start"
     >
       {!latestHidden && ( // Check if "Latest Article" section should be visible
-        <div className="w-screen h-screen grid grid-cols-4">
+        <div className="w-screen h-screen grid lg:grid-cols-4 grid-cols-2 grid-rows-2">
           {/* Grid of ArticleCards */}
           <ArticleCard
             className="latest"
@@ -108,44 +108,43 @@ export default function Article() {
 
       {/* Render the selected blog if it's not null */}
       {selectedBlog && (
-        <div className="w-screen h-screen">
-          <div className="w-screen h-screen relative">
-            <div
-              className="-z-20 absolute top-0 left-0 w-full h-full bg-cover bg-center"
-              style={{ backgroundImage: `url(${selectedBlog.imageUrl})` }}
-            ></div>
-            <div className="-z-10 absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black"></div>
+        <div className="w-screen h-screen relative">
+          <div
+            className="-z-20 absolute top-0 left-0 w-full h-full bg-cover bg-center"
+            style={{ backgroundImage: `url(${selectedBlog.imageUrl})` }}
+          ></div>
+          <div className="-z-10 absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black"></div>
 
-            <div className="flex flex-row justify-between h-10 pt-40 p-20">
-              <h1 className="font-Proxima text-white text-5xl font-bold drop-shadow-lg">
-                {selectedBlog.title}
-              </h1>
-              <button
-                className="w-auto self-center rounded-lg hover:scale-110 transition duration-100"
-                onClick={() => {
-                  setSelectedBlog(null);
-                  setLatestHidden(false); // Unhide Latest Article Section
-                }}
-              >
-                X
-              </button>
-            </div>
-            <div className="w-screen p-20 pt-10">
-              Deserunt cillum voluptate exercitation adipisicing ea aute
-              incididunt elit exercitation ex proident ea magna dolor. Officia
-              ad qui esse irure et laboris aliquip laboris irure enim. Dolor
-              elit consectetur excepteur cillum in ullamco quis. Ad exercitation
-              nisi pariatur eu velit anim consectetur nulla incididunt.
-            </div>
+          <div className="flex flex-row justify-between h-10 pt-40 p-20">
+            <h1 className="font-Proxima text-white text-5xl font-bold drop-shadow-lg">
+              {selectedBlog.title}
+            </h1>
+            <button
+              className="w-auto self-center rounded-lg hover:scale-110 transition duration-100"
+              onClick={() => {
+                setSelectedBlog(null);
+                setLatestHidden(false); // Unhide Latest Article Section
+              }}
+            >
+              X
+            </button>
+          </div>
+          <div className="w-screen p-20 pt-10">
+            Deserunt cillum voluptate exercitation adipisicing ea aute
+            incididunt elit exercitation ex proident ea magna dolor. Officia ad
+            qui esse irure et laboris aliquip laboris irure enim. Dolor elit
+            consectetur excepteur cillum in ullamco quis. Ad exercitation nisi
+            pariatur eu velit anim consectetur nulla incididunt.
           </div>
         </div>
       )}
-      <div className="h-[80vh] w-screen">
-        <h1 class="font-Proxima w-screen text-white text-5xl font-bold drop-shadow-lg ml-20 mb-8 mt-20">
-          Other Blog Sites
-        </h1>
 
-        <div class="h-screen media-scroller snap-mandatory snap-both grid gap-4 grid-flow-col overflow-x-auto overflow-y-auto ml-20">
+      <div className="h-screen w-screen">
+        <div class="font-Proxima w-screen text-white lg:text-5xl text-4xl font-bold drop-shadow-lg lg:ml-20 mx-10 mb-8 mt-20">
+          Other Blog Sites
+        </div>
+
+        <div class="media-scroller snap-mandatory snap-both grid grid-flow-col grid-cols-subgrid gap-4 overflow-x-auto overflow-y-hidden lg:ml-20 ml-10">
           <ArticleCard
             className="redirect"
             id="Blog5"

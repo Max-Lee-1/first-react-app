@@ -11,15 +11,15 @@ export default function Landing() {
         className="w-screen h-screen flex justify-center items-center absolute"
         id="Landing"
       >
-        <h1 className="w-1/3 text-center font-Proxima text-white text-5xl drop-shadow-lg">
+        <div className="w-1/3 text-center font-Proxima text-white text-5xl drop-shadow-lg">
           Are You A Toxic Gamer?
-        </h1>
+        </div>
       </div>
       <div className="w-screen h-screen flex justify-center items-center">
         <div className="md:-translate-x-80 md:-translate-y-36 -translate-x-24 -translate-y-40 absolute drop-shadow-lg hover:scale-105 transition duration-100">
           <a
             href="#Article"
-            className="md:w-40 md:h-40 w-20 h-20 flex justify-center items-center bg-gradient-to-b from-Bittersweet-Red to-Bittersweet-Pink/[0.7] rounded-full"
+            className="md:w-40 md:h-40 w-20 h-20 flex justify-center items-center bg-gradient-to-b from-Bittersweet-Red to-Bittersweet-Pink rounded-full"
           >
             <h3 className="md:w-24 w-12 text-center self-center font-Arial text-white md:text-base text-xs font-bold drop-shadow-lg">
               Wanna Read about it?
@@ -57,70 +57,73 @@ export default function Landing() {
           </a>
         </div>
       </div>
-      <div id="Hazards" className="max-h-screen">
-        <div className="grid grid-cols-2 gap-4 mx-20 pb-10 pt-40">
-          <h1 class="font-Proxima text-white text-5xl font-bold drop-shadow-lg">
+      <div id="Hazards" className=" h-auto">
+        <div className="grid grid-cols-2 gap-4 md:mx-20 mx-10 pb-10 pt-40">
+          <div class="font-Proxima text-white lg:text-5xl text-3xl font-bold drop-shadow-lg">
             Your Health, Your Care
-          </h1>
-          <p className="font-Arial text-white text-base text-justify">
+          </div>
+          <div className="font-Arial text-white lg:text-base text-sm text-justify">
             Excessive gaming often leads to a sedentary lifestyle, which can
             result in various health issues such as obesity, muscle stiffness,
             and poor posture. Sitting for prolonged periods without adequate
             breaks can contribute to cardiovascular problems and weaken overall
             physical fitness.
-          </p>
+          </div>
         </div>
-        <div className="grid grid-cols-3 gap-16 mx-20">
-          <div className="p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-1 row-span-1 drop-shadow-md">
-            <h1 class="font-Proxima text-white text-4xl font-bold drop-shadow-lg px-5 py-4">
+        <div className="grid lg:grid-cols-3 lg:gap-8 gap-4 md:mx-20 mx-4">
+          <div className="md:p-4 p-2 bg-Charcoal rounded-lg gap-1 col-span-1 drop-shadow-md">
+            <div class="font-Proxima text-white lg:text-4xl text-2xl font-bold drop-shadow-lg px-5 py-4">
               Physical Health Impact
-            </h1>
-            <p className="font-Arial text-white text-base px-5 pb-4 text-justify">
+            </div>
+            <div className="font-Arial text-white lg:text-base text-sm px-5 pb-4 text-justify">
               Excessive gaming often leads to a sedentary lifestyle, which can
               result in various health issues such as obesity, muscle stiffness,
               and poor posture. Sitting for prolonged periods without adequate
               breaks can contribute to cardiovascular problems and weaken
               overall physical fitness.
-            </p>
+            </div>
           </div>
-          <div className="p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-1 row-span-1 drop-shadow-md">
-            <h1 class="font-Proxima text-white text-4xl font-bold drop-shadow-lg px-5 py-4">
+          <div className="md:p-4 p-2 bg-Charcoal rounded-lg gap-1 col-span-1 drop-shadow-md">
+            <div class="font-Proxima text-white lg:text-4xl text-2xl font-bold drop-shadow-lg px-5 py-4">
               Mental Health Concerns
-            </h1>
-            <p className="font-Arial text-white text-base px-5 pb-4 text-justify">
+            </div>
+            <div className="font-Arial text-white lg:text-base text-sm px-5 pb-4 text-justify">
               Unhealthy gaming habits can negatively affect mental well-being.
               Excessive gaming may lead to increased stress, anxiety, and
               depression, especially if it interferes with daily
               responsibilities and social interactions. The immersive nature of
               gaming can also blur the line between reality and fantasy,
               potentially exacerbating mental health issues.
-            </p>
+            </div>
           </div>
-          <div className="p-4 bg-Charcoal rounded-lg flex flex-col gap-1 col-span-1 row-span-1 drop-shadow-md">
-            <h1 class="font-Proxima text-white text-4xl font-bold drop-shadow-lg px-5 py-4">
+          <div className="md:p-4 p-2 bg-Charcoal rounded-lg gap-1 col-span-1 drop-shadow-md">
+            <div class="font-Proxima text-white lg:text-4xl text-2xl font-bold drop-shadow-lg px-5 py-4">
               Social & Emotional Fallout
-            </h1>
-            <p className="font-Arial text-white text-base px-5 pb-4 text-justify">
+            </div>
+            <div className="font-Arial text-white lg:text-base text-sm px-5 pb-4 text-justify">
               Spending excessive time gaming can strain relationships with
               friends, family, and significant others. It may lead to social
               isolation, as individuals prioritize gaming over face-to-face
               interactions. Moreover, unhealthy gaming habits can hinder
               personal growth, as time spent gaming often detracts from pursuing
               educational, career, or personal development opportunities.
-            </p>
+            </div>
           </div>
         </div>
       </div>
-      <div id="About" className="grid grid-cols-2 gap-4 mx-20 pt-40">
+      <div
+        id="About"
+        className="relative grid grid-cols-2 gap-4 md:mx-20 mx-5 lg:pt-40 pt-10"
+      >
         <img
           src={catGaming}
-          className="object-cover h-3/4 w-full rounded-lg flex flex-col gap-1 col-span-1 row-span-1 drop-shadow-md"
+          className="object-cover lg:h-3/4 h-auto lg:w-full w-auto rounded-lg flex flex-col gap-1 md:col-span-1 col-span-2 drop-shadow-md"
         ></img>
-        <div className="p-4 flex flex-col gap-1 col-span-1 row-span-1">
-          <h1 class="font-Proxima pb-4 col-span-1 row-span-1 text-white text-5xl font-bold drop-shadow-lg">
+        <div className="p-4 flex flex-col gap-1 md:col-span-1 col-span-2">
+          <div class="font-Proxima pb-4 md:col-span-1 col-span-1 text-white text-5xl text-left font-bold drop-shadow-lg">
             Who We Are
-          </h1>
-          <p className="font-Arial text-white text-base text-justify w-full">
+          </div>
+          <div className="font-Arial text-white text-base text-justify w-full col-span-1">
             Healthy Gaming Hub aims to promote Ad commodo commodo excepteur do
             adipisicing. Ullamco duis enim fugiat elit veniam in aute aliquip.
             Cupidatat occaecat ea ipsum deserunt quis. Excepteur eiusmod labore
@@ -129,7 +132,7 @@ export default function Landing() {
             eiusmod pariatur consequat ex irure. Officia deserunt Lorem eu Lorem
             est non. Id in reprehenderit reprehenderit aliqua elit ex amet
             pariatur magna in eiusmod nostrud laboris.
-          </p>
+          </div>
         </div>
       </div>
     </section>
