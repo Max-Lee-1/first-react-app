@@ -22,12 +22,12 @@ export default function Nav() {
 
   return (
     <section id="nav" className="z-50 relative">
-      <nav class="fixed w-screen flex z-50 top-0 left-0 bg-Charcoal/30 shadow-lg backdrop-blur border border-black border-b-2 border-b-slate-500">
+      <nav class="fixed w-screen flex z-50 top-0 left-0 bg-Charcoal/50 shadow-lg backdrop-blur border border-black border-b-2 border-b-slate-500">
         <div
           class="w-screen block py-4 justify-center items-center"
           id="navbar-default"
         >
-          <ul class="w-screen grid grid-cols-4 text-center font-medium font-Arial mt-4 border-gray-100">
+          <ul class="w-screen grid grid-cols-4 text-center font-medium font-Arial border-gray-100">
             <li className={activeSection === "Home" ? "active" : ""}>
               <a
                 href="#Home"

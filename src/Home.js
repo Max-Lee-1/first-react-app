@@ -8,7 +8,7 @@ export default function Landing() {
       id="Home"
     >
       <div
-        className="w-screen h-screen flex justify-center items-center absolute"
+        className="w-screen h-screen flex justify-center items-center absolute snap-start"
         id="Landing"
       >
         <div className="w-1/3 text-center font-Proxima text-white text-5xl drop-shadow-lg">
@@ -57,7 +57,7 @@ export default function Landing() {
           </a>
         </div>
       </div>
-      <div id="Hazards" className=" h-auto">
+      <div id="Hazards" className=" h-auto snap-start">
         <div className="grid grid-cols-2 gap-4 md:mx-20 mx-10 pb-10 pt-40">
           <div class="font-Proxima text-white lg:text-5xl text-3xl font-bold drop-shadow-lg">
             Your Health, Your Care
@@ -113,7 +113,7 @@ export default function Landing() {
       </div>
       <div
         id="About"
-        className="relative grid grid-cols-2 gap-4 md:mx-20 mx-5 lg:pt-40 pt-10"
+        className="relative grid grid-cols-2 gap-4 md:mx-20 mx-5 lg:pt-40 pt-10 snap-start"
       >
         <img
           src={catGaming}

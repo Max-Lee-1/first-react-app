@@ -79,7 +79,7 @@ export default function Background() {
   requestAnimationFrame(parallax);
 
   return (
-    <section id="Background" className="z-10 relative bg-Navy">
+    <section id="Background" className="z-10 relative">
       {/* Landing Background */}
       <div className="fixed w-screen h-screen z-30 brightness-50">
         <div className="layer parallax-up bg-circle-2xl fixed -right-60 lg:-right-60 -top-80 lg:bg-Blue-Indigo bg-Teal-dim rounded-full drop-shadow-2xl brightness-50"></div>

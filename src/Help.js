@@ -9,7 +9,7 @@ export default function Help() {
       id="Help"
       className="w-screen min-h-screen z-10 relative my-20"
     >
-      <div className="h-screen flex flex-col justify-center items-center lg:mx-20 mx-10">
+      <div className="h-screen flex flex-col justify-center items-center lg:mx-20 mx-10 snap-start">
         <h1 className="font-Proxima w-1/2 self-center text-center text-white lg:text-5xl text-4xl font-bold my-2">
           Something to confess?
         </h1>
@@ -38,7 +38,7 @@ export default function Help() {
           </a>
         </div>
       </div>
-      <div className="h-screen flex flex-col justify-center items-center">
+      <div className="h-screen flex flex-col justify-center items-center snap-start">
         <h1 className="font-Proxima w-1/2 self-center text-center text-white text-5xl font-bold my-2">
           Other Sites That Can Help You
         </h1>

@@ -35,12 +35,14 @@ export default function Article() {
       return (
         <div id={id} className="">
           <button
-            className={`lg:h-screen h-full col-span-1 row-span-1 bg-cover bg-center text-transparent w-full opacity-85 transition duration-200 hover:opacity-100 hover:text-white`}
+            className={`lg:h-screen h-full col-span-1 row-span-1 bg-cover bg-center text-transparent w-full transition duration-200 hover:text-white`}
             onClick={handleClick}
             style={{ backgroundImage: `url(${imageUrl})` }}
           >
-            <div className="h-screen flex justify-start items-end p-8 font-Arial font-normal text-center text-3xl">
-              {title}
+            <div className="h-screen flex hover:bg-gradient-to-b from-transparent to-black">
+              <div className="h-screen flex justify-start items-end p-8 font-Arial font-normal text-center text-3xl">
+                {title}
+              </div>
             </div>
           </button>
         </div>
@@ -70,10 +72,10 @@ export default function Article() {
     <section
       data-section
       id="Article"
-      className="w-screen min-h-screen grid z-10 relative justify-center items-start bg-gradient-to-b from-Rhino from-75% to-transparent to-100%"
+      className="w-screen min-h-screen grid z-10 relative justify-center items-start mt-4 bg-gradient-to-b from-Rhino from-75% to-transparent to-100%"
     >
       {!latestHidden && ( // Check if "Latest Article" section should be visible
-        <div className="w-screen h-screen grid lg:grid-cols-4 grid-cols-2 grid-rows-2 bg-Rhino">
+        <div className="w-screen h-screen grid lg:grid-cols-4 grid-cols-2 grid-rows-2 bg-Rhino snap-start">
           {/* Grid of ArticleCards */}
           <ArticleCard
             className="latest"
@@ -108,7 +110,7 @@ export default function Article() {
 
       {/* Render the selected blog if it's not null */}
       {selectedBlog && (
-        <div className="w-screen h-screen relative">
+        <div className="w-screen h-screen relative snap-start">
           <div
             className="-z-20 absolute top-0 left-0 w-full h-full bg-cover bg-center"
             style={{ backgroundImage: `url(${selectedBlog.imageUrl})` }}
@@ -140,7 +142,7 @@ export default function Article() {
       )}
 
       <div className="h-screen w-screen">
-        <div class="font-Proxima w-screen text-white lg:text-5xl text-4xl font-bold drop-shadow-lg lg:ml-20 mx-10 mb-8 mt-20">
+        <div class="font-Proxima w-screen text-white lg:text-5xl text-4xl font-bold drop-shadow-lg lg:ml-20 mx-10 mb-8 pt-28 snap-start">
           Other Blog Sites
         </div>
 
