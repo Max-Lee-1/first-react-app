@@ -35,7 +35,7 @@ export default function Article() {
       return (
         <div id={id} className="">
           <button
-            className={`lg:h-screen h-full col-span-1 row-span-1 bg-cover bg-center text-transparent w-full opacity-75 transition duration-200 hover:opacity-100 hover:text-white`}
+            className={`lg:h-screen h-full col-span-1 row-span-1 bg-cover bg-center text-transparent w-full opacity-85 transition duration-200 hover:opacity-100 hover:text-white`}
             onClick={handleClick}
             style={{ backgroundImage: `url(${imageUrl})` }}
           >
@@ -70,10 +70,10 @@ export default function Article() {
     <section
       data-section
       id="Article"
-      className="w-screen min-h-screen grid z-10 relative justify-center items-start"
+      className="w-screen min-h-screen grid z-10 relative justify-center items-start bg-gradient-to-b from-Rhino from-75% to-transparent to-100%"
     >
       {!latestHidden && ( // Check if "Latest Article" section should be visible
-        <div className="w-screen h-screen grid lg:grid-cols-4 grid-cols-2 grid-rows-2">
+        <div className="w-screen h-screen grid lg:grid-cols-4 grid-cols-2 grid-rows-2 bg-Rhino">
           {/* Grid of ArticleCards */}
           <ArticleCard
             className="latest"

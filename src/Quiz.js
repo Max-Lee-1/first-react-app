@@ -7,18 +7,21 @@ export default function Quiz() {
     <section
       data-section
       id="Quiz"
-      className="z-10 relative w-screen min-h-screen flex items-center p-0 bg-Blue-Indigo"
+      className="z-10 relative w-screen min-h-screen flex items-center p-0 bg-Rhino md:pt-[10vh]"
     >
-      <div className="relative z-40">
+      <div className="relative z-40 ">
         <img
-          className="flex mix-blend-darken w-screen h-[30vh] absolute lg:-top-[20vh] -top-[10vh] -z-30"
+          className="flex mix-blend-darken w-screen h-[30vh] absolute xl:-top-[20vh] lg:-top-[27.5vh] md:-top-[25vh] -top-[10vh] -z-30 brightness-50"
           src={wave}
+          style={{
+            "@media (min-height: 768px)": { top: "-50vh" },
+          }}
         />
         {/*<img
           className="flex mix-blend-darken w-screen h-[140vh] aspect-video absolute object-cover object-right -z-40 opacity-50"
           src={bgGradient}
   />*/}
-        <div className="mix-blend-darken grid xl:grid-cols-6 grid-cols-10 grid-rows-10 xl:gap-4 gap-2 xl:mx-20 mx-10 pt-[20vh] z-50 xl:h-[75vh] pb-[8vh]">
+        <div className="mix-blend-darken grid xl:grid-cols-6 grid-cols-10 grid-rows-10 xl:gap-4 gap-2 xl:mx-20 mx-10 lg:pt-[20vh] md:pt-0 pt-[20vh] z-50 min-h-[600px] sm:max-h-[900px] pb-[8vh]">
           <div className="flex justify-center items-center p-4 bg-Charcoal rounded-lg gap-1 xl:col-span-2 col-span-4 xl:row-span-4 row-span-1 drop-shadow-md">
             <div className="text-white font-Proxima text-center xl:text-4xl text-3xl font-bold my-2 ">
               Quizes
