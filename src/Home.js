@@ -1,63 +1,62 @@
 import catGaming from "./img/cat-gaming.png";
 
-export default function Landing() {
+export default function Home() {
   return (
     <section
       data-section
       className="z-10 w-screen min-h-screen relative mb-20"
       id="Home"
     >
-      <div
-        className="w-screen h-screen flex justify-center items-center absolute snap-start"
-        id="Landing"
-      >
-        <div className="w-1/3 text-center font-Proxima text-white text-5xl drop-shadow-lg">
-          Are You A Toxic Gamer?
+      <div id="Landing" className="h-screen">
+        <div className="w-screen h-screen flex justify-center items-center absolute snap-start">
+          <div className="w-1/3 text-center font-Proxima text-white md:text-5xl text-4xl drop-shadow-lg">
+            Are You A Toxic Gamer?
+          </div>
+        </div>
+        <div className="w-screen h-screen flex justify-center items-center">
+          <div className="lg:-translate-x-80 md:-translate-x-56 -translate-x-24 md:-translate-y-36 -translate-y-40 absolute drop-shadow-lg hover:scale-105 transition duration-100">
+            <a
+              href="#Article"
+              className="md:w-40 md:h-40 w-28 h-28 flex justify-center items-center bg-gradient-to-b from-Bittersweet-Red to-Bittersweet-Pink rounded-full"
+            >
+              <div className="md:w-24 w-12 text-center self-center font-Arial text-white md:text-base text-xs font-bold drop-shadow-lg">
+                Wanna Read about it?
+              </div>
+            </a>
+          </div>
+          <div className="lg:-translate-x-52 md:-translate-x-40 -translate-x-20  md:translate-y-48 translate-y-48 absolute drop-shadow-lg hover:scale-105 transition duration-100">
+            <a
+              href="#Hazards"
+              className="md:w-40 md:h-40 w-28 h-28 flex justify-center items-center bg-gradient-to-b from-Orange to-amber-400 rounded-full"
+            >
+              <div className="md:w-24 w-12 text-center self-center font-Arial text-white md:text-base text-xs font-bold drop-shadow-lg">
+                Why should I care?
+              </div>
+            </a>
+          </div>
+          <div className="lg:translate-x-80 md:translate-x-56 translate-x-32 md:-translate-y-28 -translate-y-28 absolute drop-shadow-lg hover:scale-105 transition duration-100">
+            <a
+              href="#Quiz"
+              className="md:w-40 md:h-40 w-28 h-28 flex justify-center items-center bg-gradient-to-b from-Sulu to-Green-Pea rounded-full"
+            >
+              <div className="md:w-24 w-12 text-center self-center font-Arial text-white md:text-base text-xs font-bold drop-shadow-lg">
+                Take the Quiz
+              </div>
+            </a>
+          </div>
+          <div className="md:translate-x-48 translate-x-28 md:translate-y-36 translate-y-40 absolute drop-shadow-lg hover:scale-105 transition duration-100">
+            <a
+              href="#Help"
+              className="md:w-40 md:h-40 w-28 h-28 flex justify-center items-center bg-gradient-to-b from-Chambray to-Navy rounded-full"
+            >
+              <div className="md:w-24 w-12 text-center self-center font-Arial text-white md:text-base text-xs font-bold drop-shadow-lg break-words">
+                Yes, I need Professional Help
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-      <div className="w-screen h-screen flex justify-center items-center">
-        <div className="md:-translate-x-80 md:-translate-y-36 -translate-x-24 -translate-y-40 absolute drop-shadow-lg hover:scale-105 transition duration-100">
-          <a
-            href="#Article"
-            className="md:w-40 md:h-40 w-20 h-20 flex justify-center items-center bg-gradient-to-b from-Bittersweet-Red to-Bittersweet-Pink rounded-full"
-          >
-            <h3 className="md:w-24 w-12 text-center self-center font-Arial text-white md:text-base text-xs font-bold drop-shadow-lg">
-              Wanna Read about it?
-            </h3>
-          </a>
-        </div>
-        <div className="md:-translate-x-52 md:translate-y-48 -translate-x-20 translate-y-48 absolute drop-shadow-lg hover:scale-105 transition duration-100">
-          <a
-            href="#Hazards"
-            className="md:w-40 md:h-40 w-20 h-20 flex justify-center items-center bg-gradient-to-b from-Orange to-amber-400 rounded-full"
-          >
-            <h3 className="md:w-24 w-12 text-center self-center font-Arial text-white md:text-base text-xs font-bold drop-shadow-lg">
-              Why should I care?
-            </h3>
-          </a>
-        </div>
-        <div className="md:translate-x-80 md:-translate-y-28 translate-x-32 -translate-y-28 absolute drop-shadow-lg hover:scale-105 transition duration-100">
-          <a
-            href="#Quiz"
-            className="md:w-40 md:h-40 w-20 h-20 flex justify-center items-center bg-gradient-to-b from-Sulu to-Green-Pea rounded-full"
-          >
-            <h3 className="md:w-24 w-12 text-center self-center font-Arial text-white md:text-base text-xs font-bold drop-shadow-lg">
-              Take the Quiz
-            </h3>
-          </a>
-        </div>
-        <div className="md:translate-x-48 md:translate-y-36 translate-x-28 translate-y-40 absolute drop-shadow-lg hover:scale-105 transition duration-100">
-          <a
-            href="#Help"
-            className="md:w-40 md:h-40 w-20 h-20 flex justify-center items-center bg-gradient-to-b from-Chambray to-Navy rounded-full"
-          >
-            <h3 className="md:w-24 w-12 text-center self-center font-Arial text-white md:text-base text-xs font-bold drop-shadow-lg">
-              Yes, I need Professional Help
-            </h3>
-          </a>
-        </div>
-      </div>
-      <div id="Hazards" className=" h-auto snap-start">
+      <div id="Hazards" className="min-h-screen h-auto snap-start">
         <div className="grid grid-cols-2 gap-4 md:mx-20 mx-10 pb-10 pt-40">
           <div class="font-Proxima text-white lg:text-5xl text-3xl font-bold drop-shadow-lg">
             Your Health, Your Care
@@ -113,7 +112,7 @@ export default function Landing() {
       </div>
       <div
         id="About"
-        className="relative grid grid-cols-2 gap-4 md:mx-20 mx-5 lg:pt-40 pt-10 snap-start"
+        className="relative grid grid-cols-2 gap-4 md:mx-20 mx-5 lg:pt-40 pt-10 snap-start h-screen"
       >
         <img
           src={catGaming}

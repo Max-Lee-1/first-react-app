@@ -4,10 +4,14 @@ import { observeSections, unobserveSections } from "./intersectionObserver";
 
 export default function Nav() {
   const [activeSection, setActiveSection] = useState(null);
+
   const observer = useRef(null);
 
+  console.log(observer.current);
   useEffect(() => {
-    observer.current = observeSections((id) => setActiveSection(id));
+    observer.current = observeSections((id) => {
+      setActiveSection(id);
+    });
 
     return () => {
       unobserveSections(observer.current);
@@ -16,13 +20,21 @@ export default function Nav() {
 
   // Style for the active section link
   const activeStyle = {
+    display: "block",
     color: "white",
     textDecoration: "underline",
   };
 
+  const hiddenStyle = {
+    display: "none",
+  };
+
   return (
     <section id="nav" className="z-50 relative">
-      <nav class="fixed w-screen flex z-50 top-0 left-0 bg-Charcoal/50 shadow-lg backdrop-blur border border-black border-b-2 border-b-slate-500">
+      <nav
+        className={`fixed w-screen flex z-50 top-0 left-0 bg-Charcoal/50 shadow-lg backdrop-blur border border-black border-b-2 border-b-slate-500 `}
+        style={activeSection === "Landing" ? hiddenStyle : {}}
+      >
         <div
           class="w-screen block py-4 justify-center items-center"
           id="navbar-default"
@@ -31,35 +43,41 @@ export default function Nav() {
             <li className={activeSection === "Home" ? "active" : ""}>
               <a
                 href="#Home"
-                className="block py-2 px-3 text-gray-400 hover:text-white hover:scale-105 transition duration-100  "
+                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-400 hover:text-white hover:scale-105 transition duration-100  "
               >
-                <p style={activeSection === "Home" ? activeStyle : {}}>Home</p>
+                <div style={activeSection === "Home" ? activeStyle : {}}>
+                  Home
+                </div>
               </a>
             </li>
             <li className={activeSection === "Quiz" ? "active" : ""}>
               <a
                 href="#Quiz"
-                className="block py-2 px-3 text-gray-400 hover:text-white hover:scale-105 transition duration-100"
+                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-400 hover:text-white hover:scale-105 transition duration-100"
               >
-                <p style={activeSection === "Quiz" ? activeStyle : {}}>Quiz</p>
+                <div style={activeSection === "Quiz" ? activeStyle : {}}>
+                  Quiz
+                </div>
               </a>
             </li>
             <li className={activeSection === "Article" ? "active" : ""}>
               <a
                 href="#Article"
-                className="block py-2 px-3 text-gray-400 hover:text-white hover:scale-105 transition duration-100"
+                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-400 hover:text-white hover:scale-105 transition duration-100"
               >
-                <p style={activeSection === "Article" ? activeStyle : {}}>
+                <div style={activeSection === "Article" ? activeStyle : {}}>
                   Article
-                </p>
+                </div>
               </a>
             </li>
             <li className={activeSection === "Help" ? "active" : ""}>
               <a
                 href="#Help"
-                className="block py-2 px-3 text-gray-400 hover:text-white hover:scale-105 transition duration-100"
+                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-400 hover:text-white hover:scale-105 transition duration-100"
               >
-                <p style={activeSection === "Help" ? activeStyle : {}}>Help</p>
+                <div style={activeSection === "Help" ? activeStyle : {}}>
+                  Help
+                </div>
               </a>
             </li>
           </ul>
@@ -68,7 +86,7 @@ export default function Nav() {
       <div className="flex fixed h-screen justify-start items-center">
         <a href="https://netsafe.org.nz/" target="blank">
           <img
-            className="w-40 h-16 py-4 px-5 -rotate-90 -translate-x-12 bg-Charcoal/30 shadow-lg ring-1 ring-black/5 backdrop-blur border border-slate-500"
+            className="md:w-40 md:h-16 w-32 h-12 md:py-4 py-2 md:px-4 px-3 -rotate-90 md:-translate-x-12 -translate-x-10 bg-Charcoal/30 shadow-lg ring-1 ring-black/5 backdrop-blur border border-slate-500"
             src={Logo}
             alt="Netsafe Logo"
           />

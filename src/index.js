@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import Background from "./Background";
 import Nav from "./Nav";
-import Landing from "./Home";
+import Home from "./Home";
 import Help from "./Help";
 import Article from "./Article";
 import Quiz from "./Quiz";
@@ -14,7 +14,7 @@ root.render(
   <React.StrictMode>
     <Background />
     <Nav />
-    <Landing />
+    <Home />
     <Quiz />
     <Article />
     <Help />

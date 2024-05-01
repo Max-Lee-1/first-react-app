@@ -7,6 +7,7 @@ export function observeSections(callback) {
 
     if (visibleSection) {
       callback(visibleSection.id);
+      console.log(visibleSection.id);
     }
   });
 

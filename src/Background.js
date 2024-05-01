@@ -1,7 +1,3 @@
-import wave from "./img/stacked-waves-haikei(edit).png";
-import bgGradient from "./img/blurry-gradient-haikei.svg";
-import bgCircle1 from "./img/circle-scatter-haikei (2).svg";
-import bgCircle2 from "./img/circle-scatter-haikei (3).svg";
 import a from "./img/image_fx_digital_illustration_of_a_harmonious_gaming_c.jpg";
 import b from "./img/image_fx_digital_illustration_on_helping_out_cyber_bul.jpg";
 import c from "./img/image_fx_digital_illustration_on__too_much_gaming_scre.jpg";
@@ -109,13 +105,6 @@ export default function Background() {
         <div className="layer parallax-left bg-circle-2xl fixed  lg:top-[25vh] -top-[25vh] lg:-left-[425vh] -left-[350vh] lg:bg-Rhino bg-Navy rounded-full drop-shadow-2xl" />
         <div className="layer parallax-left bg-circle-base fixed lg:-bottom-60 bottom-[10vh] lg:-left-[275vh] -left-[375vh] lg:bg-Navy bg-Teal-main rounded-full drop-shadow-2xl" />
         <div className="layer parallax-left bg-circle-lg fixed -top-[50vh] -left-[175vh] bg-Navy rounded-full drop-shadow-2xl" />
-      </div>
-      {/* Article Background 
-      <div className="relative top-[400vh] z-40">
-        <img
-          className=" w-screen aspect-video absolute top-[50vh] object-cover object-right z-30"
-          src={bgCircle2}
-        />
       </div>
       {/* Help Background */}
       <div className="relative top-[600vh] z-0">
