@@ -1,3 +1,12 @@
+import online_etiquette from "./img/gaming-etiquette.jpg";
+import screentime from "./img/screentime-3.jpg";
+import spending from "./img/online-spending-2.jpg";
+import cybersecurity from "./img/cyber-security.jpg";
+import green_blob from "./img/blob-haikei.svg";
+import red_stacks from "./img/stacked-peaks-haikei.svg";
+import poly_grid from "./img/low-poly-grid-haikei.svg";
+import blue_circles from "./img/circle-scatter-haikei-1.svg";
+import yellow_blob_wave from "./img/blob-scene-haikei.svg";
 import React, { useState } from "react";
 
 export default function Article() {
@@ -33,34 +42,34 @@ export default function Article() {
     // Condition: different code on "latest" vs "redirect" section
     if (className === "latest") {
       return (
-        <div id={id} className="">
-          <button
-            className={`lg:h-screen h-full col-span-1 row-span-1 bg-cover bg-center text-transparent w-full transition duration-200 hover:text-white`}
-            onClick={handleClick}
-            style={{ backgroundImage: `url(${imageUrl})` }}
-          >
-            <div className="h-screen flex hover:bg-gradient-to-b from-transparent to-black">
-              <div className="h-screen flex justify-start items-end p-8 font-Arial font-normal text-center text-3xl">
-                {title}
-              </div>
+        <button
+          id={id}
+          className={`lg:h-screen h-full col-span-1 row-span-1 bg-cover bg-center opacity-85 text-transparent w-full transition duration-200 lg:text-transparent lg:hover:text-white text-white`}
+          onClick={handleClick}
+          style={{ backgroundImage: `url(${imageUrl})` }}
+        >
+          <div className="h-full flex lg:bg-none lg:hover:bg-gradient-to-b bg-gradient-to-b from-transparent to-gray-900">
+            <div className="h-auto flex justify-start items-end p-8 font-Arial font-normal text-left lg:text-3xl text-xl ">
+              {title}
             </div>
-          </button>
-        </div>
+          </div>
+        </button>
       );
     } else if (className === "redirect") {
       return (
-        <div id={id} className="lg:w-[25vw] w-[75vw]">
+        <div
+          id={id}
+          className="snap-start grid gap-4 my-6 xl:w-[25vw] w-[75vw] xl:h-[65vh] h-[70vh] bg-cover bg-no-repeat bg-center rounded-lg shadow hover:scale-105 transition duration-100"
+          style={{ backgroundImage: `url(${imageUrl})` }}
+        >
           <a
-            className={`snap-start grid gap-4 pb-4 bg-Charcoal rounded-lg shadow hover:scale-105 transition duration-100`}
+            className="w-full h-full flex bg-gradient-to-br from-transparent to-gray-900 bg-cover justify-center items-center rounded-lg"
             href={webUrl}
             target="blank"
           >
-            <img
-              className="aspect-video object-cover h-[50vh] rounded-t-lg"
-              src={imageUrl}
-              alt=""
-            />
-            <p className="text-white font-Arial text-center">{title}</p>
+            <div className="xl:px-8 px-[10vw] font-Arial text-center text-white lg:text-2xl text-xl">
+              {title}
+            </div>
           </a>
         </div>
       );
@@ -80,7 +89,7 @@ export default function Article() {
           <ArticleCard
             className="latest"
             id="Blog1"
-            imageUrl="https://images.unsplash.com/photo-1641353989082-9b15fa661805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
+            imageUrl={online_etiquette}
             title="Gaming Etiquette"
           />
           {/* Add more ArticleCard components for each blog */}
@@ -88,22 +97,22 @@ export default function Article() {
           <ArticleCard
             className="latest"
             id="Blog2"
-            imageUrl="https://images.unsplash.com/photo-1642190672487-22bde32965f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-            title="Blog 2"
+            imageUrl={screentime}
+            title="Screentime Management"
           />
 
           <ArticleCard
             className="latest"
             id="Blog3"
-            imageUrl="https://images.unsplash.com/photo-1641841344411-49dbd02896f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-            title="Blog 3"
+            imageUrl={spending}
+            title="Online Spending"
           />
 
           <ArticleCard
             className="latest"
             id="Blog4"
-            imageUrl="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-            title="Blog 4"
+            imageUrl={cybersecurity}
+            title="Cybersecurity"
           />
         </div>
       )}
@@ -112,7 +121,7 @@ export default function Article() {
       {selectedBlog && (
         <div className="w-screen h-screen relative snap-start">
           <div
-            className="-z-20 absolute top-0 left-0 w-full h-full bg-cover bg-center"
+            className="-z-20 absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-85"
             style={{ backgroundImage: `url(${selectedBlog.imageUrl})` }}
           ></div>
           <div className="-z-10 absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black"></div>
@@ -122,7 +131,7 @@ export default function Article() {
               {selectedBlog.title}
             </h1>
             <button
-              className="w-auto self-center rounded-lg hover:scale-110 transition duration-100"
+              className="w-auto self-center rounded-lg hover:scale-110 transition duration-100 text-lg"
               onClick={() => {
                 setSelectedBlog(null);
                 setLatestHidden(false); // Unhide Latest Article Section
@@ -142,50 +151,46 @@ export default function Article() {
       )}
 
       <div className="h-screen w-screen">
-        <div class="font-Proxima w-screen text-white lg:text-5xl text-4xl font-bold drop-shadow-lg lg:ml-20 mx-10 mb-8 pt-28 snap-start">
+        <div class="font-Proxima w-screen text-white lg:text-5xl text-4xl font-bold drop-shadow-lg lg:ml-20 mx-10 mb-4 pt-28 snap-start">
           Other Blog Sites
         </div>
 
-        <div class="media-scroller snap-mandatory snap-both grid grid-flow-col grid-cols-subgrid gap-4 overflow-x-auto overflow-y-hidden lg:ml-20 ml-10">
+        <div class="media-scroller snap-mandatory snap-both grid grid-flow-col grid-cols-subgrid gap-4 overflow-x-auto overflow-y-hidden lg:ml-20 ml-8 ">
           <ArticleCard
             className="redirect"
             id="Blog5"
-            imageUrl="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-            title="Blog 5"
+            imageUrl={red_stacks}
+            title="How to limit screen time and help your gamer build healthy habits5"
             webUrl="https://www.verizon.com/about/parenting/healthy-gamer-habits"
           />
           <ArticleCard
             className="redirect"
             id="Blog5"
-            imageUrl="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-            title="Blog 5"
-            webUrl=""
+            imageUrl={poly_grid}
+            title="Video Games and Mental Health: How Gaming Affects Your Mental Health"
+            webUrl="https://gamequitters.com/how-gaming-affects-your-mental-health/"
           />
           <ArticleCard
             className="redirect"
             id="Blog5"
-            imageUrl="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-            title="Blog 5"
-            webUrl=""
+            imageUrl={yellow_blob_wave}
+            title="Coping with life - Gaming and mental health
+            "
+            webUrl="https://www.youngminds.org.uk/young-person/coping-with-life/gaming-and-mental-health/"
           />
           <ArticleCard
             className="redirect"
             id="Blog5"
-            imageUrl="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-            title="Blog 5"
-            webUrl=""
+            imageUrl={green_blob}
+            title="Why gaming is better for your mental health than you might think"
+            webUrl="https://www.barnardos.org.uk/blog/why-gaming-better-your-mental-health-you-might-think"
           />
           <ArticleCard
             className="redirect"
             id="Blog5"
-            imageUrl="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-            title="Blog 5"
+            imageUrl={blue_circles}
+            title="Video Games and Mental Health: A Surprising Ally"
             webUrl=""
-          />
-          <ArticleCard
-            id="Blog5"
-            imageUrl="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
-            title="Blog 5"
           />
         </div>
       </div>
