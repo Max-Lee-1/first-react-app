@@ -1,6 +1,4 @@
 import wave from "./img/stacked-waves-haikei(edit).png";
-import bgGradient from "./img/blurry-gradient-haikei.svg";
-import bgCircle from "./img/circle-scatter-haikei (2).svg";
 
 export default function Quiz() {
   return (
@@ -19,10 +17,6 @@ export default function Quiz() {
             },
           }}
         />
-        {/*<img
-          className="flex mix-blend-darken w-screen h-[140vh] aspect-video absolute object-cover object-right -z-40 opacity-50"
-          src={bgGradient}
-  />*/}
         <div className="mix-blend-darken grid xl:grid-cols-6 grid-cols-10 grid-rows-10 xl:gap-4 gap-2 xl:mx-20 mx-10 lg:pt-[20vh] md:pt-0 pt-[20vh] z-50 min-h-[600px] sm:max-h-[900px] pb-[8vh]">
           <div className="flex justify-center items-center p-4 bg-Charcoal rounded-lg gap-1 xl:col-span-2 col-span-4 xl:row-span-4 row-span-1 drop-shadow-md">
             <div className="text-white font-Proxima text-center xl:text-4xl text-3xl font-bold my-2 ">

@@ -32,7 +32,7 @@ export default function Nav() {
   return (
     <section id="nav" className="z-50 relative">
       <nav
-        className={`fixed w-screen flex z-50 top-0 left-0 bg-Charcoal/50 shadow-lg backdrop-blur border border-black border-b-2 border-b-slate-500 `}
+        className={`fixed w-screen flex z-50 top-0 left-0 bg-Navy/50 shadow-lg backdrop-blur border border-black border-b-2 border-b-slate-500 `}
         style={activeSection === "Landing" ? hiddenStyle : {}}
       >
         <div
@@ -40,7 +40,7 @@ export default function Nav() {
           id="navbar-default"
         >
           <ul class="w-screen grid grid-cols-4 text-center font-medium font-Arial border-gray-100">
-            <li className={activeSection === "Home" ? "active" : ""}>
+            <li>
               <a
                 href="#Home"
                 className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-400 hover:text-white hover:scale-105 transition duration-100  "
@@ -50,7 +50,7 @@ export default function Nav() {
                 </div>
               </a>
             </li>
-            <li className={activeSection === "Quiz" ? "active" : ""}>
+            <li>
               <a
                 href="#Quiz"
                 className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-400 hover:text-white hover:scale-105 transition duration-100"
@@ -60,7 +60,7 @@ export default function Nav() {
                 </div>
               </a>
             </li>
-            <li className={activeSection === "Article" ? "active" : ""}>
+            <li>
               <a
                 href="#Article"
                 className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-400 hover:text-white hover:scale-105 transition duration-100"
@@ -70,7 +70,7 @@ export default function Nav() {
                 </div>
               </a>
             </li>
-            <li className={activeSection === "Help" ? "active" : ""}>
+            <li>
               <a
                 href="#Help"
                 className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-400 hover:text-white hover:scale-105 transition duration-100"
