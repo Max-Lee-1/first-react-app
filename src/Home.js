@@ -1,4 +1,4 @@
-import catGaming from "./img/cat-gaming.png";
+import catGaming from "./img/cat-gaming.webp";
 
 export default function Home() {
   return (
@@ -117,6 +117,7 @@ export default function Home() {
         <img
           src={catGaming}
           className="object-cover lg:h-3/4 h-auto lg:w-full w-auto rounded-lg flex flex-col gap-1 md:col-span-1 col-span-2 drop-shadow-md"
+          alt="Cat and Gaming PC"
         ></img>
         <div className="p-4 flex flex-col gap-1 md:col-span-1 col-span-2">
           <div class="font-Proxima pb-4 md:col-span-1 col-span-1 text-white text-5xl text-left font-bold drop-shadow-lg">

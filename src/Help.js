@@ -13,28 +13,31 @@ export default function Help() {
         <h1 className="font-Proxima w-1/2 self-center text-center text-white lg:text-5xl text-4xl font-bold my-2">
           Something to confess?
         </h1>
-        <p className="font-Arial w-full self-center text-center text-white text-xl font-normal my-4">
+        <div
+          className="font-Arial w-1/2 h-auto self-center text-center text-white
+          text-xl font-normal my-4"
+        >
           Netsafe is an internationally renowned independent not for profit
           organization with an unrelenting focus on online safety practices.
-        </p>
+        </div>
         <div className="container flex flex-row justify-center items-center gap-8 my-2">
           <a
             className="w-auto h-1/10 bg-gradient-to-r from-Teal-main to-Sulu/[0.8] p-4 rounded-lg hover:scale-105 transition duration-100"
             href="https://report.netsafe.org.nz/hc/en-au/requests/new"
             target="_blank"
           >
-            <p className="font-Arial text-white text-sm text-center">
+            <div className="font-Arial text-white text-sm text-center">
               Make A Report
-            </p>
+            </div>
           </a>
           <a
             className="w-auto h-1/10 bg-gradient-to-r from-Teal-main to-Sulu/[0.8] p-4 rounded-lg hover:scale-105 transition duration-100"
             href="https://netsafe.org.nz/contact-us/"
             target="_blank"
           >
-            <p className="font-Arial text-white text-sm text-center">
+            <div className="font-Arial text-white text-sm text-center">
               Contact Us Here
-            </p>
+            </div>
           </a>
         </div>
       </div>
@@ -48,21 +51,37 @@ export default function Help() {
             href="https://www.nasef.org/"
             target="blank"
           >
-            <img className="w-56 h-24" src={nasefLogo} alt="NASEF Logo" />
+            <img
+              className="w-56 h-24"
+              src={nasefLogo}
+              alt="NASEF Logo"
+              loading="lazy"
+            />
           </a>
           <a
             className="-translate-x-48 translate-y-32 hover:scale-105 transition duration-100"
             href="https://www.healthygamer.gg"
             target="blank"
+            loading="lazy"
           >
-            <img className="w-36 h-12" src={hgLogo} alt="Healthy Gamer Logo" />
+            <img
+              className="w-36 h-12"
+              src={hgLogo}
+              alt="Healthy Gamer Logo"
+              loading="lazy"
+            />
           </a>
           <a
             className="translate-x-10 -translate-y-24 hover:scale-105 transition duration-100"
             href="https://www.takethis.org/"
             target="blank"
           >
-            <img className="w-40 h-12" src={ttLogo} alt="Take This Logo" />
+            <img
+              className="w-40 h-12"
+              src={ttLogo}
+              alt="Take This Logo"
+              loading="lazy"
+            />
           </a>
         </div>
       </div>

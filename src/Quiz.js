@@ -1,4 +1,4 @@
-import wave from "./img/stacked-waves-haikei(edit).png";
+import wave from "./img/stacked-waves-haikei(edit).webp";
 
 export default function Quiz() {
   return (
@@ -16,6 +16,7 @@ export default function Quiz() {
               top: "-50vh",
             },
           }}
+          alt="Transition wave"
         />
         <div className="mix-blend-darken grid xl:grid-cols-6 grid-cols-10 grid-rows-10 xl:gap-4 gap-2 xl:mx-20 mx-10 lg:pt-[20vh] md:pt-0 pt-[20vh] z-50 min-h-[600px] sm:max-h-[900px] pb-[8vh]">
           <div className="flex justify-center items-center p-4 bg-Charcoal rounded-lg gap-1 xl:col-span-2 col-span-4 xl:row-span-4 row-span-1 drop-shadow-md">
@@ -74,16 +75,6 @@ export default function Quiz() {
           </a>
         </div>
       </div>
-      {/*<div className="grid auto-rows-[192px] grid-cols-3 gap-4">
-        {[...Array(7)].map((_, i) => (
-          <div
-            key={i}
-            className={`row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900 ${
-              i === 3 || i === 6 ? "col-span-2" : ""
-            }`}
-          ></div>
-        ))}
-        </div>*/}
     </section>
   );
 }

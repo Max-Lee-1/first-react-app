@@ -43,7 +43,7 @@ export default function Nav() {
             <li>
               <a
                 href="#Home"
-                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-400 hover:text-white hover:scale-105 transition duration-100  "
+                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-600 hover:text-white hover:scale-105 transition duration-100  "
               >
                 <div style={activeSection === "Home" ? activeStyle : {}}>
                   Home
@@ -53,7 +53,7 @@ export default function Nav() {
             <li>
               <a
                 href="#Quiz"
-                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-400 hover:text-white hover:scale-105 transition duration-100"
+                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-600 hover:text-white hover:scale-105 transition duration-100"
               >
                 <div style={activeSection === "Quiz" ? activeStyle : {}}>
                   Quiz
@@ -63,7 +63,7 @@ export default function Nav() {
             <li>
               <a
                 href="#Article"
-                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-400 hover:text-white hover:scale-105 transition duration-100"
+                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-600 hover:text-white hover:scale-105 transition duration-100"
               >
                 <div style={activeSection === "Article" ? activeStyle : {}}>
                   Article
@@ -73,7 +73,7 @@ export default function Nav() {
             <li>
               <a
                 href="#Help"
-                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-400 hover:text-white hover:scale-105 transition duration-100"
+                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-600 hover:text-white hover:scale-105 transition duration-100"
               >
                 <div style={activeSection === "Help" ? activeStyle : {}}>
                   Help

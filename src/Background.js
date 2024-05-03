@@ -1,7 +1,7 @@
-import community from "./img/image_fx_digital_illustration_of_a_harmonious_gaming_c.jpg";
-import mentalHealth from "./img/image_fx_digital_illustration_on_helping_out_cyber_bul.jpg";
-import excessiveGaming from "./img/image_fx_digital_illustration_on__too_much_gaming_scre.jpg";
-import excessiveGaming2 from "./img/image_fx_digital_illustration_on_helping_out_gaming_me.jpg";
+import community from "./img/image_fx_digital_illustration_of_a_harmonious_gaming_c.webp";
+import mentalHealth from "./img/image_fx_digital_illustration_on_helping_out_cyber_bul.webp";
+import excessiveGaming from "./img/image_fx_digital_illustration_on__too_much_gaming_scre.webp";
+import excessiveGaming2 from "./img/image_fx_digital_illustration_on_helping_out_gaming_me.webp";
 import React, { useState, useEffect, useRef } from "react";
 import { observeSections, unobserveSections } from "./intersectionObserver";
 
@@ -111,18 +111,22 @@ export default function Background() {
         <img
           className="layer parallax-appear bg-circle-lg fixed lg:right-[15vw] -right-[10vw] lg:top-10 top-[10vh] rounded-full drop-shadow-2xl brightness-50"
           src={community}
+          alt="Image of a peaceful community"
         />
         <img
           className="layer parallax-appear bg-circle-base fixed -left-5 -top-5 rounded-full drop-shadow-2xl brightness-50"
           src={mentalHealth}
+          alt="Image on someone caring for others"
         />
         <img
           className="layer parallax-appear bg-circle-lg fixed lg:left-[15vw] -left-[5vw] lg:-bottom-[25vh] -bottom-[5vh] rounded-full drop-shadow-2xl brightness-50"
           src={excessiveGaming}
+          alt="Image on someone gaming"
         />
         <img
           className="layer parallax-appear bg-circle-base fixed lg:right-4 -right-[10vw] lg:bottom-0 bottom-[15vh] rounded-full drop-shadow-2xl brightness-50"
           src={excessiveGaming2}
+          alt="Image on a robot"
         />
       </div>
     </section>
