@@ -32,7 +32,7 @@ export default function Nav() {
   return (
     <section id="nav" className="z-50 relative">
       <nav
-        className={`fixed w-screen flex z-50 top-0 left-0 bg-Navy/50 shadow-lg backdrop-blur border border-black border-b-2 border-b-slate-500 `}
+        className={`fixed w-screen flex z-50 top-0 left-0 bg-Navy/50 shadow-lg backdrop-blur border border-black border-b-2 border-b-Charcoal `}
         style={activeSection === "Landing" ? hiddenStyle : {}}
       >
         <div
@@ -43,7 +43,7 @@ export default function Nav() {
             <li>
               <a
                 href="#Home"
-                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-600 hover:text-white hover:scale-105 transition duration-100  "
+                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-400 hover:text-white hover:scale-105 transition duration-100  "
               >
                 <div style={activeSection === "Home" ? activeStyle : {}}>
                   Home
@@ -53,7 +53,7 @@ export default function Nav() {
             <li>
               <a
                 href="#Quiz"
-                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-600 hover:text-white hover:scale-105 transition duration-100"
+                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-400 hover:text-white hover:scale-105 transition duration-100"
               >
                 <div style={activeSection === "Quiz" ? activeStyle : {}}>
                   Quiz
@@ -63,7 +63,7 @@ export default function Nav() {
             <li>
               <a
                 href="#Article"
-                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-600 hover:text-white hover:scale-105 transition duration-100"
+                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-400 hover:text-white hover:scale-105 transition duration-100"
               >
                 <div style={activeSection === "Article" ? activeStyle : {}}>
                   Article
@@ -73,7 +73,7 @@ export default function Nav() {
             <li>
               <a
                 href="#Help"
-                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-600 hover:text-white hover:scale-105 transition duration-100"
+                className="block py-2 px-3 font-Arial md:text-xl text-base text-gray-400 hover:text-white hover:scale-105 transition duration-100"
               >
                 <div style={activeSection === "Help" ? activeStyle : {}}>
                   Help
@@ -86,7 +86,7 @@ export default function Nav() {
       <div className="flex fixed h-screen justify-start items-center">
         <a href="https://netsafe.org.nz/" target="blank">
           <img
-            className="md:w-40 md:h-16 w-32 h-12 md:py-4 py-2 md:px-4 px-3 -rotate-90 md:-translate-x-12 -translate-x-10 bg-Charcoal/30 shadow-lg ring-1 ring-black/5 backdrop-blur border border-slate-500"
+            className="md:w-40 md:h-16 w-32 h-12 md:py-4 py-2 md:px-4 px-3 -rotate-90 md:-translate-x-12 -translate-x-10 bg-Charcoal/30 shadow-lg ring-1 ring-black/5 backdrop-blur border border-Charcoal"
             src={Logo}
             alt="Netsafe Logo"
           />
