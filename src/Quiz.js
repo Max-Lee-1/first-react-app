@@ -19,16 +19,16 @@ export default function Quiz() {
           alt="Transition wave"
         />
         <div className="mix-blend-darken grid xl:grid-cols-6 grid-cols-10 grid-rows-10 xl:gap-4 gap-2 xl:mx-20 mx-10 lg:pt-[20vh] md:pt-0 pt-[20vh] z-50 min-h-[600px] sm:max-h-[900px] pb-[8vh]">
-          <div className="flex justify-center items-center p-4 bg-Charcoal rounded-lg gap-1 xl:col-span-2 col-span-4 xl:row-span-4 row-span-1 drop-shadow-md">
-            <div className="text-white font-Proxima text-center xl:text-4xl text-3xl font-bold my-2 ">
+          <div className="flex items-center justify-center col-span-4 row-span-1 gap-1 p-4 rounded-lg bg-Charcoal xl:col-span-2 xl:row-span-4 drop-shadow-md">
+            <div className="my-2 text-3xl font-bold text-center text-white font-Proxima xl:text-4xl ">
               Quizes
             </div>
           </div>
-          <div className="xl:p-2 bg-Charcoal rounded-lg gap-1 xl:col-span-2 col-span-6 xl:row-span-6 row-span-5 drop-shadow-md">
+          <div className="col-span-6 row-span-5 gap-1 rounded-lg xl:p-2 bg-Charcoal xl:col-span-2 xl:row-span-6 drop-shadow-md">
             <div class="text-white font-Proxima xl:text-4xl text-3xl font-bold drop-shadow-lg p-4 pb-2 break-words">
               Healthy Screentime
             </div>
-            <div className="font-Arial w-full text-white text-base text-justify p-4 pt-0">
+            <div className="w-full p-4 pt-0 text-base text-justify text-white font-Arial">
               Screens have their allure, but too much isn't good for you. Set
               limits, take breaks, and explore the world offline. Your eyes,
               mind, and relationships will thank you for the balance. See if you
@@ -40,7 +40,7 @@ export default function Quiz() {
             href="https://brilliantstarmagazine.org/articles/quiz-are-you-smart-about-screens"
             target="_blank"
           >
-            <div className="font-Arial text-white xl:text-4xl text-2xl break-words font-bold drop-shadow-lg p-4">
+            <div className="p-4 text-2xl font-bold text-white break-words font-Arial xl:text-4xl drop-shadow-lg">
               Quiz: Are You Smart About Screens?
             </div>
           </a>
@@ -49,15 +49,15 @@ export default function Quiz() {
             href="https://www.mind-diagnostics.org/video_game_addiction-test"
             target="_blank"
           >
-            <div className="font-Arial text-white xl:text-4xl text-xl font-bold drop-shadow-lg p-4 break-words">
+            <div className="p-4 text-xl font-bold text-white break-words font-Arial xl:text-4xl drop-shadow-lg">
               FIND OUT IF YOU HAVE A VIDEO GAME ADDICTION
             </div>
           </a>
-          <div className="xl:p-2 bg-Charcoal rounded-lg  gap-1 xl:col-span-2 col-span-6 xl:row-span-6 row-span-5 drop-shadow-md">
+          <div className="col-span-6 row-span-5 gap-1 rounded-lg xl:p-2 bg-Charcoal xl:col-span-2 xl:row-span-6 drop-shadow-md">
             <div class="text-white font-Proxima xl:text-4xl text-2xl font-bold drop-shadow-lg p-4 pb-2">
               Game Addiction
             </div>
-            <div className="font-Arial w-full text-white xl:text-base text-sm text-justify p-4 pt-0">
+            <div className="w-full p-4 pt-0 text-sm text-justify text-white font-Arial xl:text-base">
               Hey, I get it, games are addictive. But remember, there's a whole
               world out there beyond the virtual world. Don't let game addiction
               ruin your daily lives. Test yourself with these quizes to see if
@@ -69,7 +69,7 @@ export default function Quiz() {
             href="https://www.mind-diagnostics.org/video_game_addiction-test"
             target="_blank"
           >
-            <div className="font-Arial text-white xl:text-4xl text-xl font-bold drop-shadow-lg p-4 break-words">
+            <div className="p-4 text-xl font-bold text-white break-words font-Arial xl:text-4xl drop-shadow-lg">
               FIND OUT IF YOU HAVE A VIDEO GAME ADDICTION
             </div>
           </a>

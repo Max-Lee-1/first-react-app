@@ -48,8 +48,8 @@ export default function Article() {
           onClick={handleClick}
           style={{ backgroundImage: `url(${imageUrl})` }}
         >
-          <div className="h-full flex lg:bg-none lg:hover:bg-gradient-to-b bg-gradient-to-b from-transparent to-gray-900">
-            <div className="h-auto flex justify-start items-end p-8 font-Arial font-normal text-left lg:text-3xl text-xl ">
+          <div className="flex h-full lg:bg-none lg:hover:bg-gradient-to-b bg-gradient-to-b from-transparent to-gray-900">
+            <div className="flex items-end justify-start h-auto p-8 text-xl font-normal text-left font-Arial lg:text-3xl ">
               {title}
             </div>
           </div>
@@ -63,7 +63,7 @@ export default function Article() {
           style={{ backgroundImage: `url(${imageUrl})` }}
         >
           <a
-            className="w-full h-full flex bg-gradient-to-br from-transparent to-gray-900 bg-cover justify-center items-center rounded-lg"
+            className="flex items-center justify-center w-full h-full bg-cover rounded-lg bg-gradient-to-br from-transparent to-gray-900"
             href={webUrl}
             target="blank"
           >
@@ -84,7 +84,7 @@ export default function Article() {
       className="w-screen min-h-screen grid z-10 relative justify-center items-start mt-4 bg-gradient-to-b from-Rhino from-75% to-transparent to-100%"
     >
       {!latestHidden && ( // Check if "Latest Article" section should be visible
-        <div className="w-screen h-screen grid lg:grid-cols-4 grid-cols-2 grid-rows-2 bg-Rhino snap-start">
+        <div className="grid w-screen h-screen grid-cols-2 grid-rows-2 lg:grid-cols-4 bg-Rhino snap-start">
           {/* Grid of ArticleCards */}
           <ArticleCard
             className="latest"
@@ -119,19 +119,19 @@ export default function Article() {
 
       {/* Render the selected blog if it's not null */}
       {selectedBlog && (
-        <div className="w-screen h-screen relative snap-start">
+        <div className="relative w-screen h-screen snap-start">
           <div
-            className="-z-20 absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-85"
+            className="absolute top-0 left-0 w-full h-full bg-center bg-cover -z-20 opacity-85"
             style={{ backgroundImage: `url(${selectedBlog.imageUrl})` }}
           ></div>
-          <div className="-z-10 absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black"></div>
+          <div className="absolute top-0 left-0 w-full h-full -z-10 bg-gradient-to-b from-transparent to-black"></div>
 
-          <div className="flex flex-row justify-between h-10 pt-40 p-20">
-            <h1 className="font-Proxima text-white text-5xl font-bold drop-shadow-lg">
+          <div className="flex flex-row justify-between h-10 p-20 pt-40">
+            <h1 className="text-5xl font-bold text-white font-Proxima drop-shadow-lg">
               {selectedBlog.title}
             </h1>
             <button
-              className="w-auto self-center rounded-lg hover:scale-110 transition duration-100 text-lg"
+              className="self-center w-auto text-lg transition duration-100 rounded-lg hover:scale-110"
               onClick={() => {
                 setSelectedBlog(null);
                 setLatestHidden(false); // Unhide Latest Article Section
@@ -150,7 +150,7 @@ export default function Article() {
         </div>
       )}
 
-      <div className="h-screen w-screen">
+      <div className="w-screen h-screen">
         <div class="font-Proxima w-screen text-white lg:text-5xl text-4xl font-bold drop-shadow-lg lg:ml-20 mx-10 mb-4 pt-28 snap-start">
           Other Blog Sites
         </div>

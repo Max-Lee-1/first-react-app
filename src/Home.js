@@ -4,64 +4,64 @@ export default function Home() {
   return (
     <section
       data-section
-      className="z-10 w-screen min-h-screen relative mb-20"
+      className="relative z-10 w-screen min-h-screen mb-20"
       id="Home"
     >
       <div id="Landing" className="h-screen">
-        <div className="w-screen h-screen flex justify-center items-center absolute snap-start">
-          <div className="w-1/3 text-center font-Proxima text-white md:text-5xl text-4xl drop-shadow-lg">
+        <div className="absolute flex items-center justify-center w-screen h-screen snap-start">
+          <div className="w-1/3 text-4xl font-bold text-center text-white font-Proxima md:text-5xl drop-shadow-lg">
             Are You A Toxic Gamer?
           </div>
         </div>
-        <div className="w-screen h-screen flex justify-center items-center">
-          <div className="lg:-translate-x-80 md:-translate-x-56 -translate-x-24 md:-translate-y-36 -translate-y-40 absolute drop-shadow-lg hover:scale-105 transition duration-100">
+        <div className="flex items-center justify-center w-screen h-screen">
+          <div className="absolute transition duration-100 -translate-x-24 -translate-y-40 lg:-translate-x-80 md:-translate-x-56 md:-translate-y-36 drop-shadow-lg hover:scale-105">
             <a
               href="#Article"
-              className="md:w-40 md:h-40 w-28 h-28 flex justify-center items-center bg-gradient-to-b from-Bittersweet-Red to-Bittersweet-Pink rounded-full"
+              className="flex items-center justify-center rounded-full md:w-40 md:h-40 w-28 h-28 bg-gradient-to-b from-Bittersweet-Red to-Bittersweet-Pink"
             >
-              <div className="md:w-24 w-12 text-center self-center font-Arial text-white md:text-base text-xs font-bold drop-shadow-lg">
+              <div className="self-center w-12 text-xs font-bold text-center text-white md:w-24 font-Arial md:text-base drop-shadow-lg">
                 Wanna Read about it?
               </div>
             </a>
           </div>
-          <div className="lg:-translate-x-52 md:-translate-x-40 -translate-x-20  md:translate-y-48 translate-y-48 absolute drop-shadow-lg hover:scale-105 transition duration-100">
+          <div className="absolute transition duration-100 -translate-x-20 translate-y-48 lg:-translate-x-52 md:-translate-x-40 md:translate-y-48 drop-shadow-lg hover:scale-105">
             <a
               href="#Hazards"
-              className="md:w-40 md:h-40 w-28 h-28 flex justify-center items-center bg-gradient-to-b from-Orange to-amber-400 rounded-full"
+              className="flex items-center justify-center rounded-full md:w-40 md:h-40 w-28 h-28 bg-gradient-to-b from-Orange to-amber-400"
             >
-              <div className="md:w-24 w-12 text-center self-center font-Arial text-white md:text-base text-xs font-bold drop-shadow-lg">
+              <div className="self-center w-12 text-xs font-bold text-center text-white md:w-24 font-Arial md:text-base drop-shadow-lg">
                 Why should I care?
               </div>
             </a>
           </div>
-          <div className="lg:translate-x-80 md:translate-x-56 translate-x-32 md:-translate-y-28 -translate-y-28 absolute drop-shadow-lg hover:scale-105 transition duration-100">
+          <div className="absolute transition duration-100 translate-x-32 lg:translate-x-80 md:translate-x-56 md:-translate-y-28 -translate-y-28 drop-shadow-lg hover:scale-105">
             <a
               href="#Quiz"
-              className="md:w-40 md:h-40 w-28 h-28 flex justify-center items-center bg-gradient-to-b from-Sulu to-Green-Pea rounded-full"
+              className="flex items-center justify-center rounded-full md:w-40 md:h-40 w-28 h-28 bg-gradient-to-b from-Sulu to-Green-Pea"
             >
-              <div className="md:w-24 w-12 text-center self-center font-Arial text-white md:text-base text-xs font-bold drop-shadow-lg">
+              <div className="self-center w-12 text-xs font-bold text-center text-white md:w-24 font-Arial md:text-base drop-shadow-lg">
                 Take the Quiz
               </div>
             </a>
           </div>
-          <div className="md:translate-x-48 translate-x-28 md:translate-y-36 translate-y-40 absolute drop-shadow-lg hover:scale-105 transition duration-100">
+          <div className="absolute transition duration-100 translate-y-40 md:translate-x-48 translate-x-28 md:translate-y-36 drop-shadow-lg hover:scale-105">
             <a
               href="#Help"
-              className="md:w-40 md:h-40 w-28 h-28 flex justify-center items-center bg-gradient-to-b from-Chambray to-Navy rounded-full"
+              className="flex items-center justify-center rounded-full md:w-40 md:h-40 w-28 h-28 bg-gradient-to-b from-Chambray to-Navy"
             >
-              <div className="md:w-24 w-12 text-center self-center font-Arial text-white md:text-base text-xs font-bold drop-shadow-lg break-words">
+              <div className="self-center w-12 text-xs font-bold text-center text-white break-words md:w-24 font-Arial md:text-base drop-shadow-lg">
                 Yes, I need Professional Help
               </div>
             </a>
           </div>
         </div>
       </div>
-      <div id="Hazards" className="min-h-screen h-auto snap-start">
-        <div className="grid grid-cols-2 gap-4 md:mx-20 mx-10 pb-10 pt-40">
+      <div id="Hazards" className="h-auto min-h-screen snap-start">
+        <div className="grid grid-cols-2 gap-4 pt-40 pb-10 mx-10 md:mx-20">
           <div class="font-Proxima text-white lg:text-5xl text-3xl font-bold drop-shadow-lg">
             Your Health, Your Care
           </div>
-          <div className="font-Arial text-white lg:text-base text-sm text-justify">
+          <div className="text-sm text-justify text-white font-Arial lg:text-base">
             Excessive gaming often leads to a sedentary lifestyle, which can
             result in various health issues such as obesity, muscle stiffness,
             and poor posture. Sitting for prolonged periods without adequate
@@ -69,12 +69,12 @@ export default function Home() {
             physical fitness.
           </div>
         </div>
-        <div className="grid lg:grid-cols-3 lg:gap-8 gap-4 md:mx-20 mx-4">
-          <div className="md:p-4 p-2 bg-Charcoal rounded-lg gap-1 col-span-1 drop-shadow-md">
+        <div className="grid gap-4 mx-4 lg:grid-cols-3 lg:gap-8 md:mx-20">
+          <div className="col-span-1 gap-1 p-2 rounded-lg md:p-4 bg-Charcoal drop-shadow-md">
             <div class="font-Proxima text-white lg:text-4xl text-2xl font-bold drop-shadow-lg px-5 py-4">
               Physical Health Impact
             </div>
-            <div className="font-Arial text-white lg:text-base text-sm px-5 pb-4 text-justify">
+            <div className="px-5 pb-4 text-sm text-justify text-white font-Arial lg:text-base">
               Excessive gaming often leads to a sedentary lifestyle, which can
               result in various health issues such as obesity, muscle stiffness,
               and poor posture. Sitting for prolonged periods without adequate
@@ -82,11 +82,11 @@ export default function Home() {
               overall physical fitness.
             </div>
           </div>
-          <div className="md:p-4 p-2 bg-Charcoal rounded-lg gap-1 col-span-1 drop-shadow-md">
+          <div className="col-span-1 gap-1 p-2 rounded-lg md:p-4 bg-Charcoal drop-shadow-md">
             <div class="font-Proxima text-white lg:text-4xl text-2xl font-bold drop-shadow-lg px-5 py-4">
               Mental Health Concerns
             </div>
-            <div className="font-Arial text-white lg:text-base text-sm px-5 pb-4 text-justify">
+            <div className="px-5 pb-4 text-sm text-justify text-white font-Arial lg:text-base">
               Unhealthy gaming habits can negatively affect mental well-being.
               Excessive gaming may lead to increased stress, anxiety, and
               depression, especially if it interferes with daily
@@ -95,11 +95,11 @@ export default function Home() {
               potentially exacerbating mental health issues.
             </div>
           </div>
-          <div className="md:p-4 p-2 bg-Charcoal rounded-lg gap-1 col-span-1 drop-shadow-md">
+          <div className="col-span-1 gap-1 p-2 rounded-lg md:p-4 bg-Charcoal drop-shadow-md">
             <div class="font-Proxima text-white lg:text-4xl text-2xl font-bold drop-shadow-lg px-5 py-4">
               Social & Emotional Fallout
             </div>
-            <div className="font-Arial text-white lg:text-base text-sm px-5 pb-4 text-justify">
+            <div className="px-5 pb-4 text-sm text-justify text-white font-Arial lg:text-base">
               Spending excessive time gaming can strain relationships with
               friends, family, and significant others. It may lead to social
               isolation, as individuals prioritize gaming over face-to-face
@@ -112,18 +112,18 @@ export default function Home() {
       </div>
       <div
         id="About"
-        className="relative grid grid-cols-2 gap-4 md:mx-20 mx-5 lg:pt-40 pt-10 snap-start h-screen"
+        className="relative grid h-screen grid-cols-2 gap-4 pt-10 mx-5 md:mx-20 lg:pt-40 snap-start"
       >
         <img
           src={catGaming}
-          className="object-cover lg:h-3/4 h-auto lg:w-full w-auto rounded-lg flex flex-col gap-1 md:col-span-1 col-span-2 drop-shadow-md"
+          className="flex flex-col object-cover w-auto h-auto col-span-2 gap-1 rounded-lg lg:h-3/4 lg:w-full md:col-span-1 drop-shadow-md"
           alt="Cat and Gaming PC"
         ></img>
-        <div className="p-4 flex flex-col gap-1 md:col-span-1 col-span-2">
+        <div className="flex flex-col col-span-2 gap-1 p-4 md:col-span-1">
           <div class="font-Proxima pb-4 md:col-span-1 col-span-1 text-white text-5xl text-left font-bold drop-shadow-lg">
             Who We Are
           </div>
-          <div className="font-Arial text-white text-base text-justify w-full col-span-1">
+          <div className="w-full col-span-1 text-base text-justify text-white font-Arial">
             Healthy Gaming Hub aims to promote Ad commodo commodo excepteur do
             adipisicing. Ullamco duis enim fugiat elit veniam in aute aliquip.
             Cupidatat occaecat ea ipsum deserunt quis. Excepteur eiusmod labore

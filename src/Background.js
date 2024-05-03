@@ -75,20 +75,20 @@ export default function Background() {
   requestAnimationFrame(parallax);
 
   return (
-    <section id="Background" className="z-10 relative">
+    <section id="Background" className="relative z-10">
       {/* Landing Background */}
-      <div className="fixed w-screen h-screen z-30 brightness-50">
-        <div className="layer parallax-up bg-circle-2xl fixed -right-60 lg:-right-60 -top-80 lg:bg-Blue-Indigo bg-Teal-dim rounded-full drop-shadow-2xl brightness-50"></div>
-        <div className="layer parallax-up bg-circle-xl fixed md:-top-96 -top-10 md:-left-36 -left-12 bg-Rock-Blue rounded-full drop-shadow-2xl brightness-75"></div>
-        <div className="layer parallax-up bg-circle-xl fixed top-56 xl:left-[20vw] lg:left-72 md:left-12 left-60 bg-Navy rounded-full drop-shadow-2xl brightness-90"></div>
-        <div className="layer parallax-up bg-circle-lg fixed md:-top-60 -top-32 md:-left-48 -left-40 bg-Teal-bright rounded-full drop-shadow-2xl brightness-90"></div>
-        <div className="layer parallax-up bg-circle-base fixed lg:top-80 md:top-56 top-48 md:-left-56 -left-36 bg-Navy rounded-full drop-shadow-2xl brightness-125"></div>
-        <div className="layer parallax-up bg-circle-xl fixed lg:top-[50vh] md:top-[40vh] top-[45vh] lg:-left-20 -left-40 bg-Blue-Indigo rounded-full drop-shadow-2xl brightness-75"></div>
-        <div className="layer parallax-up bg-circle-xl fixed lg:top-72 md:-bottom-[75vh] top-[60vh] xl:-right-60 lg:-right-72 md:-right-60 sm:-right-40 -right-60 bg-Teal-bright rounded-full drop-shadow-2xl brightness-90"></div>
-        <div className="layer parallax-up bg-circle-base fixed lg:-top-72 -top-24 md:-right-36 -right-24 lg:bg-Navy bg-Blue-Indigo rounded-full drop-shadow-2xl" />
+      <div className="fixed z-30 w-screen h-screen brightness-50">
+        <div className="fixed rounded-full layer parallax-up bg-circle-2xl -right-60 lg:-right-60 -top-80 lg:bg-Blue-Indigo bg-Teal-dim drop-shadow-2xl brightness-50"></div>
+        <div className="fixed rounded-full layer parallax-up bg-circle-xl md:-top-96 -top-10 md:-left-36 -left-12 bg-Rock-Blue drop-shadow-2xl brightness-75"></div>
+        <div className="fixed rounded-full layer parallax-up bg-circle-xl top-56 xl:left-[20vw] lg:left-72 md:left-12 left-60 bg-Navy drop-shadow-2xl brightness-90"></div>
+        <div className="fixed rounded-full layer parallax-up bg-circle-lg md:-top-60 -top-32 md:-left-48 -left-40 bg-Teal-bright drop-shadow-2xl brightness-90"></div>
+        <div className="fixed rounded-full layer parallax-up bg-circle-base lg:top-80 md:top-56 top-48 md:-left-56 -left-36 bg-Navy drop-shadow-2xl brightness-125"></div>
+        <div className="fixed rounded-full layer parallax-up bg-circle-xl  lg:top-[50vh] md:top-[40vh] top-[45vh] lg:-left-20 -left-40 bg-Blue-Indigo drop-shadow-2xl brightness-75"></div>
+        <div className="fixed rounded-full layer parallax-up bg-circle-xl  lg:top-72 md:-bottom-[75vh] top-[60vh] xl:-right-60 lg:-right-72 md:-right-60 sm:-right-40 -right-60 bg-Teal-bright drop-shadow-2xl brightness-90"></div>
+        <div className="fixed rounded-full layer parallax-up bg-circle-base lg:-top-72 -top-24 md:-right-36 -right-24 lg:bg-Navy bg-Blue-Indigo drop-shadow-2xl" />
       </div>
       {/* Hazards Background */}
-      <div className="fixed w-screen h-screen z-20 brightness-50">
+      <div className="fixed z-20 w-screen h-screen brightness-50">
         <div className="layer parallax-down bg-circle-2xl fixed lg:-top-[200vh] -top-[180vh] lg:-right-[50vw] -right-[30vw] lg:bg-Rock-Blue bg-Navy rounded-full drop-shadow-2xl brightness-100" />
         <div className="layer parallax-down xs:bg-circle-base bg-circle-lg fixed md:-top-[150vh] -top-[175vh] 2xl:right-80 xl:right-60 md:-left-[25vw] left-[35vw] lg:bg-Navy bg-Rock-Blue rounded-full drop-shadow-2xl brightness-75" />
         <div className="layer parallax-down bg-circle-base fixed lg:hidden -top-[200vh] right-[35vw] lg:bg-Rock-Blue bg-Teal-main rounded-full drop-shadow-2xl brightness-100" />
@@ -98,7 +98,7 @@ export default function Background() {
         <div className="layer parallax-down bg-circle-2xl fixed -bottom-[10vh] -right-32 bg-Navy rounded-full drop-shadow-2xl" />
       </div>
       {/* About Background */}
-      <div className="fixed w-screen h-screen z-10 brightness-50">
+      <div className="fixed z-10 w-screen h-screen brightness-50">
         <div className="layer parallax-left bg-circle-2xl fixed lg:-top-36 -bottom-[50vh] lg:-left-[150vh] -left-[375vh] bg-Chambray rounded-full drop-shadow-2xl" />
         <div className="layer parallax-left bg-circle-xl fixed -top-36 -left-[265vh] bg-Rock-Blue rounded-full drop-shadow-2xl" />
         <div className="layer parallax-left lg:bg-circle-lg bg-circle-2xl fixed lg:-top-[25vh] -bottom-[25vh] lg:-left-[380vh] -left-[300vh] bg-Teal-main rounded-full drop-shadow-2xl" />
@@ -114,7 +114,7 @@ export default function Background() {
           alt="Image of a peaceful community"
         />
         <img
-          className="layer parallax-appear bg-circle-base fixed -left-5 -top-5 rounded-full drop-shadow-2xl brightness-50"
+          className="fixed rounded-full layer parallax-appear bg-circle-base -left-5 -top-5 drop-shadow-2xl brightness-50"
           src={mentalHealth}
           alt="Image on someone caring for others"
         />

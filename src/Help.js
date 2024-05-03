@@ -7,26 +7,23 @@ export default function Help() {
     <section
       data-section
       id="Help"
-      className="w-screen min-h-screen z-10 relative my-20"
+      className="relative z-10 w-screen min-h-screen my-20"
     >
-      <div className="h-screen flex flex-col justify-center items-center lg:mx-20 mx-10 snap-start">
-        <h1 className="font-Proxima w-1/2 self-center text-center text-white lg:text-5xl text-4xl font-bold my-2">
+      <div className="flex flex-col items-center justify-center h-screen mx-10 lg:mx-20 snap-start">
+        <h1 className="self-center w-1/2 my-2 text-4xl font-bold text-center text-white font-Proxima lg:text-5xl">
           Something to confess?
         </h1>
-        <div
-          className="font-Arial w-1/2 h-auto self-center text-center text-white
-          text-xl font-normal my-4"
-        >
+        <div className="self-center w-1/2 h-auto my-4 text-xl font-normal text-center text-white font-Arial">
           Netsafe is an internationally renowned independent not for profit
           organization with an unrelenting focus on online safety practices.
         </div>
-        <div className="container flex flex-row justify-center items-center gap-8 my-2">
+        <div className="container flex flex-row items-center justify-center gap-8 my-2">
           <a
             className="w-auto h-1/10 bg-gradient-to-r from-Teal-main to-Sulu/[0.8] p-4 rounded-lg hover:scale-105 transition duration-100"
             href="https://report.netsafe.org.nz/hc/en-au/requests/new"
             target="_blank"
           >
-            <div className="font-Arial text-white text-sm text-center">
+            <div className="text-sm text-center text-white font-Arial">
               Make A Report
             </div>
           </a>
@@ -35,19 +32,19 @@ export default function Help() {
             href="https://netsafe.org.nz/contact-us/"
             target="_blank"
           >
-            <div className="font-Arial text-white text-sm text-center">
+            <div className="text-sm text-center text-white font-Arial">
               Contact Us Here
             </div>
           </a>
         </div>
       </div>
-      <div className="h-screen flex flex-col justify-center items-center snap-start">
-        <h1 className="font-Proxima w-1/2 self-center text-center text-white text-5xl font-bold my-2">
+      <div className="flex flex-col items-center justify-center h-screen snap-start">
+        <h1 className="self-center w-1/2 my-2 text-5xl font-bold text-center text-white font-Proxima">
           Other Sites That Can Help You
         </h1>
-        <div className="w-screen h-screen flex justify-center items-center absolute drop-shadow-lg">
+        <div className="absolute flex items-center justify-center w-screen h-screen drop-shadow-lg">
           <a
-            className="-translate-x-40 -translate-y-36 hover:scale-105 transition duration-100"
+            className="transition duration-100 -translate-x-40 -translate-y-36 hover:scale-105"
             href="https://www.nasef.org/"
             target="blank"
           >
@@ -59,20 +56,20 @@ export default function Help() {
             />
           </a>
           <a
-            className="-translate-x-48 translate-y-32 hover:scale-105 transition duration-100"
+            className="transition duration-100 -translate-x-48 translate-y-32 hover:scale-105"
             href="https://www.healthygamer.gg"
             target="blank"
             loading="lazy"
           >
             <img
-              className="w-36 h-12"
+              className="h-12 w-36"
               src={hgLogo}
               alt="Healthy Gamer Logo"
               loading="lazy"
             />
           </a>
           <a
-            className="translate-x-10 -translate-y-24 hover:scale-105 transition duration-100"
+            className="transition duration-100 translate-x-10 -translate-y-24 hover:scale-105"
             href="https://www.takethis.org/"
             target="blank"
           >
