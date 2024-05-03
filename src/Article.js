@@ -19,7 +19,8 @@ export default function Article() {
     blogTitle,
     blogWebUrl,
     blogImageUrl,
-    blogClass
+    blogClass,
+    blogContent
   ) => {
     setSelectedBlog({
       id: blogId,
@@ -27,16 +28,17 @@ export default function Article() {
       webUrl: blogWebUrl,
       imageUrl: blogImageUrl,
       className: blogClass,
+      text: blogContent,
     });
     // Hide "Latest Article" section when a blog is clicked
     setLatestHidden(true);
   };
 
   // ArticleCard component representing each blog card
-  function ArticleCard({ id, imageUrl, webUrl, title, className }) {
+  function ArticleCard({ id, imageUrl, webUrl, title, className, text }) {
     // Toggle onClick from Blog button
     const handleClick = () => {
-      selectBlog(id, title, webUrl, imageUrl, className);
+      selectBlog(id, title, webUrl, imageUrl, className, text);
     };
 
     // Condition: different code on "latest" vs "redirect" section
@@ -49,7 +51,7 @@ export default function Article() {
           style={{ backgroundImage: `url(${imageUrl})` }}
         >
           <div className="flex h-full lg:bg-none lg:hover:bg-gradient-to-b bg-gradient-to-b from-transparent to-gray-900">
-            <div className="flex items-end justify-start h-auto p-8 text-xl font-normal text-left font-Arial lg:text-3xl ">
+            <div className="flex items-end justify-start h-auto p-8 text-xl font-bold text-left font-Proxima lg:text-3xl ">
               {title}
             </div>
           </div>
@@ -67,7 +69,7 @@ export default function Article() {
             href={webUrl}
             target="blank"
           >
-            <div className="xl:px-8 px-[10vw] font-Arial text-center text-white lg:text-2xl text-xl">
+            <div className="xl:px-8 px-[10vw] font-Proxima font-thin text-center text-white lg:text-2xl text-xl">
               {title}
             </div>
           </a>
@@ -85,14 +87,15 @@ export default function Article() {
     >
       {!latestHidden && ( // Check if "Latest Article" section should be visible
         <div className="grid w-screen h-screen grid-cols-2 grid-rows-2 lg:grid-cols-4 bg-Rhino snap-start">
-          {/* Grid of ArticleCards */}
           <ArticleCard
             className="latest"
             id="Blog1"
             imageUrl={online_etiquette}
             title="Gaming Etiquette"
+            text={
+              "Deserunt cillum voluptate exercitation adipisicing ea aute incididunt elit exercitation ex proident ea magna dolor. Officia adqui esse irure et laboris aliquip laboris irure enim. Dolor elitconsectetur excepteur cillum in ullamco quis. Ad exercitation nisi pariatur eu velit anim consectetur nulla incididunt."
+            }
           />
-          {/* Add more ArticleCard components for each blog */}
 
           <ArticleCard
             className="latest"
@@ -140,13 +143,7 @@ export default function Article() {
               X
             </button>
           </div>
-          <div className="w-screen p-20 pt-10">
-            Deserunt cillum voluptate exercitation adipisicing ea aute
-            incididunt elit exercitation ex proident ea magna dolor. Officia ad
-            qui esse irure et laboris aliquip laboris irure enim. Dolor elit
-            consectetur excepteur cillum in ullamco quis. Ad exercitation nisi
-            pariatur eu velit anim consectetur nulla incididunt.
-          </div>
+          <div className="w-screen p-20 pt-10">{selectedBlog.text}</div>
         </div>
       )}
 

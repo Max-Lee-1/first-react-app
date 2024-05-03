@@ -19,7 +19,7 @@ export default function Home() {
               href="#Article"
               className="flex items-center justify-center rounded-full md:w-40 md:h-40 w-28 h-28 bg-gradient-to-b from-Bittersweet-Red to-Bittersweet-Pink"
             >
-              <div className="self-center w-12 text-xs font-bold text-center text-white md:w-24 font-Arial md:text-base drop-shadow-lg">
+              <div className="self-center w-12 text-xs font-thin text-center text-white md:w-24 font-Arial md:text-base drop-shadow-lg">
                 Wanna Read about it?
               </div>
             </a>
@@ -29,7 +29,7 @@ export default function Home() {
               href="#Hazards"
               className="flex items-center justify-center rounded-full md:w-40 md:h-40 w-28 h-28 bg-gradient-to-b from-Orange to-amber-400"
             >
-              <div className="self-center w-12 text-xs font-bold text-center text-white md:w-24 font-Arial md:text-base drop-shadow-lg">
+              <div className="self-center w-12 text-xs font-thin text-center text-white md:w-24 font-Arial md:text-base drop-shadow-lg">
                 Why should I care?
               </div>
             </a>
@@ -39,7 +39,7 @@ export default function Home() {
               href="#Quiz"
               className="flex items-center justify-center rounded-full md:w-40 md:h-40 w-28 h-28 bg-gradient-to-b from-Sulu to-Green-Pea"
             >
-              <div className="self-center w-12 text-xs font-bold text-center text-white md:w-24 font-Arial md:text-base drop-shadow-lg">
+              <div className="self-center w-12 text-xs font-thin text-center text-white md:w-24 font-Arial md:text-base drop-shadow-lg">
                 Take the Quiz
               </div>
             </a>
@@ -49,7 +49,7 @@ export default function Home() {
               href="#Help"
               className="flex items-center justify-center rounded-full md:w-40 md:h-40 w-28 h-28 bg-gradient-to-b from-Chambray to-Navy"
             >
-              <div className="self-center w-12 text-xs font-bold text-center text-white break-words md:w-24 font-Arial md:text-base drop-shadow-lg">
+              <div className="self-center w-12 text-xs font-thin text-center text-white break-words md:w-24 font-Arial md:text-base drop-shadow-lg">
                 Yes, I need Professional Help
               </div>
             </a>
@@ -58,10 +58,10 @@ export default function Home() {
       </div>
       <div id="Hazards" className="h-auto min-h-screen snap-start">
         <div className="grid grid-cols-2 gap-4 pt-40 pb-10 mx-10 md:mx-20">
-          <div class="font-Proxima text-white lg:text-5xl text-3xl font-bold drop-shadow-lg">
+          <div class="font-Proxima text-white lg:text-5xl text-4xl font-bold drop-shadow-lg">
             Your Health, Your Care
           </div>
-          <div className="text-sm text-justify text-white font-Arial lg:text-base">
+          <div className="text-sm font-normal text-justify text-white font-Arial lg:text-base">
             Excessive gaming often leads to a sedentary lifestyle, which can
             result in various health issues such as obesity, muscle stiffness,
             and poor posture. Sitting for prolonged periods without adequate
@@ -74,7 +74,7 @@ export default function Home() {
             <div class="font-Proxima text-white lg:text-4xl text-2xl font-bold drop-shadow-lg px-5 py-4">
               Physical Health Impact
             </div>
-            <div className="px-5 pb-4 text-sm text-justify text-white font-Arial lg:text-base">
+            <div className="px-5 pb-4 text-sm font-normal text-justify text-white font-Arial lg:text-base">
               Excessive gaming often leads to a sedentary lifestyle, which can
               result in various health issues such as obesity, muscle stiffness,
               and poor posture. Sitting for prolonged periods without adequate
@@ -83,10 +83,10 @@ export default function Home() {
             </div>
           </div>
           <div className="col-span-1 gap-1 p-2 rounded-lg md:p-4 bg-Charcoal drop-shadow-md">
-            <div class="font-Proxima text-white lg:text-4xl text-2xl font-bold drop-shadow-lg px-5 py-4">
+            <div class="font-Proxima text-white  lg:text-4xl text-2xl font-bold drop-shadow-lg px-5 py-4">
               Mental Health Concerns
             </div>
-            <div className="px-5 pb-4 text-sm text-justify text-white font-Arial lg:text-base">
+            <div className="px-5 pb-4 text-sm font-normal text-justify text-white font-Arial lg:text-base">
               Unhealthy gaming habits can negatively affect mental well-being.
               Excessive gaming may lead to increased stress, anxiety, and
               depression, especially if it interferes with daily
@@ -99,7 +99,7 @@ export default function Home() {
             <div class="font-Proxima text-white lg:text-4xl text-2xl font-bold drop-shadow-lg px-5 py-4">
               Social & Emotional Fallout
             </div>
-            <div className="px-5 pb-4 text-sm text-justify text-white font-Arial lg:text-base">
+            <div className="px-5 pb-4 text-sm font-normal text-justify text-white font-Arial lg:text-base">
               Spending excessive time gaming can strain relationships with
               friends, family, and significant others. It may lead to social
               isolation, as individuals prioritize gaming over face-to-face
@@ -123,7 +123,7 @@ export default function Home() {
           <div class="font-Proxima pb-4 md:col-span-1 col-span-1 text-white text-5xl text-left font-bold drop-shadow-lg">
             Who We Are
           </div>
-          <div className="w-full col-span-1 text-base text-justify text-white font-Arial">
+          <div className="w-full col-span-1 text-base font-normal text-justify text-white font-Arial">
             Healthy Gaming Hub aims to promote Ad commodo commodo excepteur do
             adipisicing. Ullamco duis enim fugiat elit veniam in aute aliquip.
             Cupidatat occaecat ea ipsum deserunt quis. Excepteur eiusmod labore
