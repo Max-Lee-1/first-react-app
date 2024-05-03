@@ -61,12 +61,14 @@ export default function Home() {
           <div class="font-Proxima text-white lg:text-5xl text-4xl font-bold drop-shadow-lg">
             Your Health, Your Care
           </div>
-          <div className="text-sm font-normal text-justify text-white font-Arial lg:text-base">
-            Excessive gaming often leads to a sedentary lifestyle, which can
-            result in various health issues such as obesity, muscle stiffness,
-            and poor posture. Sitting for prolonged periods without adequate
-            breaks can contribute to cardiovascular problems and weaken overall
-            physical fitness.
+          <div className="text-base font-normal text-justify text-white font-Arial lg:text-lg">
+            Prioritizing your health in gaming is essential for peak performance
+            and long-term enjoyment. Neglecting physical and mental well-being
+            can lead to issues like eye strain, back pain, and decreased focus.
+            By taking breaks, staying active, and eating well, you'll not only
+            enhance your gaming abilities but also ensure you can continue to
+            enjoy your favorite games for years to come. Your health
+            matters—invest in it for better gaming experiences.
           </div>
         </div>
         <div className="grid gap-4 mx-4 lg:grid-cols-3 lg:gap-8 md:mx-20">
@@ -74,7 +76,7 @@ export default function Home() {
             <div class="font-Proxima text-white lg:text-4xl text-2xl font-bold drop-shadow-lg px-5 py-4">
               Physical Health Impact
             </div>
-            <div className="px-5 pb-4 text-sm font-normal text-justify text-white font-Arial lg:text-base">
+            <div className="px-5 pb-4 text-base font-normal text-justify text-white font-Arial lg:text-lg">
               Excessive gaming often leads to a sedentary lifestyle, which can
               result in various health issues such as obesity, muscle stiffness,
               and poor posture. Sitting for prolonged periods without adequate
@@ -86,7 +88,7 @@ export default function Home() {
             <div class="font-Proxima text-white  lg:text-4xl text-2xl font-bold drop-shadow-lg px-5 py-4">
               Mental Health Concerns
             </div>
-            <div className="px-5 pb-4 text-sm font-normal text-justify text-white font-Arial lg:text-base">
+            <div className="px-5 pb-4 text-base font-normal text-justify text-white font-Arial lg:text-lg">
               Unhealthy gaming habits can negatively affect mental well-being.
               Excessive gaming may lead to increased stress, anxiety, and
               depression, especially if it interferes with daily
@@ -99,7 +101,7 @@ export default function Home() {
             <div class="font-Proxima text-white lg:text-4xl text-2xl font-bold drop-shadow-lg px-5 py-4">
               Social & Emotional Fallout
             </div>
-            <div className="px-5 pb-4 text-sm font-normal text-justify text-white font-Arial lg:text-base">
+            <div className="px-5 pb-4 text-base font-normal text-justify text-white font-Arial lg:text-lg">
               Spending excessive time gaming can strain relationships with
               friends, family, and significant others. It may lead to social
               isolation, as individuals prioritize gaming over face-to-face
@@ -123,15 +125,14 @@ export default function Home() {
           <div class="font-Proxima pb-4 md:col-span-1 col-span-1 text-white text-5xl text-left font-bold drop-shadow-lg">
             Who We Are
           </div>
-          <div className="w-full col-span-1 text-base font-normal text-justify text-white font-Arial">
-            Healthy Gaming Hub aims to promote Ad commodo commodo excepteur do
-            adipisicing. Ullamco duis enim fugiat elit veniam in aute aliquip.
-            Cupidatat occaecat ea ipsum deserunt quis. Excepteur eiusmod labore
-            est labore voluptate reprehenderit consequat commodo do duis dolore
-            mollit sint duis. Ex veniam cillum ea incididunt aliquip veniam
-            eiusmod pariatur consequat ex irure. Officia deserunt Lorem eu Lorem
-            est non. Id in reprehenderit reprehenderit aliqua elit ex amet
-            pariatur magna in eiusmod nostrud laboris.
+          <div className="w-full col-span-1 text-base font-normal text-justify text-white font-Arial lg:text-lg">
+            Healthy Gaming Hub aims to promote better physical and mental health
+            surrounding gaming in all devices. We currate different resources on
+            the Internet so that you can find the right things and people to
+            help out your problems! No matter it's quiting game addiction,
+            talking about your mental issues on gaming, or even helping out
+            syber bullying in games, we assure that you can definetely find the
+            information to proceed to better health.
           </div>
         </div>
       </div>
