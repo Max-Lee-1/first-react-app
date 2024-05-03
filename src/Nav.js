@@ -32,7 +32,7 @@ export default function Nav() {
   return (
     <section id="nav" className="z-50 relative">
       <nav
-        className={`fixed w-screen flex z-50 top-0 left-0 bg-Navy/50 shadow-lg backdrop-blur border border-black border-b-2 border-b-Charcoal `}
+        className={`fixed w-screen flex z-50 top-0 left-0 bg-Navy/65 shadow-lg backdrop-blur border border-black border-b-2 border-b-Charcoal `}
         style={activeSection === "Landing" ? hiddenStyle : {}}
       >
         <div
@@ -86,7 +86,7 @@ export default function Nav() {
       <div className="flex fixed h-screen justify-start items-center">
         <a href="https://netsafe.org.nz/" target="blank">
           <img
-            className="md:w-40 md:h-16 w-32 h-12 md:py-4 py-2 md:px-4 px-3 -rotate-90 md:-translate-x-12 -translate-x-10 bg-Charcoal/30 shadow-lg ring-1 ring-black/5 backdrop-blur border border-Charcoal"
+            className="md:w-40 md:h-16 w-32 h-12 md:py-4 py-2 md:px-4 px-3 -rotate-90 md:-translate-x-12 -translate-x-10 bg-Navy/60 shadow-lg ring-1 ring-black/5 backdrop-blur border border-Charcoal"
             src={Logo}
             alt="Netsafe Logo"
           />
