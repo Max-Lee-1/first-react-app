@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <section
       data-section
-      className="relative z-10 w-screen min-h-screen mb-20"
+      className="relative z-10 w-screen min-h-screen pb-10 tiny:pb-[10vh] medium:pb-10"
       id="Home"
     >
       <div id="Landing" className="h-screen">
@@ -19,7 +19,7 @@ export default function Home() {
               href="#Article"
               className="flex items-center justify-center rounded-full md:w-40 md:h-40 w-28 h-28 bg-gradient-to-b from-Bittersweet-Red to-Bittersweet-Pink"
             >
-              <div className="self-center w-12 text-xs font-thin text-center text-white md:w-24 font-Arial md:text-base drop-shadow-lg">
+              <div className="self-center w-12 text-xs font-light text-center text-white md:w-24 font-Proxima md:text-base drop-shadow-lg">
                 Wanna Read about it?
               </div>
             </a>
@@ -29,7 +29,7 @@ export default function Home() {
               href="#Hazards"
               className="flex items-center justify-center rounded-full md:w-40 md:h-40 w-28 h-28 bg-gradient-to-b from-Orange to-amber-400"
             >
-              <div className="self-center w-12 text-xs font-thin text-center text-white md:w-24 font-Arial md:text-base drop-shadow-lg">
+              <div className="self-center w-12 text-xs font-light text-center text-white md:w-24 font-Proxima md:text-base drop-shadow-lg">
                 Why should I care?
               </div>
             </a>
@@ -39,7 +39,7 @@ export default function Home() {
               href="#Quiz"
               className="flex items-center justify-center rounded-full md:w-40 md:h-40 w-28 h-28 bg-gradient-to-b from-Sulu to-Green-Pea"
             >
-              <div className="self-center w-12 text-xs font-thin text-center text-white md:w-24 font-Arial md:text-base drop-shadow-lg">
+              <div className="self-center w-12 text-xs font-light text-center text-white md:w-24 font-Proxima md:text-base drop-shadow-lg">
                 Take the Quiz
               </div>
             </a>
@@ -49,7 +49,7 @@ export default function Home() {
               href="#Help"
               className="flex items-center justify-center rounded-full md:w-40 md:h-40 w-28 h-28 bg-gradient-to-b from-Chambray to-Navy"
             >
-              <div className="self-center w-12 text-xs font-thin text-center text-white break-words md:w-24 font-Arial md:text-base drop-shadow-lg">
+              <div className="self-center w-12 text-xs font-light text-center text-white break-words md:w-24 font-Proxima md:text-base drop-shadow-lg">
                 Yes, I need Professional Help
               </div>
             </a>
@@ -114,18 +114,18 @@ export default function Home() {
       </div>
       <div
         id="About"
-        className="relative grid h-screen grid-cols-2 gap-4 pt-10 mx-5 md:mx-20 lg:pt-40 snap-start"
+        className="relative grid items-center h-screen grid-cols-2 gap-4 pt-20 mx-5 md:pt-10 md:mx-20 snap-start"
       >
         <img
           src={catGaming}
-          className="flex flex-col object-cover w-auto h-auto col-span-2 gap-1 rounded-lg lg:h-3/4 lg:w-full md:col-span-1 drop-shadow-md"
+          className="flex flex-col object-cover w-auto h-auto col-span-2 gap-1 rounded-lg lg:h-3/4 lg:w-full lg:col-span-1 drop-shadow-md"
           alt="Cat and Gaming PC"
         ></img>
-        <div className="flex flex-col col-span-2 gap-1 p-4 md:col-span-1">
-          <div class="font-Proxima pb-4 md:col-span-1 col-span-1 text-white text-5xl text-left font-bold drop-shadow-lg">
+        <div className="flex flex-col col-span-2 gap-1 p-4 lg:col-span-1">
+          <div class="font-Proxima pb-4 col-span-1 text-white text-5xl text-left font-bold drop-shadow-lg">
             Who We Are
           </div>
-          <div className="w-full col-span-1 text-base font-normal text-justify text-white font-Arial lg:text-lg">
+          <div className="w-full col-span-1 text-base font-normal text-justify text-white font-Arial lg:text-lg tall:text-lg">
             Healthy Gaming Hub aims to promote better physical and mental health
             surrounding gaming in all devices. We currate different resources on
             the Internet so that you can find the right things and people to

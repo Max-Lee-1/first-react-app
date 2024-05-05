@@ -46,7 +46,8 @@ export default function Article() {
       return (
         <button
           id={id}
-          className={`lg:h-screen h-full col-span-1 row-span-1 bg-cover bg-center opacity-85 text-transparent w-full transition duration-200 lg:text-transparent lg:hover:text-white text-white`}
+          className={`lg:h-screen h-full col-span-1 row-span-1 bg-cover bg-center opacity-85 
+          text-transparent w-full transition duration-200 lg:text-transparent lg:hover:text-white text-white`}
           onClick={handleClick}
           style={{ backgroundImage: `url(${imageUrl})` }}
         >
@@ -61,7 +62,8 @@ export default function Article() {
       return (
         <div
           id={id}
-          className="snap-start grid gap-4 my-6 xl:w-[25vw] w-[75vw] xl:h-[65vh] h-[70vh] bg-cover bg-no-repeat bg-center rounded-lg shadow hover:scale-105 transition duration-100"
+          className="snap-start grid gap-4 my-6 xl:w-[25vw] w-[75vw] xl:h-[65vh] h-[70vh] 
+          bg-cover bg-no-repeat bg-center rounded-lg shadow hover:scale-105 transition duration-100"
           style={{ backgroundImage: `url(${imageUrl})` }}
         >
           <a

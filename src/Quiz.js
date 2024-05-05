@@ -5,20 +5,15 @@ export default function Quiz() {
     <section
       data-section
       id="Quiz"
-      className="z-10 relative w-screen min-h-screen flex items-center p-0 bg-Rhino md:pt-[10vh] snap-start"
+      className="z-10 relative w-screen min-h-screen flex items-center p-0 bg-Rhino snap-start mt-[10vh]"
     >
       <div className="relative z-40 ">
         <img
-          className="flex mix-blend-darken w-screen h-[30vh] absolute xl:-top-[20vh] lg:-top-[27.5vh] md:-top-[25vh] -top-[10vh] -z-30 brightness-50"
+          className="flex items-center relative -top-[10vh] mix-blend-darken w-screen h-[30vh] -z-30 brightness-50"
           src={wave}
-          style={{
-            "@media (min-height: 768px)": {
-              top: "-50vh",
-            },
-          }}
           alt="Transition wave"
         />
-        <div className="mix-blend-darken grid xl:grid-cols-6 grid-cols-10 grid-rows-10 lg:gap-4 gap-2 xl:mx-20 mx-10 lg:pt-[20vh] md:pt-0 pt-[20vh] z-50 min-h-[600px] sm:max-h-[900px] pb-[8vh]">
+        <div className="mix-blend-darken grid xl:grid-cols-6 grid-cols-10 grid-rows-10 lg:gap-4 gap-2 xl:mx-20 mx-10 z-50 min-h-[600px] sm:max-h-[900px] pb-[8vh]">
           <div className="flex items-center justify-center col-span-4 row-span-1 gap-1 p-4 rounded-lg bg-Charcoal xl:col-span-2 xl:row-span-4 drop-shadow-md">
             <div className="my-2 text-3xl font-bold text-center text-white font-Proxima xl:text-4xl ">
               Quizes

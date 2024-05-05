@@ -25,10 +25,18 @@ module.exports = {
         Charcoal: "#42474f", //body text
         Orange: "#f89005", //call to action
       },
+
       accentColor: {},
       backgroundColor: {},
       borderColor: {},
       boxShadowColor: {},
+      screens: {
+        tiny: { raw: "(min-height: 600px)" },
+        short: { raw: "(min-height: 700px)" },
+
+        medium: { raw: "(min-height: 900px)" },
+        tall: { raw: "(min-height: 1000px)" },
+      },
     },
   },
   plugins: [],
